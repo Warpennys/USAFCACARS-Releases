@@ -22,8 +22,6 @@ Public installer and automatic update packages for USA Flight Club ACARS. Source
 
 <h1 align="center">USAFCACARS</h1>
 
-<h1 align="center">USAFCACARS</h1>
-
 <p align="center">
   <strong>The official desktop flight operations and ACARS client for USA Flight Club.</strong>
 </p>
