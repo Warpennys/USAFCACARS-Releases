@@ -1,0 +1,390 @@
+name: Feature request
+description: Propose a new feature or improvement for an official USAFCACARS release.
+title: "[Feature]: "
+labels:
+  - enhancement
+  - triage
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # USAFCACARS Feature Request
+
+        Thank you for helping shape USAFCACARS.
+
+        USAFCACARS is proprietary software in active alpha development. Many screenshots and graphics in this repository are **concept visualizations** that show the intended scope of the project. A concept image does not confirm that the feature is already implemented or scheduled for a specific release.
+
+        Before submitting:
+
+        - Review the README, changelog, current release notes, and existing issues.
+        - Confirm that the request is not already part of the documented development plan.
+        - Keep the request focused on one feature or closely related workflow.
+        - Explain the operational problem the feature would solve.
+
+        **Do not include passwords, authentication tokens, private pilot information, private communications, security vulnerabilities, or confidential server details.**
+
+        Security concerns must be reported privately under `SECURITY.md`.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting
+      description: Confirm that you reviewed the existing project information.
+      options:
+        - label: I searched existing issues and did not find the same request.
+          required: true
+        - label: I reviewed the README, changelog, and current release notes.
+          required: true
+        - label: I understand that concept images do not guarantee implementation.
+          required: true
+        - label: This request does not contain a security vulnerability or confidential account matter.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: USAFCACARS version
+      description: Enter the version you are currently using, or state that the request is based on the project concepts.
+      placeholder: "Example: 1.0.4 Alpha or Concept/Roadmap request"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature area
+      description: Select the area most closely related to the request.
+      options:
+        - Application shell or dashboard
+        - Login, account, or pilot authentication
+        - Pilot profile or career progression
+        - Flights, bids, or flight search
+        - Pilot briefing
+        - SimConnect connection
+        - Aircraft telemetry
+        - Flight phases
+        - Flight tracking or PIREP submission
+        - Live map
+        - Flightboard
+        - Weather
+        - Airport information
+        - Charts
+        - Voice communications
+        - Microphone or speaker controls
+        - ATC or TRACON
+        - Flight strips
+        - Airport selection or taxi management
+        - Horizon Explorer
+        - Workspace Manager
+        - Aircraft Control
+        - Passenger Operations
+        - Music and Radio
+        - Community Hub
+        - Help and Support
+        - Downloads or updates
+        - API module or server integration
+        - Accessibility or display scaling
+        - Performance
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request type
+      description: Select the best description of the proposed change.
+      options:
+        - New feature
+        - Improvement to an existing feature
+        - New aircraft integration
+        - New simulator integration
+        - New data or service integration
+        - Workflow improvement
+        - User-interface improvement
+        - Accessibility improvement
+        - Performance improvement
+        - Administrative feature
+        - Documentation improvement
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature summary
+      description: Describe the requested feature in a few clear sentences.
+      placeholder: |
+        Example: Add aircraft-specific control profiles so each supported aircraft can map its own SimConnect events, local variables, and cockpit controls.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: Explain the operational problem, limitation, or missing workflow this feature would address.
+      placeholder: |
+        Explain what is difficult, unavailable, repetitive, confusing, or incomplete today.
+        Describe who is affected and during which part of the flight or application workflow.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-workflow
+    attributes:
+      label: Proposed workflow
+      description: Describe how the feature should work from the user's perspective.
+      placeholder: |
+        1. The pilot opens Aircraft Control.
+        2. USAFCACARS detects the loaded aircraft.
+        3. The matching aircraft profile loads automatically.
+        4. Supported controls become active.
+        5. Unsupported controls remain disabled with a clear explanation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-interface
+    attributes:
+      label: User-interface concept
+      description: Describe where the feature belongs, how it should open, and what controls or information it should contain.
+      placeholder: |
+        Navigation location:
+        Expanded center workspace or pop-out:
+        Main panels:
+        Buttons or controls:
+        Status indicators:
+        Required warnings:
+        Mobile/scaling considerations:
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Required data and behavior
+      description: List the information the feature must read, display, save, calculate, or transmit.
+      placeholder: |
+        Inputs:
+        Outputs:
+        Saved settings:
+        API fields:
+        Simulator variables:
+        Update frequency:
+        Validation rules:
+        Error states:
+
+  - type: dropdown
+    id: simulator-dependency
+    attributes:
+      label: Simulator dependency
+      description: Does the request depend on a particular simulator?
+      options:
+        - Not simulator-dependent
+        - Microsoft Flight Simulator 2020
+        - Microsoft Flight Simulator 2024
+        - Both MSFS 2020 and MSFS 2024
+        - Other
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: aircraft
+    attributes:
+      label: Aircraft or add-on dependency
+      description: Identify any aircraft, add-on developer, or version required by the request.
+      placeholder: "Example: Fenix A320, PMDG 737, default aircraft, or Not applicable"
+
+  - type: textarea
+    id: simconnect
+    attributes:
+      label: SimConnect or aircraft-control requirements
+      description: Complete this section when the request reads or controls simulator systems.
+      placeholder: |
+        Simulator variables:
+        SimConnect events:
+        Local variables:
+        WASM or vendor SDK:
+        Read-only states:
+        Writable controls:
+        Aircraft-specific limitations:
+
+  - type: textarea
+    id: api
+    attributes:
+      label: API or server requirements
+      description: Complete this section when the request needs data from the USAFCACARS phpVMS API module or another service.
+      placeholder: |
+        Proposed endpoint:
+        Authentication:
+        Request fields:
+        Response fields:
+        Database records:
+        Permissions:
+        Public or private visibility:
+        Update frequency:
+
+  - type: textarea
+    id: communications
+    attributes:
+      label: Communications, audio, or community requirements
+      description: Complete this section when the request involves voice, radio, chat, community, notifications, or media.
+      placeholder: |
+        Rooms or channels:
+        Push-to-talk behavior:
+        Microphone or speaker behavior:
+        Privacy requirements:
+        Recording behavior:
+        Notification behavior:
+        Moderation or permissions:
+
+  - type: textarea
+    id: atc
+    attributes:
+      label: ATC, TRACON, flight-strip, or airport-operations requirements
+      description: Complete this section when the request affects ATC workflows.
+      placeholder: |
+        Controller role:
+        Scope or map layer:
+        Flight-strip behavior:
+        Aircraft selection:
+        Commands:
+        Handoffs:
+        Runway or taxi behavior:
+        Alerts:
+        Required history or audit record:
+
+  - type: textarea
+    id: passenger
+    attributes:
+      label: Passenger or cabin-operations requirements
+      description: Complete this section when the request affects Passenger Operations.
+      placeholder: |
+        Cabin configuration:
+        Passenger roster:
+        Seating:
+        Boarding:
+        Meal or beverage service:
+        Entertainment:
+        Cabin signs:
+        Doors:
+        Satisfaction or scoring:
+        Simulator integration:
+
+  - type: textarea
+    id: privacy-security
+    attributes:
+      label: Privacy and security considerations
+      description: Explain whether the feature processes account data, live position, communications, audio, logs, or other sensitive information.
+      placeholder: |
+        Data collected:
+        Data transmitted:
+        Publicly visible fields:
+        Retention:
+        Permissions:
+        Sensitive information:
+        Abuse prevention:
+        Audit requirements:
+    validations:
+      required: true
+
+  - type: textarea
+    id: third-party
+    attributes:
+      label: Third-party services or licensing
+      description: Identify any external library, API, provider, map source, weather source, chart source, audio service, or other dependency.
+      placeholder: |
+        Provider:
+        Purpose:
+        License or terms:
+        Attribution:
+        API limits:
+        Cost:
+        Redistribution restrictions:
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any workaround or alternative design you considered.
+      placeholder: |
+        Explain why the alternative is less useful, less reliable, or more difficult.
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Suggested completion criteria
+      description: List measurable conditions that would show the feature is working correctly.
+      placeholder: |
+        - The feature opens from the intended navigation item.
+        - The selected aircraft is detected correctly.
+        - Supported controls update the simulator.
+        - Unsupported controls are disabled.
+        - Settings survive an application restart.
+        - No credentials or private data appear in logs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Suggested testing
+      description: Describe how the feature should be tested.
+      placeholder: |
+        Test environments:
+        Test aircraft:
+        Test simulator:
+        Expected edge cases:
+        Network interruption:
+        Missing data:
+        Multi-monitor behavior:
+        Performance expectations:
+
+  - type: input
+    id: concept-reference
+    attributes:
+      label: Concept image or documentation reference
+      description: Link to a relevant concept image, README section, issue, or external specification.
+      placeholder: "Example: assets/readme/usafc_aircraftcontrol.png"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add any other non-sensitive details, examples, sketches, or context that would help evaluate the request.
+
+  - type: checkboxes
+    id: proprietary
+    attributes:
+      label: Project and licensing confirmation
+      options:
+        - label: I understand that USAFCACARS is proprietary software and that submitting this request does not grant rights to USAFCACARS source code, branding, assets, or future implementations.
+          required: true
+        - label: I confirm that any attached material is mine to share or is properly licensed for this purpose.
+          required: true
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy and security confirmation
+      options:
+        - label: I removed passwords, authentication tokens, API credentials, session cookies, private keys, and database credentials.
+          required: true
+        - label: I removed private voice communications, private chat, private support information, and unnecessary personal data.
+          required: true
+        - label: I understand that GitHub issues may be publicly visible.
+          required: true
+        - label: I will report security-sensitive information privately under SECURITY.md.
+          required: true
+
+  - type: checkboxes
+    id: final-confirmation
+    attributes:
+      label: Final confirmation
+      options:
+        - label: I confirm that this request describes one focused feature or closely related workflow and is accurate to the best of my knowledge.
+          required: true

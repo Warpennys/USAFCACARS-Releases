@@ -1,0 +1,344 @@
+name: Bug report
+description: Report a reproducible defect in an official USAFCACARS alpha release.
+title: "[Bug]: "
+labels:
+  - bug
+  - triage
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # USAFCACARS Bug Report
+
+        Thank you for helping test USAFCACARS.
+
+        USAFCACARS is proprietary software in active alpha development. Confirm that the behavior is not already listed as a known limitation in the current release notes before submitting this report.
+
+        **Do not use this form for security vulnerabilities, account-specific problems, private communications, privacy requests, or confidential information.**
+
+        - Security issues: follow `SECURITY.md`
+        - Account, PIREP, administrative, or private support: use the official USA Flight Club support system
+        - Privacy requests: follow `PRIVACY.md`
+
+        Never include passwords, authentication tokens, API keys, private voice communications, private chat, database credentials, or unredacted personal information.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting
+      description: Confirm that you completed the basic checks.
+      options:
+        - label: I am using an official USAFCACARS release.
+          required: true
+        - label: I read the release notes and known limitations for this version.
+          required: true
+        - label: I restarted USAFCACARS and reproduced the problem again.
+          required: true
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: This report does not contain a security vulnerability or confidential account matter.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: USAFCACARS version
+      description: Enter the complete version and release channel shown by the application.
+      placeholder: "Example: 1.0.4 Alpha"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation type
+      description: Select how this build was installed.
+      options:
+        - Windows installer
+        - MSI installer
+        - Portable ZIP
+        - Authorized development build
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Affected area
+      description: Select the area most closely related to the defect.
+      multiple: false
+      options:
+        - Application startup or shutdown
+        - Installation or update
+        - Login or authentication
+        - Pilot profile
+        - Flights, bids, or search
+        - Pilot briefing
+        - SimConnect connection
+        - Aircraft telemetry
+        - Flight phases
+        - Flight start, cancel, or completion
+        - PIREP submission
+        - Live map
+        - Flightboard
+        - Weather
+        - Airport information
+        - Charts
+        - Voice communications
+        - Microphone or speaker testing
+        - ATC or TRACON
+        - Flight strips
+        - Airport or taxi management
+        - Horizon Explorer
+        - Workspace Manager
+        - Aircraft Control
+        - Passenger Operations
+        - Music and Radio
+        - Pilot Profile or career features
+        - Community Hub
+        - Help and Support
+        - Performance or resource usage
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      description: Include the Windows edition and build when known.
+      placeholder: "Example: Windows 11 Home 24H2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: simulator
+    attributes:
+      label: Simulator
+      description: Select the simulator involved. Select Not applicable for non-simulator defects.
+      options:
+        - Microsoft Flight Simulator 2020
+        - Microsoft Flight Simulator 2024
+        - Both MSFS 2020 and MSFS 2024
+        - Not applicable
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: simulator-version
+    attributes:
+      label: Simulator version
+      description: Enter the simulator build number when relevant.
+      placeholder: "Example: 1.xx.xx.x or Not applicable"
+    validations:
+      required: true
+
+  - type: input
+    id: aircraft
+    attributes:
+      label: Aircraft and add-on version
+      description: Include the aircraft, developer, and version. Enter Not applicable when the problem is not aircraft-related.
+      placeholder: "Example: Fenix A320 v2.x.x or Default Cessna 172"
+    validations:
+      required: true
+
+  - type: input
+    id: route
+    attributes:
+      label: Flight, route, airport, or callsign
+      description: Provide only the non-sensitive operational identifier needed to reproduce the problem.
+      placeholder: "Example: UFC102, KJFK-KBGR, or airport 81R"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Describe the defect clearly in one or two paragraphs.
+      placeholder: "Example: The Flightboard begins flashing every row after the second live-data refresh."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide exact numbered steps that consistently produce the problem.
+      placeholder: |
+        1. Launch USAFCACARS.
+        2. Sign in with an authorized test account.
+        3. Open Flightboard.
+        4. Select Arrivals.
+        5. Wait for the second automatic refresh.
+        6. Observe all rows flashing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: Explain what should have happened.
+      placeholder: "Only changed characters should animate, and unchanged rows should remain stable."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Explain what happened instead.
+      placeholder: "Every row flashes repeatedly even when the displayed values have not changed."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does the defect occur?
+      options:
+        - Every time
+        - Often
+        - Occasionally
+        - Once
+        - Unable to reproduce again
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: Did this work in an earlier release?
+      options:
+        - Yes
+        - No
+        - Unknown
+        - Not applicable
+    validations:
+      required: true
+
+  - type: input
+    id: previous-version
+    attributes:
+      label: Last known working version
+      description: Enter the version where the feature last worked, if known.
+      placeholder: "Example: 1.0.3 Alpha or Unknown"
+
+  - type: textarea
+    id: error-message
+    attributes:
+      label: Exact error message
+      description: Paste the complete error text after removing sensitive information. Enter None if no error appeared.
+      placeholder: "Paste the sanitized error message here."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized log excerpt
+      description: |
+        Include only the smallest useful log section.
+
+        Remove passwords, full tokens, authorization headers, cookies, email addresses where unnecessary, private messages, internal credentials, and unrelated personal information.
+      render: shell
+      placeholder: |
+        2026-08-06 01:00:00 [Feature] Sanitized error message
+        [REDACTED TOKEN]
+
+  - type: textarea
+    id: display
+    attributes:
+      label: Display and workspace information
+      description: Include this when the issue involves layout, scaling, windows, maps, charts, or multi-monitor behavior.
+      placeholder: |
+        Monitor count:
+        Resolution:
+        Windows scaling:
+        Workspace layout:
+        Panel expanded or popped out:
+        Fullscreen:
+
+  - type: textarea
+    id: audio
+    attributes:
+      label: Audio-device information
+      description: Include this only when the issue involves Voice Communications, Music and Radio, microphone testing, or speaker testing.
+      placeholder: |
+        Microphone:
+        Speaker or headset:
+        Connection type:
+        Windows default device:
+        Push-to-talk key:
+        Microphone test result:
+        Speaker test result:
+
+  - type: textarea
+    id: network
+    attributes:
+      label: Network and connection information
+      description: Include this when the issue involves login, API, live map, weather, charts, voice communications, downloads, or updates.
+      placeholder: |
+        Connection type:
+        VPN or proxy:
+        Website reachable:
+        Live map reachable:
+        Server status shown in app:
+        Simulator status shown in app:
+
+  - type: textarea
+    id: performance
+    attributes:
+      label: Performance information
+      description: Include this when the issue involves freezing, lag, high CPU, high memory, or excessive WebView2 processes.
+      placeholder: |
+        Approximate CPU usage:
+        Approximate memory usage:
+        Number of WebView2 processes:
+        Time app had been running:
+        Open panels:
+        MSFS running:
+
+  - type: textarea
+    id: workarounds
+    attributes:
+      label: Troubleshooting and workarounds tried
+      description: List what you already attempted and whether anything temporarily resolved the issue.
+      placeholder: |
+        - Restarted USAFCACARS
+        - Restarted MSFS
+        - Tested a default aircraft
+        - Reset the workspace
+        - Reproduced in a clean portable build
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add any other non-sensitive information that may help reproduce or diagnose the problem.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy and security confirmation
+      description: These confirmations are required before the report can be submitted.
+      options:
+        - label: I removed passwords, authentication tokens, API credentials, session cookies, private keys, and database credentials.
+          required: true
+        - label: I removed private voice communications, private chat, private support information, and unnecessary personal data.
+          required: true
+        - label: I understand that GitHub issues may be publicly visible.
+          required: true
+        - label: I will report any security-sensitive discovery privately under SECURITY.md instead of posting exploit details here.
+          required: true
+
+  - type: checkboxes
+    id: final-confirmation
+    attributes:
+      label: Final confirmation
+      options:
+        - label: I confirm that this report describes behavior observed in an official USAFCACARS build and that the information provided is accurate to the best of my knowledge.
+          required: true

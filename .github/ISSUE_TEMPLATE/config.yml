@@ -1,0 +1,22 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Private USAFCACARS Support
+    url: https://usaflightclub.net
+    about: Use private USA Flight Club support for account access, pilot records, PIREP disputes, administrative requests, private logs, and confidential matters.
+
+  - name: Report a Security Vulnerability
+    url: https://usaflightclub.net
+    about: Report authentication, authorization, token exposure, private-data exposure, communications security, or other vulnerabilities privately. Do not open a public issue.
+
+  - name: Submit a Privacy Request
+    url: https://usaflightclub.net
+    about: Submit access, correction, deletion, or other privacy-related requests privately through USA Flight Club.
+
+  - name: Official USAFCACARS Downloads
+    url: https://usaflightclub.net/downloads
+    about: Download official USAFCACARS releases and review available release information.
+
+  - name: USAFCACARS Live Map
+    url: https://usaflightclub.net/usafcacars/live
+    about: Open the official USAFCACARS live operations map.

@@ -1,2 +1,1312 @@
-# USAFCACARS-Releases
-Public installer and automatic update packages for USA Flight Club ACARS. Source code is maintained privately.
+<p align="center">
+  <img
+    src="assets/readme/usafcacars-hero.png"
+    alt="USAFCACARS — USA Flight Club ACARS Operations Center"
+    width="100%"
+  >
+</p>
+
+<h1 align="center">USAFCACARS</h1>
+
+<p align="center">
+  <strong>The official desktop flight operations, ACARS, communications, and simulation command center for USA Flight Club.</strong>
+</p>
+
+<p align="center">
+  Flight planning · SimConnect telemetry · Live tracking · Weather · ATC · Voice communications · Aircraft systems · Passenger operations
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-ALPHA-a00000?style=for-the-badge" alt="Alpha">
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-1f6feb?style=for-the-badge&logo=windows" alt="Windows 10 and Windows 11">
+  <img src="https://img.shields.io/badge/Simulator-MSFS%202020%20%7C%202024-263b5e?style=for-the-badge" alt="Microsoft Flight Simulator 2020 and 2024">
+  <img src="https://img.shields.io/badge/Integration-SimConnect-0b6e4f?style=for-the-badge" alt="SimConnect">
+  <img src="https://img.shields.io/badge/License-Proprietary-555555?style=for-the-badge" alt="Proprietary software">
+</p>
+
+<p align="center">
+  <a href="../../releases/latest">
+    <img src="https://img.shields.io/badge/RELEASES-VIEW%20LATEST-a00000?style=for-the-badge&logo=github" alt="View the latest USAFCACARS release">
+  </a>
+  &nbsp;
+  <a href="https://usaflightclub.net/downloads">
+    <img src="https://img.shields.io/badge/DOWNLOADS-USA%20FLIGHT%20CLUB-263b5e?style=for-the-badge" alt="USA Flight Club downloads">
+  </a>
+  &nbsp;
+  <a href="https://usaflightclub.net">
+    <img src="https://img.shields.io/badge/WEBSITE-USAFLIGHTCLUB.NET-263b5e?style=for-the-badge" alt="Visit USA Flight Club">
+  </a>
+  &nbsp;
+  <a href="https://usaflightclub.net/usafcacars/live">
+    <img src="https://img.shields.io/badge/LIVE%20MAP-VIEW%20OPERATIONS-0b6e4f?style=for-the-badge" alt="Open the USAFCACARS Live Map">
+  </a>
+</p>
+
+---
+
+> [!IMPORTANT]
+> **USAFCACARS is currently in active alpha development.**
+>
+> The interface images in this README are **concept visualizations** showing the intended scope, design direction, and long-term feature goals for the desktop application. They are not final screenshots, do not represent a finished release, and should not be interpreted as confirmation that every displayed control or service is already implemented.
+>
+> Features, layouts, wording, data sources, integrations, and availability may change as development continues. The release notes for each downloadable build are the authoritative record of what is currently functional.
+
+> [!CAUTION]
+> Alpha builds may contain incomplete features, visual placeholders, disabled controls, configuration changes, or defects. Do not rely on an alpha build as the only method of recording an important flight.
+
+---
+
+## The USAFCACARS Vision
+
+USAFCACARS is being developed as a complete desktop operations environment for USA Flight Club pilots, dispatchers, controllers, and virtual aviation enthusiasts.
+
+The project is intended to connect:
+
+- A pilot’s USA Flight Club account
+- The USAFC phpVMS platform
+- Microsoft Flight Simulator
+- SimConnect aircraft telemetry and controls
+- Flight planning and briefing resources
+- Live aircraft tracking
+- Airport weather and charts
+- Voice and radio communications
+- Flightboard and ATC operations
+- Aircraft systems management
+- Passenger and cabin-service simulation
+- Multi-window and multi-monitor workspaces
+
+The goal is not to create only a small ACARS recorder. The long-term vision is a unified virtual airline operations center that remains useful before departure, throughout the flight, after arrival, and during ATC or community activity.
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_acars.png"
+    alt="USAFCACARS complete operations-center concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept visualization of the complete USAFCACARS operations-center experience.</em>
+</p>
+
+---
+
+## Application Overview
+
+<p align="center">
+  <img
+    src="assets/readme/operations-center.png"
+    alt="USAFCACARS operations center"
+    width="94%"
+  >
+</p>
+
+USAFCACARS is designed around a persistent operations shell with:
+
+- Left-side feature navigation
+- Pilot and account information
+- Current-flight status
+- Simulator and server connection indicators
+- Quick operational actions
+- Expandable feature panels
+- Pop-out windows
+- Workspace layouts
+- Live telemetry
+- Zulu time
+- ATC and communications status
+- A continuous operations feed
+
+Selected modules can expand into the large center workspace between the permanent left and right rails. This allows a live map, flightboard, TRACON scope, briefing package, aircraft panel, or another major tool to use the full working area without losing access to the pilot and flight controls.
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/readme/dashboard.png" alt="USAFCACARS dashboard visual" width="100%">
+      <br>
+      <strong>Dashboard</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/readme/workspace-manager.png" alt="USAFCACARS workspace manager" width="100%">
+      <br>
+      <strong>Workspace Manager</strong>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Current Development Status
+
+USAFCACARS remains an alpha project. Individual systems may be at different stages in any given build:
+
+| Area | Development direction |
+|---|---|
+| Desktop shell and dashboard | Active development |
+| USAFC account and API integration | Active development |
+| SimConnect telemetry | Active development |
+| Flight tracking and PIREP workflow | Active development |
+| Live map and flightboard | Active development and expansion |
+| Weather, airport data, and charts | Active development |
+| Voice communications | Active development |
+| Horizon Explorer | Active development |
+| Workspace Manager | Active development |
+| ATC, TRACON, strips, and taxi management | Advanced concept and staged development |
+| Aircraft systems control | Experimental/advanced concept |
+| Passenger operations | Planned advanced simulation feature |
+| Community and support centers | Planned integration and staged development |
+
+This table describes the project direction only. Consult the release notes for the exact capabilities of a particular build.
+
+---
+
+# Major Systems
+
+## Pilot Dashboard
+
+The pilot dashboard is intended to provide an immediate overview of the logged-in pilot and the current USAFC session.
+
+Target information includes:
+
+- Pilot avatar
+- Pilot name and ID
+- Callsign
+- Division or airline
+- Rank and progression
+- Network status
+- Current airport
+- Current flight
+- Active aircraft
+- Flight phase
+- Bid count
+- Hours and completed flights
+- Voice communications state
+- Simulator connection
+- Quick flight actions
+- Current weather
+
+The dashboard is also the launch point for the other major USAFCACARS workspaces.
+
+---
+
+## Flight Selection, Bids, and Flight Tracking
+
+USAFCACARS is intended to integrate directly with the USA Flight Club flight and bid system.
+
+Planned and developing capabilities include:
+
+- Pilot login through USAFC services
+- Current bid retrieval
+- Available flights
+- My Flights
+- Completed flights
+- Flight search
+- Flight selection
+- Aircraft assignment
+- Route and airport briefing
+- Flight start
+- Live telemetry transmission
+- Flight phase tracking
+- Flight cancellation
+- Flight completion
+- Landing-rate capture
+- PIREP submission
+- Post-flight summary
+
+Airport handling is intended to support both four-character identifiers and valid shorter identifiers such as `81R`.
+
+---
+
+## Live Operations Map
+
+<p align="center">
+  <a href="https://usaflightclub.net/usafcacars/live">
+    <img src="https://img.shields.io/badge/OPEN%20THE%20LIVE%20MAP-usaflightclub.net%2Fusafcacars%2Flive-a00000?style=for-the-badge" alt="Open the live USAFCACARS operations map">
+  </a>
+</p>
+
+The live USAFCACARS operations map is available at **[usaflightclub.net/usafcacars/live](https://usaflightclub.net/usafcacars/live)**.
+
+The live map is designed to become a major center workspace that can expand across the full area between the permanent menus.
+
+Target capabilities include:
+
+- USAFC active aircraft
+- Departure and arrival airports
+- Planned routes
+- Traveled trails
+- Smooth aircraft movement
+- Pilot and aircraft selection
+- Pilot and flight information
+- Weather overlays
+- Radar
+- Airspace
+- Navigation layers
+- Airports and runways
+- Navaids
+- Obstacles
+- SID and STAR overlays
+- ATS routes
+- VATSIM traffic
+- IVAO traffic
+- ADS-B traffic
+- ATC coverage
+- Range and compass tools
+- Zulu clock
+- Saved layer profiles
+- Pop-out map windows
+- Independent map instances
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_map.png"
+    alt="Expanded USAFCACARS live operations map concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept: the Live Operations Map expanded into the primary center workspace.</em>
+</p>
+
+<p align="center">
+  <img
+    src="assets/readme/live-map.png"
+    alt="USAFCACARS live-map feature visual"
+    width="88%"
+  >
+</p>
+
+---
+
+## Flightboard
+
+The flightboard is planned as a live airport-style split-flap operations display.
+
+Primary views:
+
+```text
+CURRENT
+DEPARTURES
+ARRIVALS
+```
+
+Possible traffic sources:
+
+```text
+USAFC
+ADS-B
+VATSIM
+IVAO
+```
+
+Planned columns include:
+
+| Phase | Status | Flight | Departure | Arrival | Departure Time |
+|---|---|---|---|---|---|
+| Estimated Arrival | Altitude | Speed | Heading | Type/Registration | Pilot |
+
+Changed characters are intended to animate independently, reproducing a mechanical split-flap display without repeatedly flashing unchanged rows.
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_flightboard.png"
+    alt="Expanded USAFCACARS flightboard concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept: Flightboard expanded between the permanent navigation and operations rails.</em>
+</p>
+
+<p align="center">
+  <img
+    src="assets/readme/flightboard.png"
+    alt="USAFCACARS flightboard feature visual"
+    width="88%"
+  >
+</p>
+
+---
+
+## Pilot Briefing
+
+The Pilot Briefing workspace is intended to gather operational information for the selected flight into one organized location.
+
+Planned sections include:
+
+- Flight summary
+- Route overview
+- Departure, arrival, and alternate airports
+- Weather summary
+- METAR and TAF
+- Radar and satellite imagery
+- Fuel planning
+- Weight summary
+- Aircraft performance
+- Charts and procedures
+- NOTAMs
+- ATC and communications information
+- Checklists
+- Active warnings
+- Departure and arrival runway information
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_briefing.png"
+    alt="USAFCACARS pilot briefing concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept: an integrated dispatch-style pilot briefing and flight-planning workspace.</em>
+</p>
+
+---
+
+## Airport Information and Charts
+
+USAFCACARS is intended to provide airport information without forcing the pilot to leave the application.
+
+Target information includes:
+
+- Airport name and identifier
+- Coordinates
+- Elevation
+- Runways
+- Taxiways
+- Frequencies
+- Current weather
+- Navigation data
+- Airport status
+- Airport diagrams
+- Taxi charts
+- SID and STAR charts
+- Approach plates
+- Local chart-library integration
+- Chart thumbnails
+- Full-page viewing
+- Zoom and reset controls
+- Chart pop-out windows
+
+---
+
+## Weather Center
+
+The Weather Center is intended to combine airport weather, enroute conditions, and live map overlays.
+
+Planned weather systems include:
+
+- METAR
+- TAF
+- Weather radar
+- Satellite imagery
+- Clouds
+- Wind
+- Temperature
+- Pressure
+- Precipitation
+- Visibility
+- Lightning
+- Turbulence and icing information
+- SIGMET and AIRMET information
+- Layer thumbnails
+- Saved weather profiles
+
+Weather imagery and data must use authorized providers and retain required attribution.
+
+---
+
+# ATC and Airspace Operations
+
+## TRACON
+
+The TRACON workspace is intended to provide a futuristic USAFC command-center view while retaining useful aviation structure.
+
+Target features include:
+
+- 2D radar view
+- Layered 3D airspace view
+- Glowing vector corridors
+- Animated aircraft trails
+- Tactical data blocks
+- Range rings
+- Radials
+- Sector boundaries
+- Weather returns
+- Airport, VOR, and NDB symbols
+- Obstacles
+- SID and STAR layers
+- ATC coverage
+- Aircraft selection
+- Handoff tools
+- Vector commands
+- Flight-strip synchronization
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_tracon.png" alt="USAFCACARS TRACON radar concept" width="100%">
+      <br>
+      <strong>Expanded TRACON Scope</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_tracon2.png" alt="USAFCACARS 3D TRACON concept" width="100%">
+      <br>
+      <strong>Layered 3D Airspace</strong>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_tracon_atc.png"
+    alt="Complete USAFCACARS ATC and TRACON section concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept: complete ATC workspace with radar, commands, frequencies, airport operations, weather, and coordination.</em>
+</p>
+
+---
+
+## Flight Strips
+
+The ATC flight-strip workspace is intended to synchronize aircraft, controllers, phases, and clearances.
+
+Planned strip groups include:
+
+- Arrivals
+- Departures
+- Ground
+- Active
+- Hold
+- Bin/Archive
+
+Target strip features include:
+
+- Callsign
+- Aircraft type
+- Registration
+- Route
+- Altitude
+- Squawk
+- Assigned runway
+- Departure or arrival time
+- Controller remarks
+- Clearance state
+- Selection synchronization
+- Drag-and-drop workflow
+- Hold and active queues
+- Handoff coordination
+- Strip history
+- Controller annotations
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_atc_flightstrips.png"
+    alt="USAFCACARS ATC flight strips concept"
+    width="100%"
+  >
+</p>
+
+---
+
+## Airport Selection and Taxi Management
+
+The ATC airport workspace is planned as a complete ground-operations and taxi-management environment.
+
+Target features include:
+
+- Airport selection and favorites
+- Live airport status
+- Active runways
+- Airport diagram
+- Gate and ramp layout
+- Aircraft labels
+- Pushback requests
+- Taxi queues
+- Taxi-route assignment
+- Hold-short commands
+- Runway occupancy
+- Gate management
+- Ramp congestion
+- Arrival and departure queues
+- Flight strips
+- ATIS
+- Ground frequencies
+- Command log
+- Runway-incursion warnings
+- Taxi conflicts
+- Color-coded clearances
+- 3D airport view
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_atc_taxitrafic.png" alt="USAFCACARS airport and taxi management concept" width="100%">
+      <br>
+      <strong>Airport Selection and Taxi Queues</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_atc_taxitrafic2.png" alt="USAFCACARS 3D taxi management concept" width="100%">
+      <br>
+      <strong>3D Ground-Operations Command View</strong>
+    </td>
+  </tr>
+</table>
+
+---
+
+# Communications
+
+## Voice Communications
+
+USAFCACARS is being designed with integrated voice and radio communications.
+
+Planned communication options include:
+
+- Airport frequency rooms
+- UNICOM
+- ATC rooms
+- Private crew rooms
+- Open group rooms
+- Pilot channels
+- Push-to-talk
+- Microphone mute
+- Speaker deafen
+- Device selection
+- Microphone level
+- Microphone playback test
+- Speaker test
+- Active frequency display
+- Room rosters
+- Participant audio levels
+- Automatic room transitions
+- Private messaging
+- Connected-aircraft display
+- On Comms status
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_comms.png"
+    alt="Expanded USAFCACARS voice communications concept"
+    width="100%"
+  >
+</p>
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/readme/voice-communications.png" alt="USAFCACARS voice communications visual" width="100%">
+      <br>
+      <strong>Voice Communications</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/readme/comms.png" alt="USAFCACARS communications visual" width="100%">
+      <br>
+      <strong>Communications System</strong>
+    </td>
+  </tr>
+</table>
+
+---
+
+# Aircraft and Cabin Systems
+
+## Aircraft Control
+
+The Aircraft Control workspace is an advanced SimConnect concept intended to display aircraft instruments and expose supported simulator controls.
+
+Potential systems include:
+
+- Primary flight instruments
+- Engine instruments
+- Fuel data
+- Electrical systems
+- Hydraulics
+- Pneumatics
+- Pressurization
+- Landing gear
+- Flaps
+- Spoilers
+- Trim
+- Speed brake
+- Parking brake
+- Exterior lights
+- Cabin lights
+- Seatbelt sign
+- No-smoking sign
+- Batteries and generators
+- Avionics master
+- External power
+- Engine start
+- APU
+- Anti-ice
+- Pitot heat
+- Radios
+- Transponder
+- Doors and services
+- Ground power
+- Pushback
+- Fuel truck
+- Chocks
+- Alerts and annunciations
+- Checklists
+
+The available controls will depend on SimConnect support, simulator behavior, aircraft implementation, and add-on compatibility. Not every aircraft exposes every system in a standardized way.
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_aircraftcontrol.png"
+    alt="Expanded USAFCACARS aircraft control panel concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept: a complete aircraft instruments and systems control workspace driven by available SimConnect data and events.</em>
+</p>
+
+---
+
+## Passenger Operations
+
+Passenger Operations is planned as a deep cabin and passenger-experience simulation inspired by classic passenger-management add-ons, while remaining a USAFC-owned implementation.
+
+The concept includes:
+
+- Aircraft cabin configuration
+- Seat-map editor
+- Class and cabin sections
+- Passenger manifest
+- Passenger roster
+- Seat assignment
+- Boarding status
+- Baggage and payload
+- Comfort and satisfaction
+- Passenger needs and special services
+- Cabin announcements
+- Crew actions
+- Meal and beverage service
+- Lunch or dinner service
+- Movie and entertainment options
+- Cabin-service timeline
+- Seatbelt sign
+- No-smoking sign
+- Cabin lighting
+- Cabin temperature
+- Door controls
+- Cargo-door controls
+- Stairs and jetway status
+- Lavatory status
+- Incident reporting
+- Passenger surveys
+- Arrival and deboarding
+- Flight-service scoring
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_passengerops.png"
+    alt="USAFCACARS passenger operations center concept"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <em>Concept: configurable aircraft seating, passenger roster, cabin services, announcements, hardware controls, and satisfaction tracking.</em>
+</p>
+
+---
+
+# Research, Media, and Workspaces
+
+## Horizon Explorer
+
+Horizon Explorer is planned as an integrated multi-tab aviation research studio.
+
+Target capabilities include:
+
+- Multiple browser tabs
+- Pinned sites
+- USAFC start page
+- Aviation weather resources
+- Full-page charts
+- Terminal diagrams
+- NOTAM workspaces
+- Aircraft manuals
+- Route plans
+- Airport documents
+- Search
+- Print
+- Download
+- Draggable browser panels
+- Separate windows
+- Loading indicators
+- Saved resources
+- Safe external navigation
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_horizon.png" alt="USAFCACARS Horizon Explorer concept" width="100%">
+      <br>
+      <strong>Horizon Explorer Start Workspace</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_horizon2.png" alt="USAFCACARS Horizon Explorer research studio concept" width="100%">
+      <br>
+      <strong>Aviation Research Studio</strong>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Music and Radio
+
+The Music & Radio Center is intended to provide entertainment and aviation-radio tools without interfering with voice communications.
+
+Target features include:
+
+- Music Player tab
+- Radio Scanner tab
+- Music Radio Player tab
+- Local playlists
+- Favorites
+- Now-playing queue
+- Album artwork
+- Playback controls
+- Shuffle and repeat
+- Equalizer
+- Audio visualizer
+- Audio-output selection
+- Balance and spatial controls
+- USAFC Radio
+- Aviation radio presets
+- Live transmission list
+- Squelch
+- Record controls where permitted
+- Independent volume control
+- Quick-access shortcuts
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_musicradio.png"
+    alt="Expanded USAFCACARS Music and Radio Center concept"
+    width="100%"
+  >
+</p>
+
+---
+
+## Workspace Manager
+
+The Workspace Manager is intended to arrange USAFCACARS tools across one or more displays.
+
+Planned layouts include:
+
+- Grid
+- Rows
+- Columns
+- Stacks
+- BSP
+- Ultrawide
+- Floating windows
+- Saved window positions
+- Saved window sizes
+- Fullscreen windows
+- Multi-monitor workspaces
+- Pop-out panels
+- Workspace reset
+- Off-screen window recovery
+- Layout restoration after restart
+
+<p align="center">
+  <img
+    src="assets/readme/workspace-manager.png"
+    alt="USAFCACARS Workspace Manager"
+    width="90%"
+  >
+</p>
+
+---
+
+# Pilot, Community, and Support
+
+## Pilot Profile
+
+The Pilot Profile is planned as a career command center and USAFC personnel record.
+
+Target information includes:
+
+- Pilot avatar
+- Pilot ID and callsign
+- Division
+- Rank
+- Rank progression
+- Level and experience
+- Total flight time
+- Flights and landings
+- Distance flown
+- Recent flights
+- Route history
+- Monthly activity
+- Aircraft time breakdown
+- Ratings
+- Endorsements
+- Certifications
+- Type qualifications
+- Achievements
+- Badges
+- Career milestones
+- Logbook
+- Personal account information
+- Connected services
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_pilot.png" alt="USAFCACARS pilot profile concept" width="100%">
+      <br>
+      <strong>Pilot Profile and Statistics</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/readme/usafc_pilot_animated.png" alt="USAFCACARS pilot career command center concept" width="100%">
+      <br>
+      <strong>Career Progression and Achievements</strong>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Community Hub
+
+The Community Hub is intended to connect pilots directly from the desktop application.
+
+Planned areas include:
+
+- Community feed
+- Groups
+- Events
+- Gallery
+- Discord integration
+- Leaderboards
+- Membership
+- Online members
+- Live pilot status
+- Community chat
+- Group flights
+- Event RSVP
+- Recent activity
+- Achievements
+- Screenshot sharing
+- USAFC announcements
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_community.png"
+    alt="USAFCACARS Community Hub concept"
+    width="100%"
+  >
+</p>
+
+---
+
+## Help and Support
+
+The Help & Support Center is planned as an integrated assistance and diagnostics workspace.
+
+Target capabilities include:
+
+- Help search
+- Getting-started guides
+- Knowledge base
+- Video tutorials
+- Downloads
+- System status
+- Support tickets
+- Contact support
+- Troubleshooting guides
+- Connection tests
+- System diagnostics
+- Log viewer
+- Settings reset
+- Add-on and plugin management
+- Popular topics
+- Current ticket status
+- Useful resources
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_support.png"
+    alt="USAFCACARS Help and Support Center concept"
+    width="100%"
+  >
+</p>
+
+---
+
+# Simulator and Server Integration
+
+## SimConnect
+
+USAFCACARS is intended to receive simulator telemetry and, where supported, send commands through SimConnect.
+
+Potential telemetry includes:
+
+- Latitude and longitude
+- Altitude
+- Ground speed
+- Indicated and true airspeed
+- Heading
+- Vertical speed
+- On-ground state
+- Gear position
+- Flaps
+- Spoilers
+- Fuel
+- Engine data
+- Electrical state
+- Lights
+- Doors
+- Parking brake
+- Transponder
+- Radio frequencies
+- Autopilot data
+- Aircraft identity
+- Landing rate
+- Simulator state
+
+Actual availability varies by aircraft and simulator. Complex third-party aircraft may use custom variables, events, WASM bridges, local variables, or proprietary interfaces that require aircraft-specific adapters.
+
+## USAFC API Integration
+
+The desktop application is intended to communicate with the proprietary USAFCACARS phpVMS module for:
+
+- Server ping
+- Authentication
+- Pilot profile
+- Bid retrieval
+- Flight start
+- Telemetry updates
+- Flight completion
+- Flight cancellation
+- Live-flight data
+- Weather services
+- Airport information
+- Chart information
+- Communications authorization
+- Room and frequency information
+- Application configuration
+- Version and update checks
+
+Passwords and full authentication tokens must never be written to normal application logs.
+
+---
+
+# Flight Phases
+
+USAFCACARS is intended to follow the aircraft through a complete flight lifecycle:
+
+```text
+PREFLIGHT
+BOARDING
+PUSHBACK
+TAXI OUT
+TAKEOFF
+INITIAL CLIMB
+CLIMB
+CRUISE
+DESCENT
+APPROACH
+LANDING
+TAXI IN
+AT GATE
+SHUTDOWN
+COMPLETED
+```
+
+The phase engine is intended to use stabilization logic so that normal simulator noise or brief state changes do not cause rapid phase oscillation.
+
+---
+
+# System Requirements
+
+Exact requirements are provided with each release.
+
+General target requirements:
+
+| Requirement | Details |
+|---|---|
+| Operating system | Windows 10 or Windows 11 |
+| Architecture | 64-bit Windows |
+| Simulator | Microsoft Flight Simulator 2020 and/or Microsoft Flight Simulator 2024 |
+| USAFC account | Active USA Flight Club pilot account for connected services |
+| Internet | Required for login, server synchronization, live operations, and online services |
+| SimConnect | Required for simulator telemetry and supported aircraft commands |
+| WebView2 | Required by builds using Microsoft Edge WebView2 |
+| Audio devices | Required for voice communications, microphone testing, and audio playback |
+| Runtime | Listed in the release notes or included with the installer |
+
+Not all features require the simulator to be running, but flight tracking and aircraft control do.
+
+---
+
+# Installation
+
+1. Open the [latest release](../../releases/latest).
+2. Read the release notes and known limitations.
+3. Download the correct installer or portable package.
+4. Verify the SHA-256 checksum when provided.
+5. Close any running copy of USAFCACARS.
+6. Install or extract the application.
+7. Start USAFCACARS.
+8. Sign in with a valid USA Flight Club pilot account.
+9. Review API, simulator, audio, and workspace settings.
+10. Start Microsoft Flight Simulator when simulator features are needed.
+
+Do not install an update over a running copy of the application.
+
+---
+
+# Alpha Testing
+
+Alpha testers should expect:
+
+- Frequent updates
+- Incomplete modules
+- Disabled buttons
+- Placeholder data
+- Database or configuration changes
+- UI revisions
+- Missing aircraft-specific integrations
+- Temporary diagnostic controls
+- Occasional crashes or connection failures
+
+Before reporting a defect:
+
+1. Confirm the installed version.
+2. Read the release notes.
+3. Reproduce the problem.
+4. Record the exact steps.
+5. Note whether MSFS 2020 or MSFS 2024 was running.
+6. Note the aircraft and add-on version.
+7. Include relevant log excerpts.
+8. Remove passwords, tokens, personal information, and private communications.
+
+Open a report through the repository issue tracker when enabled:
+
+[Create a USAFCACARS issue](../../issues/new/choose)
+
+---
+
+# Release Channels
+
+| Channel | Purpose |
+|---|---|
+| **Alpha** | Active development and internal/controlled testing |
+| **Beta** | Broader testing after major systems become stable |
+| **Stable** | Recommended production release after validation |
+| **Development** | Experimental build that may be incomplete or unstable |
+| **Legacy** | Previous release retained for compatibility or rollback |
+
+During the current development phase, most public or tester builds should be treated as **Alpha** unless the release explicitly states otherwise.
+
+---
+
+# Checksums
+
+Official release files may include SHA-256 checksums.
+
+PowerShell example:
+
+```powershell
+Get-FileHash .\USAFCACARS-Setup.exe -Algorithm SHA256
+```
+
+Compare the returned value with the checksum published in the release notes. Do not install a package when the checksum does not match.
+
+---
+
+# Troubleshooting
+
+## Application does not start
+
+- Confirm the supported Windows version.
+- Install the runtime listed in the release notes.
+- Install Microsoft Edge WebView2 Runtime when required.
+- Restart Windows after prerequisite installation.
+- Review the application log and known issues.
+
+## Simulator does not connect
+
+- Confirm Microsoft Flight Simulator is running.
+- Load fully into an aircraft before retrying.
+- Confirm the application is using the correct simulator adapter.
+- Close stale USAFCACARS processes.
+- Confirm SimConnect dependencies are installed.
+- Restart USAFCACARS after the simulator has loaded.
+
+## Login fails
+
+- Confirm the USA Flight Club website is reachable.
+- Verify the pilot credentials.
+- Distinguish invalid credentials from a server-connection error.
+- Confirm the application is configured for the correct API environment.
+- Check whether the installed alpha build requires an update.
+
+## Voice or audio does not work
+
+- Confirm the selected microphone and speaker devices.
+- Check Windows microphone permissions.
+- Run the microphone playback and speaker tests.
+- Confirm another program is not exclusively locking the device.
+- Reopen Voice & Radio Settings after reconnecting hardware.
+
+## Map or Horizon Explorer is blank
+
+- Confirm internet access.
+- Install or repair Microsoft Edge WebView2 Runtime.
+- Check firewall and security software.
+- Reload the panel or restart the application.
+- Review logs for blocked content or initialization failures.
+
+---
+
+# Security and Privacy
+
+USAFCACARS may process account, pilot, flight, simulator, map, communications, and diagnostic data required for operation.
+
+Never publish or commit:
+
+- Passwords
+- Authentication tokens
+- API secrets
+- Database credentials
+- Private certificates
+- Private communications
+- Unredacted diagnostic logs containing sensitive data
+- Development bypass credentials
+- Administrator credentials
+
+Security concerns should be reported privately to USA Flight Club administration.
+
+---
+
+# Repository Purpose
+
+This repository is intended to distribute official USAFCACARS desktop releases and public documentation.
+
+It may contain:
+
+- Installers
+- Portable packages
+- Release notes
+- Checksums
+- Public documentation
+- Concept artwork
+- Application screenshots
+- Compatibility information
+- Installation instructions
+
+This release repository does **not** make the USAFCACARS source code open source.
+
+---
+
+# Concept Image Index
+
+All images below are stored under:
+
+```text
+assets/readme/
+```
+
+| File | Purpose |
+|---|---|
+| `usafc-logo.png` | USA Flight Club branding |
+| `usafcacars-hero.png` | README hero |
+| `dashboard.png` | Dashboard visual |
+| `workspace-manager.png` | Workspace feature visual |
+| `usafc_acars.png` | Complete application concept |
+| `operations-center.png` | Operations-center overview |
+| `live-map.png` | Live-map visual |
+| `usafc_map.png` | Expanded live map |
+| `flightboard.png` | Flightboard visual |
+| `usafc_flightboard.png` | Expanded flightboard |
+| `voice-communications.png` | Voice communications visual |
+| `comms.png` | Communications visual |
+| `usafc_comms.png` | Expanded communications center |
+| `usafc_tracon.png` | TRACON radar |
+| `usafc_tracon2.png` | Futuristic layered TRACON |
+| `usafc_tracon_atc.png` | Complete ATC section |
+| `usafc_atc_flightstrips.png` | ATC flight strips |
+| `usafc_atc_taxitrafic.png` | Airport and taxi management |
+| `usafc_atc_taxitrafic2.png` | 3D ground operations |
+| `usafc_horizon.png` | Horizon Explorer |
+| `usafc_horizon2.png` | Aviation research studio |
+| `usafc_briefing.png` | Pilot briefing |
+| `usafc_aircraftcontrol.png` | Aircraft control panel |
+| `usafc_musicradio.png` | Music and radio center |
+| `usafc_pilot.png` | Pilot profile |
+| `usafc_pilot_animated.png` | Pilot career concept |
+| `usafc_community.png` | Community Hub |
+| `usafc_support.png` | Help and Support |
+| `usafc_passengerops.png` | Passenger Operations |
+
+---
+
+# Proprietary Software
+
+USAFCACARS is proprietary software developed for USA Flight Club.
+
+Unless expressly authorized in writing, users may not:
+
+- Redistribute the application
+- Rebrand the application
+- Resell the application
+- Publish private source code
+- Remove ownership notices
+- Extract proprietary USAFC assets
+- Use USAFCACARS for an unrelated organization
+- Reverse engineer or modify the application except where applicable law expressly permits otherwise
+
+Third-party components remain subject to their respective licenses.
+
+```text
+Copyright © 2026 USA Flight Club.
+All rights reserved.
+```
+
+---
+
+## Official Links
+
+- **USA Flight Club:** [https://usaflightclub.net](https://usaflightclub.net)
+- **USAFCACARS Live Map:** [https://usaflightclub.net/usafcacars/live](https://usaflightclub.net/usafcacars/live)
+- **Official Downloads:** [https://usaflightclub.net/downloads](https://usaflightclub.net/downloads)
+- **Latest GitHub Release:** [View release](../../releases/latest)
+- **Issue Tracker:** [View issues](../../issues)
+
+---
+
+<p align="center">
+  <img
+    src="assets/readme/usafc-logo.png"
+    alt="USA Flight Club"
+    width="190"
+  >
+</p>
+
+<p align="center">
+  <strong>USA Flight Club</strong><br>
+  Where pilots become family.
+</p>
+
+<p align="center">
+  <sub>USAFCACARS is proprietary software in active alpha development. All interface concepts are subject to change.</sub>
+</p>
