@@ -1,0 +1,349 @@
+USAFCACARS PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
+Copyright © 2026 USA Flight Club.
+All rights reserved.
+
+IMPORTANT: READ THIS AGREEMENT CAREFULLY BEFORE DOWNLOADING, INSTALLING,
+ACCESSING, COPYING, OR USING USAFCACARS.
+
+By downloading, installing, accessing, copying, or using USAFCACARS, you
+acknowledge that you have read, understood, and agreed to be bound by this
+Agreement. If you do not agree to these terms, do not download, install,
+access, copy, or use the Software.
+
+1. DEFINITIONS
+
+"USAFC" means USA Flight Club and its authorized owners, administrators,
+developers, licensors, and successors.
+
+"Software" means USAFCACARS and all related materials provided by USAFC,
+including, without limitation:
+
+- The USAFCACARS Windows desktop application;
+- The USAFCACARS phpVMS/API module and related server components;
+- Installers, executable files, libraries, configuration files, and updates;
+- Documentation, release notes, manuals, and support materials;
+- User-interface designs, concept images, screenshots, graphics, logos,
+  icons, audio, maps, and other proprietary assets;
+- Pre-release, alpha, beta, development, test, and legacy builds; and
+- Any modifications, patches, enhancements, or derivative versions supplied
+  by USAFC.
+
+"Authorized User" means an individual whom USAFC has permitted to access or
+use the Software for authorized USA Flight Club activities.
+
+2. OWNERSHIP AND RESERVATION OF RIGHTS
+
+The Software is licensed, not sold.
+
+USAFC and its licensors retain all right, title, and interest in and to the
+Software, including all copyrights, trademarks, trade dress, designs,
+graphics, source code, object code, documentation, concepts, data structures,
+and other intellectual-property rights.
+
+No ownership rights are transferred under this Agreement. All rights not
+expressly granted are reserved by USAFC.
+
+The presence of the Software, release packages, documentation, or concept
+artwork in a public or private repository does not make the Software open
+source and does not grant permission to copy, redistribute, modify, publish,
+or reuse it.
+
+3. LIMITED LICENSE GRANT
+
+Subject to continuous compliance with this Agreement, USAFC grants an
+Authorized User a limited, personal, revocable, non-exclusive,
+non-transferable, and non-sublicensable license to:
+
+a. Download and install an authorized release of the Software on devices
+   owned or controlled by the Authorized User;
+
+b. Use the Software solely for personal, noncommercial participation in
+   authorized USA Flight Club virtual-aviation, flight-simulation, training,
+   community, testing, and support activities; and
+
+c. Make one reasonable archival or backup copy solely for the Authorized
+   User's own lawful use.
+
+This license does not authorize use of the Software for another virtual
+airline, organization, business, commercial service, or competing project
+without prior written permission from USAFC.
+
+4. RESTRICTIONS
+
+Except where applicable law expressly prohibits a restriction, you may not,
+without prior written authorization from USAFC:
+
+a. Copy, reproduce, publish, upload, distribute, mirror, transmit, sell,
+   rent, lease, lend, sublicense, assign, share, or otherwise make the
+   Software available to another person or organization;
+
+b. Redistribute the Software through another website, repository, package
+   manager, download service, file-sharing service, forum, cloud-storage
+   link, physical media, or bundled installer;
+
+c. Modify, adapt, translate, alter, patch, or create derivative works based
+   on the Software;
+
+d. Reverse engineer, decompile, disassemble, decode, attempt to derive source
+   code from, or otherwise attempt to discover the internal design of the
+   Software, except only to the limited extent such activity is expressly
+   permitted by applicable law notwithstanding this restriction;
+
+e. Circumvent, disable, remove, bypass, or interfere with authentication,
+   licensing, access controls, update checks, server validation, security
+   measures, usage restrictions, or technical protection mechanisms;
+
+f. Remove, alter, obscure, or replace any copyright, trademark, ownership,
+   attribution, proprietary-rights, or license notice;
+
+g. Use USAFC names, logos, liveries, graphics, screenshots, concept images,
+   interface designs, or branding in another product or project;
+
+h. Use the Software to impersonate USAFC, misrepresent affiliation with
+   USAFC, or suggest that another product is approved, sponsored, or
+   published by USAFC;
+
+i. Use the Software for unlawful activity, unauthorized access, interference
+   with services, harassment, abuse, fraud, data extraction, credential
+   collection, or infringement of third-party rights;
+
+j. Use automated tools to scrape, bulk-download, probe, overload, or
+   interfere with USAFC services or APIs; or
+
+k. Use the Software, its interfaces, or its outputs to operate, navigate,
+   dispatch, control, or provide safety-critical support for any real
+   aircraft or real-world aviation operation.
+
+5. VIRTUAL-AVIATION USE ONLY
+
+USAFCACARS is designed exclusively for virtual aviation, entertainment,
+education, software testing, and flight simulation.
+
+The Software is not certified, approved, or intended for:
+
+- Real-world flight planning or dispatch;
+- Real-world air traffic control;
+- Aircraft navigation;
+- Aircraft maintenance;
+- Operational weather decision-making;
+- Emergency response;
+- Safety-critical systems; or
+- The control of any real aircraft, vehicle, or equipment.
+
+Any aircraft controls, instruments, ATC tools, maps, charts, weather,
+communications, passenger systems, or operational displays within the
+Software are simulation features only.
+
+6. ACCOUNTS, ONLINE SERVICES, AND AUTHORIZATION
+
+Some features may require:
+
+- A valid USA Flight Club account;
+- An active and authorized pilot or administrator status;
+- Internet access;
+- Access to USAFC servers or APIs;
+- Microsoft Flight Simulator;
+- SimConnect or another simulator interface;
+- Third-party services; or
+- Additional permissions assigned by USAFC.
+
+Access to online services is conditional and may be limited, suspended, or
+terminated at any time for maintenance, security, policy enforcement,
+technical reasons, account status, or breach of this Agreement.
+
+You are responsible for protecting your account credentials and for all
+activity performed through your account. You may not share credentials,
+tokens, private keys, administrator access, or protected service endpoints.
+
+7. ALPHA, BETA, DEVELOPMENT, AND PRE-RELEASE SOFTWARE
+
+USAFCACARS may be distributed as alpha, beta, development, experimental,
+preview, test, or otherwise pre-release software.
+
+Pre-release Software may:
+
+- Be incomplete or unstable;
+- Contain defects, disabled features, placeholders, or inaccurate data;
+- Change without notice;
+- Lose or corrupt settings, logs, or flight data;
+- Require reinstallation or configuration changes;
+- Be incompatible with prior or future releases; and
+- Be withdrawn at any time.
+
+Concept images, mockups, feature descriptions, roadmaps, and interface
+visualizations are illustrative only. They show intended direction and
+possible future scope. They are not promises, warranties, or representations
+that every depicted feature will be implemented or released.
+
+Release notes for a particular build are the authoritative description of
+the features known to be available in that build.
+
+8. DATA, TELEMETRY, AND COMMUNICATIONS
+
+The Software may process or transmit information reasonably required for
+authorized operation, including account, pilot, flight, simulator,
+aircraft, position, telemetry, communications, configuration, diagnostic,
+and update information.
+
+You agree not to submit unlawful content, another person's credentials, or
+data that you are not authorized to provide.
+
+Voice, chat, community, and support features are subject to USAFC rules,
+moderation, and applicable privacy notices. You must not record, intercept,
+publish, or redistribute private communications without all permissions
+required by applicable law and USAFC policy.
+
+9. THIRD-PARTY SOFTWARE AND SERVICES
+
+The Software may include, depend upon, interact with, or provide links to
+third-party software, libraries, runtimes, simulators, APIs, map services,
+weather providers, chart providers, audio services, websites, or other
+content.
+
+Third-party components remain governed by their own licenses and terms.
+Nothing in this Agreement changes or replaces rights granted under an
+applicable third-party license.
+
+USAFC does not grant ownership of third-party materials and is not
+responsible for the continued availability, accuracy, security, licensing,
+or performance of a third-party service.
+
+10. UPDATES AND CHANGES
+
+USAFC may provide, require, modify, replace, suspend, or discontinue updates,
+features, services, compatibility, or access at any time.
+
+Unless accompanied by separate terms, updates and replacement versions are
+governed by this Agreement.
+
+You may be required to install a newer version to continue accessing USAFC
+services. USAFC is not obligated to provide support, maintenance, updates,
+backward compatibility, or any particular feature.
+
+11. FEEDBACK
+
+If you voluntarily provide ideas, suggestions, test results, issue reports,
+or other feedback concerning the Software, you grant USAFC a worldwide,
+perpetual, irrevocable, royalty-free, transferable, and sublicensable right
+to use, reproduce, modify, incorporate, publish, distribute, and otherwise
+exploit that feedback for any lawful purpose without compensation or
+attribution.
+
+This section does not transfer ownership of your pre-existing copyrighted
+materials that are clearly identified and supplied separately.
+
+12. TERMINATION
+
+This Agreement and the license granted under it terminate automatically if
+you breach any term.
+
+USAFC may also revoke or suspend authorization to use the Software where
+reasonably necessary to protect USAFC, its members, its services, its
+intellectual property, or third parties.
+
+Upon termination, you must immediately:
+
+- Stop using the Software;
+- Uninstall and delete all copies under your control;
+- Stop accessing protected USAFC services; and
+- Cease using USAFC proprietary materials.
+
+Sections concerning ownership, restrictions, feedback, disclaimers,
+limitations of liability, and other provisions that by their nature should
+survive will remain effective after termination.
+
+13. DISCLAIMER OF WARRANTIES
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE AND ALL
+RELATED SERVICES, CONTENT, DATA, DOCUMENTATION, AND SUPPORT ARE PROVIDED
+"AS IS," "AS AVAILABLE," AND "WITH ALL FAULTS."
+
+USAFC DISCLAIMS ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS, IMPLIED,
+STATUTORY, OR OTHERWISE, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, RELIABILITY,
+AVAILABILITY, SECURITY, COMPATIBILITY, QUIET ENJOYMENT, AND RESULTS.
+
+USAFC DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE, UNINTERRUPTED,
+SECURE, COMPLETE, COMPATIBLE WITH EVERY AIRCRAFT OR SIMULATOR, OR THAT
+FLIGHT, WEATHER, MAP, CHART, TELEMETRY, COMMUNICATIONS, PASSENGER, ATC, OR
+OTHER DATA WILL BE ACCURATE OR PRESERVED.
+
+Some jurisdictions do not allow certain warranty exclusions, so some of
+these exclusions may not apply to you.
+
+14. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, USAFC AND ITS OWNERS,
+ADMINISTRATORS, DEVELOPERS, CONTRIBUTORS, LICENSORS, SERVICE PROVIDERS, AND
+AFFILIATES WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF DATA,
+FLIGHT RECORDS, PROFITS, REVENUE, GOODWILL, USE, BUSINESS, OPPORTUNITY,
+COMMUNICATIONS, OR SERVICE AVAILABILITY, ARISING OUT OF OR RELATED TO THE
+SOFTWARE OR THIS AGREEMENT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL AGGREGATE
+LIABILITY OF USAFC ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS
+AGREEMENT WILL NOT EXCEED THE GREATER OF:
+
+a. The amount, if any, you paid directly to USAFC specifically for the
+   Software during the twelve months before the event giving rise to the
+   claim; or
+
+b. Ten United States dollars (US $10.00).
+
+Some jurisdictions do not allow certain liability limitations, so some of
+these limitations may not apply to you.
+
+15. TRADEMARKS AND BRANDING
+
+"USA Flight Club," "USAFC," "USAFCACARS," associated names, logos, liveries,
+graphics, slogans, icons, and trade dress are proprietary identifiers of
+USAFC or their respective owners.
+
+No trademark, branding, endorsement, or merchandising license is granted by
+this Agreement.
+
+16. EXPORT AND LEGAL COMPLIANCE
+
+You must use the Software in compliance with all applicable laws,
+regulations, sanctions, and export-control requirements. You may not use,
+export, re-export, transfer, or provide access to the Software where doing so
+would violate applicable law.
+
+17. SEVERABILITY AND NO WAIVER
+
+If any provision of this Agreement is held invalid or unenforceable, that
+provision will be enforced to the maximum extent permitted, and the
+remaining provisions will remain in effect.
+
+A failure by USAFC to enforce any provision is not a waiver of that
+provision or any other right.
+
+18. ENTIRE AGREEMENT
+
+This Agreement, together with any applicable release terms, privacy notice,
+website terms, and written USAFC authorization, constitutes the agreement
+governing use of the Software.
+
+If USAFC supplies a separately signed agreement or separately presented
+license for a particular release or user, that agreement controls to the
+extent of a direct conflict.
+
+19. CHANGES TO THIS AGREEMENT
+
+USAFC may revise this Agreement for future releases. A revised license
+applies when accepted or when you download, install, access, or use a release
+distributed with the revised license, to the extent permitted by applicable
+law.
+
+20. LICENSING CONTACT
+
+Questions concerning licensing, redistribution, commercial use, source-code
+access, integrations, or written authorization should be directed through
+the official USA Flight Club website:
+
+https://usaflightclub.net
+
+END OF LICENSE
