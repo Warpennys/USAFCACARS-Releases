@@ -215,8 +215,8 @@ body:
     attributes:
       label: Did this work in an earlier release?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Unknown
         - Not applicable
     validations:
