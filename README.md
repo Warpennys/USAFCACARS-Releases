@@ -1091,27 +1091,111 @@ Passwords and full authentication tokens must never be written to normal applica
 
 # Flight Phases
 
-USAFCACARS is intended to follow the aircraft through a complete flight lifecycle:
+USAFCACARS is intended to follow the aircraft through a complete flight lifecycle using the standard USAFCACARS phase color system.
 
-```text
-PREFLIGHT
-BOARDING
-PUSHBACK
-TAXI OUT
-TAKEOFF
-INITIAL CLIMB
-CLIMB
-CRUISE
-DESCENT
-APPROACH
-LANDING
-TAXI IN
-AT GATE
-SHUTDOWN
-COMPLETED
-```
+> [!IMPORTANT]
+> **Flight Phase and Flight Status are separate values.**  
+> The colors below represent the **phase** only. Flightboard status colors are handled independently so a pilot can have a phase such as **CRUISE** while the operational status remains **EN ROUTE**.
 
-The phase engine is intended to use stabilization logic so that normal simulator noise or brief state changes do not cause rapid phase oscillation.
+<table>
+  <thead>
+    <tr>
+      <th align="left">Flight Phase</th>
+      <th align="left">Standard Color</th>
+      <th align="left">Color Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>PREFLIGHT</strong></td>
+      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>BOARDING</strong></td>
+      <td><span style="color:#00FF66"><strong>● GREEN</strong></span></td>
+      <td><code>#00FF66</code></td>
+    </tr>
+    <tr>
+      <td><strong>PUSHBACK</strong></td>
+      <td><span style="color:#FFD400"><strong>● YELLOW / GOLD</strong></span></td>
+      <td><code>#FFD400</code></td>
+    </tr>
+    <tr>
+      <td><strong>TAXI OUT</strong></td>
+      <td><span style="color:#FFD400"><strong>● YELLOW / GOLD</strong></span></td>
+      <td><code>#FFD400</code></td>
+    </tr>
+    <tr>
+      <td><strong>TAKEOFF</strong></td>
+      <td><span style="color:#FF9900"><strong>● ORANGE</strong></span></td>
+      <td><code>#FF9900</code></td>
+    </tr>
+    <tr>
+      <td><strong>INITIAL CLIMB</strong></td>
+      <td><span style="color:#FF9900"><strong>● ORANGE</strong></span></td>
+      <td><code>#FF9900</code></td>
+    </tr>
+    <tr>
+      <td><strong>CLIMB</strong></td>
+      <td><span style="color:#FF9900"><strong>● ORANGE</strong></span></td>
+      <td><code>#FF9900</code></td>
+    </tr>
+    <tr>
+      <td><strong>CRUISE</strong></td>
+      <td><span style="color:#00FF66"><strong>● GREEN</strong></span></td>
+      <td><code>#00FF66</code></td>
+    </tr>
+    <tr>
+      <td><strong>DESCENT</strong></td>
+      <td><span style="color:#00CCFF"><strong>● CYAN / SKY BLUE</strong></span></td>
+      <td><code>#00CCFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>APPROACH</strong></td>
+      <td><span style="color:#00CCFF"><strong>● CYAN / SKY BLUE</strong></span></td>
+      <td><code>#00CCFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>LANDING</strong></td>
+      <td><span style="color:#FF5B2E"><strong>● RED-ORANGE</strong></span></td>
+      <td><code>#FF5B2E</code></td>
+    </tr>
+    <tr>
+      <td><strong>TAXI IN</strong></td>
+      <td><span style="color:#FFD400"><strong>● YELLOW / GOLD</strong></span></td>
+      <td><code>#FFD400</code></td>
+    </tr>
+    <tr>
+      <td><strong>AT GATE</strong></td>
+      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>SHUTDOWN</strong></td>
+      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>COMPLETED</strong></td>
+      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+  </tbody>
+</table>
+
+The phase-color engine also treats the following equivalent operational labels as part of the same standard groups:
+
+| Standard color | Phase aliases |
+|---|---|
+| <span style="color:#00FF66"><strong>● #00FF66</strong></span> | `BOARDING`, `READY`, `LOADING`, `CRUISE`, `LEVEL`, `ENROUTE` |
+| <span style="color:#FFD400"><strong>● #FFD400</strong></span> | `TAXI`, `TAXIOUT`, `TAXIIN`, `PUSHBACK` |
+| <span style="color:#FF9900"><strong>● #FF9900</strong></span> | `TAKEOFF`, `CLIMB` |
+| <span style="color:#00CCFF"><strong>● #00CCFF</strong></span> | `DESCENT`, `APPROACH` |
+| <span style="color:#FF5B2E"><strong>● #FF5B2E</strong></span> | `LANDING`, `LANDED` |
+| <span style="color:#FFFFFF"><strong>● #FFFFFF</strong></span> | Neutral or unmatched lifecycle phases |
+
+The phase engine is intended to use stabilization logic so that normal simulator noise, brief runway contact, small altitude fluctuations, or short-lived state changes do not cause rapid phase oscillation.
 
 ---
 
