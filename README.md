@@ -805,9 +805,9 @@ Target features include:
 
 ## Workspace Manager
 
-The Workspace Manager is intended to arrange USAFCACARS tools across one or more displays.
+The Workspace Manager is intended to turn USAFCACARS into a true multi-monitor operations center. Pilots will be able to arrange major ACARS tools across their displays, save that arrangement as a named layout, and later restore the complete working environment from **Saved Layouts**.
 
-Planned layouts include:
+Planned workspace capabilities include:
 
 - Grid
 - Rows
@@ -816,11 +816,14 @@ Planned layouts include:
 - BSP
 - Ultrawide
 - Floating windows
+- Pop-out panels
 - Saved window positions
 - Saved window sizes
+- Saved monitor assignments
 - Fullscreen windows
 - Multi-monitor workspaces
-- Pop-out panels
+- Layout naming and management
+- One-click saved-layout loading
 - Workspace reset
 - Off-screen window recovery
 - Layout restoration after restart
@@ -832,6 +835,83 @@ Planned layouts include:
     width="90%"
   >
 </p>
+
+### Saved Multi-Monitor Layouts
+
+A saved workspace is intended to restore much more than a list of open panels. Loading a saved layout should rebuild the pilot's complete operations setup across the monitors that were assigned when the layout was saved.
+
+A saved layout may restore:
+
+- Which USAFCACARS tools are open
+- Which monitor each tool belongs on
+- Window position and size
+- Maximized or fullscreen state
+- Docked, tiled, stacked, or floating placement
+- Pop-out state
+- Map and operational panel placement
+- Flightboard placement
+- ATC/TRACON placement
+- Briefing and chart placement
+- Voice Communications placement
+- Aircraft Control placement
+- Weather and map placement
+- Telemetry and system-monitor placement
+- Community and support panels where selected
+
+The concept below demonstrates two examples of the same Workspace system after a pilot chooses a saved layout: a **three-monitor flight-operations layout** and a **five-monitor command-center layout**.
+
+<p align="center">
+  <img
+    src="assets/readme/workspace-manager1.png"
+    alt="USAFCACARS Workspace Manager saved layouts across three-monitor and five-monitor setups"
+    width="100%"
+  >
+  <br>
+  <strong>Saved Layouts — Three-Monitor Operations and Five-Monitor Command Center</strong>
+</p>
+
+#### Three-Monitor Operations
+
+A three-monitor saved layout can divide the cockpit desktop into dedicated operating zones. For example:
+
+- **Monitor 1:** Pilot Briefing, weather summary, flight information, or charts
+- **Monitor 2:** Live Operations Map and Flightboard
+- **Monitor 3:** Aircraft Control, Voice Communications, network/ATC status, and Music & Radio
+
+The exact arrangement is controlled by the pilot and saved as part of the layout.
+
+#### Five-Monitor Command Center
+
+A five-monitor saved layout can expand USAFCACARS into a broader command-center environment. A layout may dedicate displays to combinations such as:
+
+- Flightboard and active-flight information
+- ATC/TRACON tools
+- Airports and Charts
+- Live Operations Map
+- Voice Communications
+- Weather and map layers
+- Telemetry and aircraft systems
+- Community activity
+- Aircraft Control
+- Pilot Briefing or Horizon Explorer
+
+The purpose is not to force a fixed five-screen arrangement. The five-monitor concept demonstrates how the same Workspace Manager can restore a much larger personalized operating environment when additional displays are available.
+
+#### Loading a Saved Layout
+
+The intended workflow is:
+
+1. Open **Workspace Manager**.
+2. Select **Saved Layouts**.
+3. Choose a named layout such as `Triple Monitor Operations` or `Five Monitor Command Center`.
+4. Select **Load Layout**.
+5. USAFCACARS restores the saved panels, windows, monitor assignments, positions, sizes, and supported workspace states.
+6. The pilot can continue working immediately or make changes and save the arrangement again.
+
+If a previously assigned monitor is unavailable, Workspace Manager is intended to recover those windows onto an available display rather than leave them inaccessible off-screen.
+
+> [!NOTE]
+> The multi-monitor image is a **concept visualization** of the intended saved-layout experience. Exact panels, monitor assignments, window geometry, and restoration behavior may change as Workspace Manager development continues.
 
 ---
 
@@ -886,7 +966,7 @@ Target information includes:
 
 ## Community Hub
 
-The Community Hub is intended to connect pilots directly from the desktop application.
+The Community Hub is intended to connect pilots directly from the desktop application and extend that community experience to other participating virtual airlines.
 
 Planned areas include:
 
@@ -906,6 +986,11 @@ Planned areas include:
 - Achievements
 - Screenshot sharing
 - USAFC announcements
+- Virtual Airline Online Presence directory
+- Participating-airline statistics and activity
+- Cross-airline pilot directory and pilot search
+- Buddy-list management
+- Buddy online and flight-status alerts
 
 <p align="center">
   <img
@@ -914,6 +999,81 @@ Planned areas include:
     width="100%"
   >
 </p>
+
+### Virtual Airline Online Presence
+
+The Community section is also planned to provide a shared virtual-airline discovery system through the USAFCACARS module.
+
+A virtual airline will appear in the USAFCACARS airline directory only when that airline has **Online Presence** enabled by an administrator in its USAFCACARS module settings. This gives each participating airline control over whether its organization and eligible pilot activity are visible to the wider USAFCACARS community.
+
+The airline directory is intended to provide:
+
+- A searchable list of virtual airlines with Online Presence enabled
+- Airline logo, name, code, and online-status information
+- Number of pilots currently online
+- Total registered members
+- Active-flight count
+- Primary hub or operating region
+- Community-wide online-airline and pilot totals
+- Filtering and sorting
+- Direct access to each participating airline's community profile
+- Quick access to pilot browsing and buddy lists
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_community1.png"
+    alt="USAFCACARS Community Online Presence airline directory concept"
+    width="100%"
+  >
+  <br>
+  <strong>Online Presence — Participating Virtual Airline Directory</strong>
+</p>
+
+### Airline Profile and Member Directory
+
+Selecting a participating virtual airline opens a detailed airline community profile.
+
+The airline view is planned to include:
+
+- Airline identity, logo, code, description, and website
+- Online Presence status
+- Total members
+- Pilots currently online
+- Active flights
+- Total flight hours
+- Fleet size
+- Hub information
+- Airline performance and activity statistics
+- Top hubs
+- Most-active pilots
+- Recent airline activity
+- Searchable member roster
+- Pilot search by name, callsign, or pilot ID
+- Pilot rank
+- Home airport
+- Online, offline, on-ground, and enroute status
+- Total pilot hours
+- Last-flight information
+- Pilot preview cards
+- Mutual-buddy information
+- Current-flight information when available
+- **Add Buddy** and buddy-status controls
+- Direct pilot-profile access
+
+The buddy system is intended to work across participating airlines so pilots can find other USAFCACARS users, add them to a personal buddy list, and see permitted online or flight-status updates without requiring membership in the same virtual airline.
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_community2.png"
+    alt="USAFCACARS participating virtual airline profile and member directory concept"
+    width="100%"
+  >
+  <br>
+  <strong>Airline Profile — Statistics, Members, Pilot Search, and Buddy Network</strong>
+</p>
+
+> [!NOTE]
+> Online Presence is intended to be opt-in at the virtual-airline administration level. Exact pilot fields, public visibility, buddy visibility, and live-status information should follow the permissions and privacy controls configured by the participating airline and USAFCACARS service.
 
 ---
 
@@ -1011,27 +1171,132 @@ Passwords and full authentication tokens must never be written to normal applica
 
 # Flight Phases
 
-USAFCACARS is intended to follow the aircraft through a complete flight lifecycle:
+USAFCACARS is intended to follow the aircraft through a complete flight lifecycle using the standard USAFCACARS phase color system.
 
-```text
-PREFLIGHT
-BOARDING
-PUSHBACK
-TAXI OUT
-TAKEOFF
-INITIAL CLIMB
-CLIMB
-CRUISE
-DESCENT
-APPROACH
-LANDING
-TAXI IN
-AT GATE
-SHUTDOWN
-COMPLETED
-```
+> [!IMPORTANT]
+> **Flight Phase and Flight Status are separate values.**  
+> The colors below represent the **phase** only. Flightboard status colors are handled independently so a pilot can have a phase such as **CRUISE** while the operational status remains **EN ROUTE**.
 
-The phase engine is intended to use stabilization logic so that normal simulator noise or brief state changes do not cause rapid phase oscillation.
+> [!NOTE]
+> GitHub README rendering does not always preserve custom CSS color styling consistently, so the chart below uses **actual color swatch emojis** plus the locked **hex color values** to clearly showcase the standard USAFCACARS phase colors.
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Flight Phase</th>
+      <th align="left">Color Showcase</th>
+      <th align="left">Standard Color</th>
+      <th align="left">Color Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>PREFLIGHT</strong></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>BOARDING</strong></td>
+      <td>🟢 🟢 🟢</td>
+      <td><strong>Green</strong></td>
+      <td><code>#00FF66</code></td>
+    </tr>
+    <tr>
+      <td><strong>PUSHBACK</strong></td>
+      <td>🟡 🟡 🟡</td>
+      <td><strong>Yellow / Gold</strong></td>
+      <td><code>#FFD400</code></td>
+    </tr>
+    <tr>
+      <td><strong>TAXI OUT</strong></td>
+      <td>🟡 🟡 🟡</td>
+      <td><strong>Yellow / Gold</strong></td>
+      <td><code>#FFD400</code></td>
+    </tr>
+    <tr>
+      <td><strong>TAKEOFF</strong></td>
+      <td>🟠 🟠 🟠</td>
+      <td><strong>Orange</strong></td>
+      <td><code>#FF9900</code></td>
+    </tr>
+    <tr>
+      <td><strong>INITIAL CLIMB</strong></td>
+      <td>🟠 🟠 🟠</td>
+      <td><strong>Orange</strong></td>
+      <td><code>#FF9900</code></td>
+    </tr>
+    <tr>
+      <td><strong>CLIMB</strong></td>
+      <td>🟠 🟠 🟠</td>
+      <td><strong>Orange</strong></td>
+      <td><code>#FF9900</code></td>
+    </tr>
+    <tr>
+      <td><strong>CRUISE</strong></td>
+      <td>🟢 🟢 🟢</td>
+      <td><strong>Green</strong></td>
+      <td><code>#00FF66</code></td>
+    </tr>
+    <tr>
+      <td><strong>DESCENT</strong></td>
+      <td>🔵 🔵 🔵</td>
+      <td><strong>Cyan / Sky Blue</strong></td>
+      <td><code>#00CCFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>APPROACH</strong></td>
+      <td>🔵 🔵 🔵</td>
+      <td><strong>Cyan / Sky Blue</strong></td>
+      <td><code>#00CCFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>LANDING</strong></td>
+      <td>🔴 🟠 🔴</td>
+      <td><strong>Red-Orange</strong></td>
+      <td><code>#FF5B2E</code></td>
+    </tr>
+    <tr>
+      <td><strong>TAXI IN</strong></td>
+      <td>🟡 🟡 🟡</td>
+      <td><strong>Yellow / Gold</strong></td>
+      <td><code>#FFD400</code></td>
+    </tr>
+    <tr>
+      <td><strong>AT GATE</strong></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>SHUTDOWN</strong></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+    <tr>
+      <td><strong>COMPLETED</strong></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
+      <td><code>#FFFFFF</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Phase Color Groups
+
+The phase-color engine also treats the following equivalent operational labels as part of the same standard groups:
+
+| Color Showcase | Standard Color | Phase aliases |
+|---|---|---|
+| 🟢 🟢 🟢 | **Green** `#00FF66` | `BOARDING`, `READY`, `LOADING`, `CRUISE`, `LEVEL`, `ENROUTE` |
+| 🟡 🟡 🟡 | **Yellow / Gold** `#FFD400` | `TAXI`, `TAXIOUT`, `TAXIIN`, `PUSHBACK` |
+| 🟠 🟠 🟠 | **Orange** `#FF9900` | `TAKEOFF`, `INITIAL CLIMB`, `CLIMB` |
+| 🔵 🔵 🔵 | **Cyan / Sky Blue** `#00CCFF` | `DESCENT`, `APPROACH` |
+| 🔴 🟠 🔴 | **Red-Orange** `#FF5B2E` | `LANDING`, `LANDED` |
+| ⚪ ⚪ ⚪ | **Silver / White** `#FFFFFF` | `PREFLIGHT`, `AT GATE`, `SHUTDOWN`, `COMPLETED`, neutral lifecycle phases |
+
+The phase engine is intended to use stabilization logic so that normal simulator noise, brief runway contact, small altitude fluctuations, or short-lived state changes do not cause rapid phase oscillation.
 
 ---
 
@@ -1232,6 +1497,7 @@ assets/readme/
 | `usafcacars-hero.png` | README hero |
 | `dashboard.png` | Dashboard visual |
 | `workspace-manager.png` | Workspace feature visual |
+| `workspace-manager1.png` | Saved Workspace layouts across three-monitor and five-monitor setups |
 | `usafc_acars.png` | Complete application concept |
 | `operations-center.png` | Operations-center overview |
 | `live-map.png` | Live-map visual |
@@ -1255,6 +1521,8 @@ assets/readme/
 | `usafc_pilot.png` | Pilot profile |
 | `usafc_pilot_animated.png` | Pilot career concept |
 | `usafc_community.png` | Community Hub |
+| `usafc_community1.png` | Community Online Presence virtual airline directory |
+| `usafc_community2.png` | Virtual airline profile, member directory, pilot search, and buddy network |
 | `usafc_support.png` | Help and Support |
 | `usafc_passengerops.png` | Passenger Operations |
 
