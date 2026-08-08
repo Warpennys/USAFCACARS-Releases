@@ -886,7 +886,7 @@ Target information includes:
 
 ## Community Hub
 
-The Community Hub is intended to connect pilots directly from the desktop application.
+The Community Hub is intended to connect pilots directly from the desktop application and extend that community experience to other participating virtual airlines.
 
 Planned areas include:
 
@@ -906,6 +906,11 @@ Planned areas include:
 - Achievements
 - Screenshot sharing
 - USAFC announcements
+- Virtual Airline Online Presence directory
+- Participating-airline statistics and activity
+- Cross-airline pilot directory and pilot search
+- Buddy-list management
+- Buddy online and flight-status alerts
 
 <p align="center">
   <img
@@ -914,6 +919,81 @@ Planned areas include:
     width="100%"
   >
 </p>
+
+### Virtual Airline Online Presence
+
+The Community section is also planned to provide a shared virtual-airline discovery system through the USAFCACARS module.
+
+A virtual airline will appear in the USAFCACARS airline directory only when that airline has **Online Presence** enabled by an administrator in its USAFCACARS module settings. This gives each participating airline control over whether its organization and eligible pilot activity are visible to the wider USAFCACARS community.
+
+The airline directory is intended to provide:
+
+- A searchable list of virtual airlines with Online Presence enabled
+- Airline logo, name, code, and online-status information
+- Number of pilots currently online
+- Total registered members
+- Active-flight count
+- Primary hub or operating region
+- Community-wide online-airline and pilot totals
+- Filtering and sorting
+- Direct access to each participating airline's community profile
+- Quick access to pilot browsing and buddy lists
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_community1.png"
+    alt="USAFCACARS Community Online Presence airline directory concept"
+    width="100%"
+  >
+  <br>
+  <strong>Online Presence — Participating Virtual Airline Directory</strong>
+</p>
+
+### Airline Profile and Member Directory
+
+Selecting a participating virtual airline opens a detailed airline community profile.
+
+The airline view is planned to include:
+
+- Airline identity, logo, code, description, and website
+- Online Presence status
+- Total members
+- Pilots currently online
+- Active flights
+- Total flight hours
+- Fleet size
+- Hub information
+- Airline performance and activity statistics
+- Top hubs
+- Most-active pilots
+- Recent airline activity
+- Searchable member roster
+- Pilot search by name, callsign, or pilot ID
+- Pilot rank
+- Home airport
+- Online, offline, on-ground, and enroute status
+- Total pilot hours
+- Last-flight information
+- Pilot preview cards
+- Mutual-buddy information
+- Current-flight information when available
+- **Add Buddy** and buddy-status controls
+- Direct pilot-profile access
+
+The buddy system is intended to work across participating airlines so pilots can find other USAFCACARS users, add them to a personal buddy list, and see permitted online or flight-status updates without requiring membership in the same virtual airline.
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_community2.png"
+    alt="USAFCACARS participating virtual airline profile and member directory concept"
+    width="100%"
+  >
+  <br>
+  <strong>Airline Profile — Statistics, Members, Pilot Search, and Buddy Network</strong>
+</p>
+
+> [!NOTE]
+> Online Presence is intended to be opt-in at the virtual-airline administration level. Exact pilot fields, public visibility, buddy visibility, and live-status information should follow the permissions and privacy controls configured by the participating airline and USAFCACARS service.
 
 ---
 
@@ -1255,6 +1335,8 @@ assets/readme/
 | `usafc_pilot.png` | Pilot profile |
 | `usafc_pilot_animated.png` | Pilot career concept |
 | `usafc_community.png` | Community Hub |
+| `usafc_community1.png` | Community Online Presence virtual airline directory |
+| `usafc_community2.png` | Virtual airline profile, member directory, pilot search, and buddy network |
 | `usafc_support.png` | Help and Support |
 | `usafc_passengerops.png` | Passenger Operations |
 
