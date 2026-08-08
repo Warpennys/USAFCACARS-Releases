@@ -1097,10 +1097,14 @@ USAFCACARS is intended to follow the aircraft through a complete flight lifecycl
 > **Flight Phase and Flight Status are separate values.**  
 > The colors below represent the **phase** only. Flightboard status colors are handled independently so a pilot can have a phase such as **CRUISE** while the operational status remains **EN ROUTE**.
 
+> [!NOTE]
+> GitHub README rendering does not always preserve custom CSS color styling consistently, so the chart below uses **actual color swatch emojis** plus the locked **hex color values** to clearly showcase the standard USAFCACARS phase colors.
+
 <table>
   <thead>
     <tr>
       <th align="left">Flight Phase</th>
+      <th align="left">Color Showcase</th>
       <th align="left">Standard Color</th>
       <th align="left">Color Code</th>
     </tr>
@@ -1108,92 +1112,109 @@ USAFCACARS is intended to follow the aircraft through a complete flight lifecycl
   <tbody>
     <tr>
       <td><strong>PREFLIGHT</strong></td>
-      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
       <td><code>#FFFFFF</code></td>
     </tr>
     <tr>
       <td><strong>BOARDING</strong></td>
-      <td><span style="color:#00FF66"><strong>● GREEN</strong></span></td>
+      <td>🟢 🟢 🟢</td>
+      <td><strong>Green</strong></td>
       <td><code>#00FF66</code></td>
     </tr>
     <tr>
       <td><strong>PUSHBACK</strong></td>
-      <td><span style="color:#FFD400"><strong>● YELLOW / GOLD</strong></span></td>
+      <td>🟡 🟡 🟡</td>
+      <td><strong>Yellow / Gold</strong></td>
       <td><code>#FFD400</code></td>
     </tr>
     <tr>
       <td><strong>TAXI OUT</strong></td>
-      <td><span style="color:#FFD400"><strong>● YELLOW / GOLD</strong></span></td>
+      <td>🟡 🟡 🟡</td>
+      <td><strong>Yellow / Gold</strong></td>
       <td><code>#FFD400</code></td>
     </tr>
     <tr>
       <td><strong>TAKEOFF</strong></td>
-      <td><span style="color:#FF9900"><strong>● ORANGE</strong></span></td>
+      <td>🟠 🟠 🟠</td>
+      <td><strong>Orange</strong></td>
       <td><code>#FF9900</code></td>
     </tr>
     <tr>
       <td><strong>INITIAL CLIMB</strong></td>
-      <td><span style="color:#FF9900"><strong>● ORANGE</strong></span></td>
+      <td>🟠 🟠 🟠</td>
+      <td><strong>Orange</strong></td>
       <td><code>#FF9900</code></td>
     </tr>
     <tr>
       <td><strong>CLIMB</strong></td>
-      <td><span style="color:#FF9900"><strong>● ORANGE</strong></span></td>
+      <td>🟠 🟠 🟠</td>
+      <td><strong>Orange</strong></td>
       <td><code>#FF9900</code></td>
     </tr>
     <tr>
       <td><strong>CRUISE</strong></td>
-      <td><span style="color:#00FF66"><strong>● GREEN</strong></span></td>
+      <td>🟢 🟢 🟢</td>
+      <td><strong>Green</strong></td>
       <td><code>#00FF66</code></td>
     </tr>
     <tr>
       <td><strong>DESCENT</strong></td>
-      <td><span style="color:#00CCFF"><strong>● CYAN / SKY BLUE</strong></span></td>
+      <td>🔵 🔵 🔵</td>
+      <td><strong>Cyan / Sky Blue</strong></td>
       <td><code>#00CCFF</code></td>
     </tr>
     <tr>
       <td><strong>APPROACH</strong></td>
-      <td><span style="color:#00CCFF"><strong>● CYAN / SKY BLUE</strong></span></td>
+      <td>🔵 🔵 🔵</td>
+      <td><strong>Cyan / Sky Blue</strong></td>
       <td><code>#00CCFF</code></td>
     </tr>
     <tr>
       <td><strong>LANDING</strong></td>
-      <td><span style="color:#FF5B2E"><strong>● RED-ORANGE</strong></span></td>
+      <td>🔴 🟠 🔴</td>
+      <td><strong>Red-Orange</strong></td>
       <td><code>#FF5B2E</code></td>
     </tr>
     <tr>
       <td><strong>TAXI IN</strong></td>
-      <td><span style="color:#FFD400"><strong>● YELLOW / GOLD</strong></span></td>
+      <td>🟡 🟡 🟡</td>
+      <td><strong>Yellow / Gold</strong></td>
       <td><code>#FFD400</code></td>
     </tr>
     <tr>
       <td><strong>AT GATE</strong></td>
-      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
       <td><code>#FFFFFF</code></td>
     </tr>
     <tr>
       <td><strong>SHUTDOWN</strong></td>
-      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
       <td><code>#FFFFFF</code></td>
     </tr>
     <tr>
       <td><strong>COMPLETED</strong></td>
-      <td><span style="color:#FFFFFF"><strong>● SILVER / WHITE</strong></span></td>
+      <td>⚪ ⚪ ⚪</td>
+      <td><strong>Silver / White</strong></td>
       <td><code>#FFFFFF</code></td>
     </tr>
   </tbody>
 </table>
 
+### Phase Color Groups
+
 The phase-color engine also treats the following equivalent operational labels as part of the same standard groups:
 
-| Standard color | Phase aliases |
-|---|---|
-| <span style="color:#00FF66"><strong>● #00FF66</strong></span> | `BOARDING`, `READY`, `LOADING`, `CRUISE`, `LEVEL`, `ENROUTE` |
-| <span style="color:#FFD400"><strong>● #FFD400</strong></span> | `TAXI`, `TAXIOUT`, `TAXIIN`, `PUSHBACK` |
-| <span style="color:#FF9900"><strong>● #FF9900</strong></span> | `TAKEOFF`, `CLIMB` |
-| <span style="color:#00CCFF"><strong>● #00CCFF</strong></span> | `DESCENT`, `APPROACH` |
-| <span style="color:#FF5B2E"><strong>● #FF5B2E</strong></span> | `LANDING`, `LANDED` |
-| <span style="color:#FFFFFF"><strong>● #FFFFFF</strong></span> | Neutral or unmatched lifecycle phases |
+| Color Showcase | Standard Color | Phase aliases |
+|---|---|---|
+| 🟢 🟢 🟢 | **Green** `#00FF66` | `BOARDING`, `READY`, `LOADING`, `CRUISE`, `LEVEL`, `ENROUTE` |
+| 🟡 🟡 🟡 | **Yellow / Gold** `#FFD400` | `TAXI`, `TAXIOUT`, `TAXIIN`, `PUSHBACK` |
+| 🟠 🟠 🟠 | **Orange** `#FF9900` | `TAKEOFF`, `INITIAL CLIMB`, `CLIMB` |
+| 🔵 🔵 🔵 | **Cyan / Sky Blue** `#00CCFF` | `DESCENT`, `APPROACH` |
+| 🔴 🟠 🔴 | **Red-Orange** `#FF5B2E` | `LANDING`, `LANDED` |
+| ⚪ ⚪ ⚪ | **Silver / White** `#FFFFFF` | `PREFLIGHT`, `AT GATE`, `SHUTDOWN`, `COMPLETED`, neutral lifecycle phases |
 
 The phase engine is intended to use stabilization logic so that normal simulator noise, brief runway contact, small altitude fluctuations, or short-lived state changes do not cause rapid phase oscillation.
 
