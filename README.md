@@ -805,9 +805,9 @@ Target features include:
 
 ## Workspace Manager
 
-The Workspace Manager is intended to arrange USAFCACARS tools across one or more displays.
+The Workspace Manager is intended to turn USAFCACARS into a true multi-monitor operations center. Pilots will be able to arrange major ACARS tools across their displays, save that arrangement as a named layout, and later restore the complete working environment from **Saved Layouts**.
 
-Planned layouts include:
+Planned workspace capabilities include:
 
 - Grid
 - Rows
@@ -816,11 +816,14 @@ Planned layouts include:
 - BSP
 - Ultrawide
 - Floating windows
+- Pop-out panels
 - Saved window positions
 - Saved window sizes
+- Saved monitor assignments
 - Fullscreen windows
 - Multi-monitor workspaces
-- Pop-out panels
+- Layout naming and management
+- One-click saved-layout loading
 - Workspace reset
 - Off-screen window recovery
 - Layout restoration after restart
@@ -832,6 +835,83 @@ Planned layouts include:
     width="90%"
   >
 </p>
+
+### Saved Multi-Monitor Layouts
+
+A saved workspace is intended to restore much more than a list of open panels. Loading a saved layout should rebuild the pilot's complete operations setup across the monitors that were assigned when the layout was saved.
+
+A saved layout may restore:
+
+- Which USAFCACARS tools are open
+- Which monitor each tool belongs on
+- Window position and size
+- Maximized or fullscreen state
+- Docked, tiled, stacked, or floating placement
+- Pop-out state
+- Map and operational panel placement
+- Flightboard placement
+- ATC/TRACON placement
+- Briefing and chart placement
+- Voice Communications placement
+- Aircraft Control placement
+- Weather and map placement
+- Telemetry and system-monitor placement
+- Community and support panels where selected
+
+The concept below demonstrates two examples of the same Workspace system after a pilot chooses a saved layout: a **three-monitor flight-operations layout** and a **five-monitor command-center layout**.
+
+<p align="center">
+  <img
+    src="assets/readme/workspace-manager1.png"
+    alt="USAFCACARS Workspace Manager saved layouts across three-monitor and five-monitor setups"
+    width="100%"
+  >
+  <br>
+  <strong>Saved Layouts — Three-Monitor Operations and Five-Monitor Command Center</strong>
+</p>
+
+#### Three-Monitor Operations
+
+A three-monitor saved layout can divide the cockpit desktop into dedicated operating zones. For example:
+
+- **Monitor 1:** Pilot Briefing, weather summary, flight information, or charts
+- **Monitor 2:** Live Operations Map and Flightboard
+- **Monitor 3:** Aircraft Control, Voice Communications, network/ATC status, and Music & Radio
+
+The exact arrangement is controlled by the pilot and saved as part of the layout.
+
+#### Five-Monitor Command Center
+
+A five-monitor saved layout can expand USAFCACARS into a broader command-center environment. A layout may dedicate displays to combinations such as:
+
+- Flightboard and active-flight information
+- ATC/TRACON tools
+- Airports and Charts
+- Live Operations Map
+- Voice Communications
+- Weather and map layers
+- Telemetry and aircraft systems
+- Community activity
+- Aircraft Control
+- Pilot Briefing or Horizon Explorer
+
+The purpose is not to force a fixed five-screen arrangement. The five-monitor concept demonstrates how the same Workspace Manager can restore a much larger personalized operating environment when additional displays are available.
+
+#### Loading a Saved Layout
+
+The intended workflow is:
+
+1. Open **Workspace Manager**.
+2. Select **Saved Layouts**.
+3. Choose a named layout such as `Triple Monitor Operations` or `Five Monitor Command Center`.
+4. Select **Load Layout**.
+5. USAFCACARS restores the saved panels, windows, monitor assignments, positions, sizes, and supported workspace states.
+6. The pilot can continue working immediately or make changes and save the arrangement again.
+
+If a previously assigned monitor is unavailable, Workspace Manager is intended to recover those windows onto an available display rather than leave them inaccessible off-screen.
+
+> [!NOTE]
+> The multi-monitor image is a **concept visualization** of the intended saved-layout experience. Exact panels, monitor assignments, window geometry, and restoration behavior may change as Workspace Manager development continues.
 
 ---
 
@@ -1417,6 +1497,7 @@ assets/readme/
 | `usafcacars-hero.png` | README hero |
 | `dashboard.png` | Dashboard visual |
 | `workspace-manager.png` | Workspace feature visual |
+| `workspace-manager1.png` | Saved Workspace layouts across three-monitor and five-monitor setups |
 | `usafc_acars.png` | Complete application concept |
 | `operations-center.png` | Operations-center overview |
 | `live-map.png` | Live-map visual |
