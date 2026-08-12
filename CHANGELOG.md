@@ -2,7 +2,7 @@
 
 All notable changes to **USAFCACARS** are documented in this file.
 
-USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. The latest documented desktop release is `1.0.16`.
+USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. The latest documented desktop release is `1.0.17`.
 
 This changelog follows the general structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and uses version numbers compatible with Semantic Versioning where practical.
 
@@ -49,6 +49,33 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ---
 
+## [1.0.17] - 2026-08-12
+
+### Added
+
+- Added the responsive, instrument-panel-inspired right operations rail with populated pilot, operations-grid, quick-action, and ACARS flight-data sections.
+- Added separate **Load Flight to Planner** and **Load Flight Directly** controls with high-definition icons and independent active/progress states.
+- Added configurable direct-load startup states for cold and dark, ready for engine start, engines running, and ready for taxi.
+- Added the fixed lower-left airport/weather card with live airport context, NOAA METAR data, click-to-refresh behavior, and flight-aware departure/arrival transitions.
+- Added high-definition day, night, sunrise, sunset, cloud, rain, snow, and thunderstorm artwork plus calculated moon-phase rendering.
+- Added the approved left-navigation and right-operations-panel design references to the public documentation.
+
+### Changed
+
+- Rebuilt the right-side quick actions as riveted, dark-gunmetal cockpit controls with stable labels, icons, indicator lamps, and responsive sizing.
+- Limited left-rail scrolling to the navigation links so connection, airport/weather, and version cards remain visible at normal application sizes.
+- Made the airport weather strip fit its complete flight category, wind, visibility, temperature, altimeter, condition, and moon-phase text without right-edge truncation.
+- Made weather overlays mutually exclusive so clear reports show the appropriate lighting/moon scene without false cloud artwork.
+- Enabled the local development endpoint in Release builds only when ACARS is running on the authorized development machine or explicitly enabled by its development environment setting.
+- Improved cached image reuse and window-control glyph rendering to prevent visual flashing and corrupted minimize/maximize/close symbols.
+
+### Fixed
+
+- Fixed flight cancellation so the lower-left airport card returns from the arrival target to the pilot's actual/last airport context.
+- Fixed quick-action start/load visual-state updates so labels remain visible and the correct button stays illuminated.
+- Fixed the pilot/operations rail layout so populated live data does not resize, clip, or force unnecessary scrolling at the normal application size.
+
+---
 ## [1.0.16] - 2026-08-11
 
 ### Added

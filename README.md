@@ -137,6 +137,25 @@ USAFCACARS is designed around a persistent operations shell with:
 
 Selected modules can expand into the large center workspace between the permanent left and right rails. This allows a live map, flightboard, TRACON scope, briefing package, aircraft panel, or another major tool to use the full working area without losing access to the pilot and flight controls.
 
+### Current Shell Rail Design
+
+The lower-left status stack remains fixed while only the feature-link list scrolls. The right operations rail is responsive and reserves a stable scrollbar gutter, but only displays the scrollbar when the available monitor height actually requires it. Live pilot, flight, simulator, communications, airport, and weather data populate without resizing the surrounding frames.
+
+<table>
+  <tr>
+    <td width="34%" align="center" valign="top">
+      <img src="assets/readme/left_nav_panel.png" alt="USAFCACARS fixed lower-left status and airport weather cards" width="246">
+      <br>
+      <strong>Left Navigation Status Stack</strong>
+    </td>
+    <td width="66%" align="center" valign="top">
+      <img src="assets/readme/usafc_right_panel.png" alt="USAFCACARS responsive right operations rail design" width="430">
+      <br>
+      <strong>Right Operations Rail Design</strong>
+    </td>
+  </tr>
+</table>
+
 <table>
   <tr>
     <td width="50%" align="center">
@@ -1542,6 +1561,8 @@ assets/readme/
 | `workspace-manager1.png` | Saved Workspace layouts across three-monitor and five-monitor setups |
 | `usafc_acars.png` | Complete application concept |
 | `operations-center.png` | Operations-center overview |
+| `left_nav_panel.png` | Fixed lower-left connection, airport/weather, and version card design |
+| `usafc_right_panel.png` | Responsive right operations rail design |
 | `live-map.png` | Live-map visual |
 | `usafc_map.png` | Expanded live map |
 | `flightboard.png` | Flightboard visual |

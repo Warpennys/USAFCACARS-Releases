@@ -1,7 +1,7 @@
 # USAFCACARS Support Guide
 
 **Last updated:** August 11, 2026
-**Current documented release:** 1.0.16 Alpha
+**Current documented release:** 1.0.17 Alpha
 **Software status:** Proprietary software in active alpha development
 
 This document explains how to obtain help with USAFCACARS, where to report
