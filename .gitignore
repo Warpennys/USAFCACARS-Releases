@@ -236,6 +236,7 @@ traces/
 release-assets/
 release-packages/
 release-staging/
+server-modules/
 installer-output/
 installer-build/
 portable-build/
