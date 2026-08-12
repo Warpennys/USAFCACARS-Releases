@@ -1,7 +1,7 @@
 # USAFCACARS Troubleshooting Guide
 
-**Last updated:** August 6, 2026  
-**Current documented release:** 1.0.4 Alpha  
+**Last updated:** August 11, 2026
+**Current documented release:** 1.0.16 Alpha
 **Software status:** Proprietary software in active alpha development
 
 This guide provides practical troubleshooting steps for the USAFCACARS Windows
@@ -1134,24 +1134,27 @@ Do not upload restricted chart files publicly.
 ## Check
 
 - PTT key assignment;
-- Focus behavior;
+- Global PTT registration;
 - Mute state;
 - Active room;
 - Microphone selection;
 - Windows permissions;
 - Key conflict;
-- Administrator privilege mismatch.
+- Administrator privilege mismatch; and
+- Discord mute-shortcut configuration when enabled.
 
 ## Steps
 
-1. Confirm the PTT assignment.
-2. Confirm the microphone level moves.
-3. Confirm mute is off.
-4. Confirm an active room.
-5. Hold the key rather than tapping it.
-6. Test a different key.
-7. Confirm another application does not intercept it.
-8. Restart USAFCACARS.
+1. Confirm the PTT assignment in Communications Settings.
+2. Confirm the live microphone spectrum and MIC meter move.
+3. Confirm mute is off and an active room is joined.
+4. Hold the key rather than tapping it; TX should illuminate for the full hold.
+5. Put another application in focus and confirm global PTT still activates TX.
+6. Test a different key if another application reserves the current assignment.
+7. Run USAFCACARS and the simulator at compatible privilege levels. A lower-privilege application cannot always capture keys over an elevated application.
+8. If Discord coordination is enabled, keep Discord's mute shortcut set to `Ctrl+Shift+M` and confirm the setting is enabled in USAFCACARS.
+9. Restart USAFCACARS to reinstall the global keyboard hook.
+10. Record whether the on-screen PTT button works while only the global shortcut fails.
 
 ---
 

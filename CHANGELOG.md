@@ -2,7 +2,7 @@
 
 All notable changes to **USAFCACARS** are documented in this file.
 
-USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**, even though the current application version is `1.0.4`.
+USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. The latest documented desktop release is `1.0.16`.
 
 This changelog follows the general structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and uses version numbers compatible with Semantic Versioning where practical.
 
@@ -46,6 +46,28 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 - Complete update checking against the official USAFC release records.
 - Expand automated API and integration testing.
 - Finish high-priority accessibility, scaling, and multi-monitor corrections.
+
+---
+
+## [1.0.16] - 2026-08-11
+
+### Added
+
+- Added the first operational Communications Station with independent COM1 and COM2 selection.
+- Added active/standby frequency transfer, mouse tuning, and two-way SimConnect radio synchronization.
+- Added global push-to-talk that remains available while USAFCACARS is not focused.
+- Added real microphone, transmit, receive, and spectrum metering.
+- Added nearby-airport discovery, airport-category filters, published frequencies, and temporary open channels.
+- Added public and private communications rooms with room creation, joining, disconnecting, rosters, and locked-room visibility.
+- Added configurable Discord microphone-mute coordination during ACARS transmission.
+- Added current and design-reference Communications Station images to the README.
+- Added GitHub-compatible tab-style README navigation for major documentation sections.
+
+### Changed
+
+- Improved microphone normalization, receive buffering, and stale-packet handling to reduce low or garbled voice playback.
+- Updated Communications Station, installation, testing, troubleshooting, and support documentation.
+- Preserved the expanded communications-center artwork and roadmap as explicitly planned concepts beyond the current radio implementation.
 
 ---
 

@@ -1,7 +1,7 @@
 # USAFCACARS Installation Guide
 
-**Last updated:** August 6, 2026  
-**Current documented release:** 1.0.4 Alpha  
+**Last updated:** August 11, 2026
+**Current documented release:** 1.0.16 Alpha
 **Software status:** Proprietary software in active alpha development
 
 This guide explains how to download, verify, install, configure, update, repair,
@@ -286,7 +286,8 @@ Voice Communications requires:
 - Windows microphone permission;
 - A selected input device;
 - A selected output device; and
-- A supported audio format.
+- A supported audio format; and
+- Firewall access to the configured USAFCACARS communications service.
 
 A headset is recommended to prevent feedback.
 
@@ -545,9 +546,10 @@ Open Voice & Radio Settings and choose:
 
 - Microphone;
 - Speaker or headset;
-- Push-to-talk control;
+- Global push-to-talk control;
 - Microphone level;
 - Communications volume;
+- Optional Discord microphone-mute coordination;
 - Music volume; and
 - Radio volume.
 

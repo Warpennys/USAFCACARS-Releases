@@ -493,22 +493,30 @@ Test with a headset when possible.
 
 Verify:
 
-- Communications page opens.
-- Communications settings page scrolls.
+- Communications Station opens and fits the normal application workspace.
+- COM1 and COM2 selection changes the illuminated radio state.
+- Active and standby frequencies transfer correctly.
+- Frequency tuning controls change the selected standby channel.
+- Simulator COM changes update the Communications Station through SimConnect.
+- Communications Station changes update the simulator where supported.
+- Global push-to-talk works while another application has focus.
+- Configured push-to-talk press and release are both detected reliably.
 - Microphone device list loads.
 - Speaker device list loads.
-- Microphone level responds.
-- Microphone test captures and plays back audio.
+- Live microphone spectrum and MIC meter respond to real input.
+- TX responds only while transmitting and RX responds to received audio.
+- Microphone and speaker volume controls change real audio levels.
+- Microphone test captures and plays back audio locally.
 - Speaker test is audible.
-- Push-to-talk works.
 - Mute blocks outgoing audio.
-- Deafen blocks incoming audio.
-- Active room is shown.
-- Frequency is shown.
-- Room members are shown.
-- Device changes are applied.
-- Disconnecting an audio device is handled.
-- Closing the application releases the audio device.
+- Nearby airports and category filters return appropriate results.
+- Airport channels display the correct frequency and status.
+- Public and private rooms can be created, joined, and disconnected.
+- Private rooms display a lock and enforce their access code.
+- Active room, room members, and connection status remain accurate.
+- Discord microphone-mute coordination works globally when configured.
+- Device changes are applied and disconnecting a device is handled.
+- Closing the application releases the audio device and global PTT hook.
 
 Do not record or publish private communications without all required permissions.
 

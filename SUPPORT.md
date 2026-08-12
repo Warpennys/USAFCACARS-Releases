@@ -1,7 +1,7 @@
 # USAFCACARS Support Guide
 
-**Last updated:** August 6, 2026  
-**Current documented release:** 1.0.4 Alpha  
+**Last updated:** August 11, 2026
+**Current documented release:** 1.0.16 Alpha
 **Software status:** Proprietary software in active alpha development
 
 This document explains how to obtain help with USAFCACARS, where to report
@@ -480,18 +480,19 @@ Do not publicly attach restricted third-party chart files.
 
 Use this category for:
 
-- Microphone not detected;
-- Speaker not detected;
-- Microphone test silent;
-- Speaker test silent;
-- Push-to-talk failure;
-- Mute failure;
-- Deafen failure;
-- Room authorization;
-- Incorrect room or frequency;
-- Audio-device lock;
-- Page not scrollable; and
-- App not releasing audio on shutdown.
+- Microphone or speaker not detected;
+- Low, clipped, or garbled voice audio;
+- Microphone or speaker test failure;
+- Global push-to-talk failure or key conflict;
+- MIC, TX, RX, or spectrum meter failure;
+- COM1/COM2 selection, tuning, or frequency-transfer failure;
+- SimConnect radio synchronization failure;
+- Microphone mute or speaker-monitor failure;
+- Public/private room authorization;
+- Incorrect nearby airport, room, or frequency;
+- Discord mute-coordination failure;
+- Audio-device lock; and
+- App not releasing audio or the global PTT hook on shutdown.
 
 Do not post private voice recordings publicly.
 

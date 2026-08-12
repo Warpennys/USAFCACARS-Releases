@@ -44,10 +44,29 @@
 
 ---
 
+<p align="center">
+  <a href="#major-systems"><img src="https://img.shields.io/badge/FLIGHT%20OPS-182331?style=flat-square" alt="Flight operations"></a>
+  <a href="#atc-and-airspace-operations"><img src="https://img.shields.io/badge/ATC%20%26%20AIRSPACE-182331?style=flat-square" alt="ATC and airspace"></a>
+  <a href="#communications"><img src="https://img.shields.io/badge/COMMS-a00000?style=flat-square" alt="Communications"></a>
+  <a href="#aircraft-and-cabin-systems"><img src="https://img.shields.io/badge/AIRCRAFT%20%26%20CABIN-182331?style=flat-square" alt="Aircraft and cabin"></a>
+  <a href="#research-media-and-workspaces"><img src="https://img.shields.io/badge/MEDIA%20%26%20WORKSPACES-182331?style=flat-square" alt="Media and workspaces"></a>
+</p>
+<p align="center">
+  <a href="#pilot-community-and-support"><img src="https://img.shields.io/badge/PILOT%20%26%20COMMUNITY-182331?style=flat-square" alt="Pilot and community"></a>
+  <a href="#simulator-and-server-integration"><img src="https://img.shields.io/badge/INTEGRATION-182331?style=flat-square" alt="Simulator and server integration"></a>
+  <a href="#installation"><img src="https://img.shields.io/badge/INSTALLATION-263b5e?style=flat-square" alt="Installation"></a>
+  <a href="#troubleshooting"><img src="https://img.shields.io/badge/TROUBLESHOOTING-263b5e?style=flat-square" alt="Troubleshooting"></a>
+  <a href="#concept-image-index"><img src="https://img.shields.io/badge/IMAGE%20INDEX-263b5e?style=flat-square" alt="Concept image index"></a>
+</p>
+
+> [!NOTE]
+> GitHub Markdown does not support interactive content tabs. These tab-style links provide direct navigation while keeping every section visible and searchable.
+
+---
 > [!IMPORTANT]
 > **USAFCACARS is currently in active alpha development.**
 >
-> The interface images in this README are **concept visualizations** showing the intended scope, design direction, and long-term feature goals for the desktop application. They are not final screenshots, do not represent a finished release, and should not be interpreted as confirmation that every displayed control or service is already implemented.
+> Images labeled **Current** show the implemented application at the documented release. Images labeled **Concept**, **Design Reference**, or **Visual** show intended scope and design direction and should not be interpreted as confirmation that every displayed control or service is already implemented.
 >
 > Features, layouts, wording, data sources, integrations, and availability may change as development continues. The release notes for each downloadable build are the authoritative record of what is currently functional.
 
@@ -147,7 +166,7 @@ USAFCACARS remains an alpha project. Individual systems may be at different stag
 | Flight tracking and PIREP workflow | Active development |
 | Live map and flightboard | Active development and expansion |
 | Weather, airport data, and charts | Active development |
-| Voice communications | Active development |
+| Voice communications | Operational alpha and active expansion |
 | Horizon Explorer | Active development |
 | Workspace Manager | Active development |
 | ATC, TRACON, strips, and taxi management | Advanced concept and staged development |
@@ -565,37 +584,60 @@ Target features include:
 
 ## Voice Communications
 
-USAFCACARS is being designed with integrated voice and radio communications.
+The USAFCACARS Communications Station is an integrated, aircraft-radio-inspired voice workspace connected to the USA Flight Club network and Microsoft Flight Simulator through SimConnect.
 
-Planned communication options include:
+Current communications capabilities include:
 
-- Airport frequency rooms
-- UNICOM
-- ATC rooms
-- Private crew rooms
-- Open group rooms
-- Pilot channels
-- Push-to-talk
-- Microphone mute
-- Speaker deafen
-- Device selection
-- Microphone level
-- Microphone playback test
-- Speaker test
-- Active frequency display
-- Room rosters
-- Participant audio levels
-- Automatic room transitions
-- Private messaging
-- Connected-aircraft display
-- On Comms status
+- Independent COM1 and COM2 selection
+- Active and standby frequencies with frequency transfer
+- Mouse-operated frequency tuning controls
+- Two-way synchronization with simulator COM radios
+- Global push-to-talk that remains available while USAFCACARS is not focused
+- Live microphone, transmit, and receive level metering
+- Selectable microphone and speaker devices
+- Microphone and speaker volume controls
+- Microphone mute, speaker monitoring, and local audio tests
+- Nearby-airport discovery within communications range
+- Airport filtering for GA, airfield, airstrip, international, FBO, and open channels
+- Published airport frequencies and temporary open channels
+- Public and private rooms, including locked-room visibility
+- Room creation, joining, disconnecting, rosters, and connection status
+- Discord microphone-mute coordination during ACARS push-to-talk when configured
+
+The interface uses a proportional metal radio chassis, illuminated hardware-style controls, digital active/standby readouts, and persistent metal scrollbars for contained lists.
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_comms_actual.png"
+    alt="Current USAFCACARS Communications Station implementation"
+    width="100%"
+  >
+  <br>
+  <strong>Current Communications Station</strong>
+</p>
+
+<p align="center">
+  <img
+    src="assets/readme/usafc_comms2.png"
+    alt="USAFCACARS Communications Station design reference"
+    width="100%"
+  >
+  <br>
+  <strong>Communications Station Design Reference</strong>
+</p>
+
+### Planned Communications Center
+
+The larger communications-center concept remains part of the project roadmap. It extends the implemented radio with expanded pilot-channel management, connected-aircraft awareness, richer participant controls, automatic room transitions, private messaging, and broader ATC/community communications workflows.
 
 <p align="center">
   <img
     src="assets/readme/usafc_comms.png"
-    alt="Expanded USAFCACARS voice communications concept"
+    alt="Planned expanded USAFCACARS communications center concept"
     width="100%"
   >
+  <br>
+  <strong>Planned Expanded Communications Center</strong>
 </p>
 
 <table>
@@ -603,12 +645,12 @@ Planned communication options include:
     <td width="50%" align="center">
       <img src="assets/readme/voice-communications.png" alt="USAFCACARS voice communications visual" width="100%">
       <br>
-      <strong>Voice Communications</strong>
+      <strong>Planned Voice Communications Visual</strong>
     </td>
     <td width="50%" align="center">
       <img src="assets/readme/comms.png" alt="USAFCACARS communications visual" width="100%">
       <br>
-      <strong>Communications System</strong>
+      <strong>Planned Communications System Visual</strong>
     </td>
   </tr>
 </table>
@@ -1506,7 +1548,9 @@ assets/readme/
 | `usafc_flightboard.png` | Expanded flightboard |
 | `voice-communications.png` | Voice communications visual |
 | `comms.png` | Communications visual |
-| `usafc_comms.png` | Expanded communications center |
+| `usafc_comms.png` | Expanded communications center concept |
+| `usafc_comms2.png` | Communications Station design reference |
+| `usafc_comms_actual.png` | Current Communications Station implementation |
 | `usafc_tracon.png` | TRACON radar |
 | `usafc_tracon2.png` | Futuristic layered TRACON |
 | `usafc_tracon_atc.png` | Complete ATC section |
