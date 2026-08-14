@@ -237,6 +237,9 @@ release-assets/
 release-packages/
 release-staging/
 server-modules/
+/modules/USAFCACARS/
+/Modules/USAFCACARS/
+/private-source-backups/
 installer-output/
 installer-build/
 portable-build/
@@ -244,6 +247,13 @@ packages/
 staging/
 temp/
 tmp/
+
+# Private MSFS 2024 integration source and Community package. These files are
+# embedded only in an authorized desktop deployment and never belong in this
+# public documentation/release-metadata repository.
+MSFS2024.EfbBridge/
+**/MSFS2024/Packages/
+**/usafc-acars-efb-bridge/
 
 # Allow documented checksums and release metadata
 !SHA256SUMS.txt

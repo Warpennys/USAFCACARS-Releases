@@ -179,21 +179,41 @@ USAFCACARS remains an alpha project. Individual systems may be at different stag
 
 | Area | Development direction |
 |---|---|
-| Desktop shell and dashboard | Active development |
+| Desktop shell and dashboard | Operational alpha; live route, aircraft, weather, radar, operations, and quick-action data |
 | USAFC account and API integration | Active development |
 | SimConnect telemetry | Active development |
-| Flight tracking and PIREP workflow | Active development |
+| Flight tracking and PIREP workflow | Operational alpha with completed-bid cleanup and owner/completion PIREP safeguards |
 | Live map and flightboard | Active development and expansion |
-| Weather, airport data, and charts | Active development |
+| Weather, airport data, and charts | Operational Weather Center alpha; airport/chart expansion continues |
 | Voice communications | Operational alpha and active expansion |
-| Horizon Explorer | Active development |
-| Workspace Manager | Active development |
+| Horizon Explorer | Operational multi-tab alpha with bookmarks, imports, pop-outs, search, and aviation start page |
+| Workspace Manager | Operational alpha with real layouts, named profiles, window placement, restore controls, and safe reset |
 | ATC, TRACON, strips, and taxi management | Advanced concept and staged development |
-| Aircraft systems control | Experimental/advanced concept |
+| Aircraft systems control | Operational experimental panel; aircraft-specific depth remains active development |
 | Passenger operations | Planned advanced simulation feature |
-| Community and support centers | Planned integration and staged development |
+| Community and support centers | Searchable Help/diagnostics and Release Center implemented; Community expansion staged |
 
 This table describes the project direction only. Consult the release notes for the exact capabilities of a particular build.
+<details open>
+<summary><strong>Current operational alpha</strong></summary>
+
+Dashboard and flight tracking, the unified Scheduled/SimBrief/Free Flight/Charter/Tours planner, MSFS 2024 SimConnect and private EFB bridge integration, aircraft catalog/artwork cache, Communications Station, Weather Operations Center, Horizon Explorer, Workspace Manager, Release Center, and searchable Help & Support are implemented in the active development tree.
+
+</details>
+
+<details>
+<summary><strong>Server and phpVMS integration</strong></summary>
+
+The private USAFCACARS module supplies authentication, settings, flight/search/bid data, SimBrief capability, gates, weather, real-world traffic providers, communications, affiliate-network behavior, Tours, Charter integration, and PIREP lifecycle services. Private module and MSFS add-on source is never published in this public repository.
+
+</details>
+
+<details>
+<summary><strong>Planned concepts preserved in this README</strong></summary>
+
+ATC/TRACON control, expanded airport/taxi operations, passenger operations, deeper aircraft-specific cockpit control, broader Community functions, and other clearly labeled concept images remain roadmap material. Their artwork is intentionally preserved without representing those systems as finished.
+
+</details>
 
 ---
 
@@ -201,9 +221,9 @@ This table describes the project direction only. Consult the release notes for t
 
 ## Pilot Dashboard
 
-The pilot dashboard is intended to provide an immediate overview of the logged-in pilot and the current USAFC session.
+The pilot dashboard provides an immediate, instrument-panel overview of the logged-in pilot, current USAFC session, active route, simulator, network, nearby traffic, aircraft, and operational status.
 
-Target information includes:
+Current dashboard information includes:
 
 - Pilot avatar
 - Pilot name and ID
@@ -222,7 +242,13 @@ Target information includes:
 - Quick flight actions
 - Current weather
 
-The dashboard is also the launch point for the other major USAFCACARS workspaces.
+The dashboard is also the launch point for the other major USAFCACARS workspaces. Its route monitor uses a locked high-detail satellite view, progressively updates the live aircraft position during flight, exposes airport/procedure details, and keeps the collapsed and expanded workspace layouts proportional.
+
+<p align="center">
+  <img src="assets/readme/usafc_dashboard2.png" alt="USAFCACARS dashboard design reference" width="100%">
+  <br>
+  <em>Design reference retained for the implemented dashboard direction.</em>
+</p>
 
 ---
 
@@ -369,9 +395,9 @@ Changed characters are intended to animate independently, reproducing a mechanic
 
 ## Pilot Briefing
 
-The Pilot Briefing workspace is intended to gather operational information for the selected flight into one organized location.
+The unified Flight Planner and Pilot Briefing gathers operational information for Scheduled, SimBrief, Free Flight, Charter, and Tours flights into one instrument-style workspace.
 
-Planned sections include:
+Implemented core sections include:
 
 - Flight summary
 - Route overview
@@ -398,7 +424,13 @@ Planned sections include:
 </p>
 
 <p align="center">
-  <em>Concept: an integrated dispatch-style pilot briefing and flight-planning workspace.</em>
+  <em>Concept artwork remains preserved while the unified operational planner continues integration testing.</em>
+</p>
+
+<p align="center">
+  <img src="assets/readme/usafc_flightplanner.png" alt="USAFCACARS unified flight planner design reference" width="100%">
+  <br>
+  <em>Design reference for the unified flight-planning instrument; exact controls vary as integrations mature.</em>
 </p>
 
 ---
@@ -407,7 +439,7 @@ Planned sections include:
 
 USAFCACARS is intended to provide airport information without forcing the pilot to leave the application.
 
-Target information includes:
+Current dashboard information includes:
 
 - Airport name and identifier
 - Coordinates
@@ -432,9 +464,18 @@ Target information includes:
 
 ## Weather Center
 
-The Weather Center is intended to combine airport weather, enroute conditions, and live map overlays.
+The Weather Operations Center is implemented in the active desktop tree. Clicking the left weather card opens the route-aware center and refreshes the same weather snapshot used by the rail.
 
-Planned weather systems include:
+Current operational-alpha capabilities include:
+
+- Primary departure and arrival METAR summaries
+- Selectable en-route weather stations sampled along the loaded route
+- Raw METAR detail panel and flight-category color coding
+- Esri satellite imagery and live SimConnect aircraft position
+- Animated RainViewer precipitation history and infrared imagery
+- Station visibility, route fitting, explicit refresh, and last-valid-snapshot retention
+
+Planned weather expansion includes:
 
 - METAR
 - TAF
@@ -787,9 +828,9 @@ The concept includes:
 
 ## Horizon Explorer
 
-Horizon Explorer is planned as an integrated multi-tab aviation research studio.
+Horizon Explorer is an integrated multi-tab aviation research browser in the active desktop tree.
 
-Target capabilities include:
+Current operational-alpha capabilities include tabs, a USAFC aviation start page, DuckDuckGo search, navigation, WebView2 autofill/password support, pop-outs, draggable tab ownership, persistent bookmark folders, an optional stable-gutter bookmark bar, and Chrome/Edge/HTML import. Ongoing expansion includes:
 
 - Multiple browser tabs
 - Pinned sites
@@ -866,9 +907,9 @@ Target features include:
 
 ## Workspace Manager
 
-The Workspace Manager is intended to turn USAFCACARS into a true multi-monitor operations center. Pilots will be able to arrange major ACARS tools across their displays, save that arrangement as a named layout, and later restore the complete working environment from **Saved Layouts**.
+The Workspace Manager turns USAFCACARS into a multi-monitor operations center. Pilots can arrange detached ACARS tools, apply real layout presets, save named profiles with window bounds and states, restore visible tools, recover off-screen windows, and reset invalid configuration safely.
 
-Planned workspace capabilities include:
+Current operational-alpha capabilities include:
 
 - Grid
 - Rows
@@ -982,7 +1023,7 @@ If a previously assigned monitor is unavailable, Workspace Manager is intended t
 
 The Pilot Profile is planned as a career command center and USAFC personnel record.
 
-Target information includes:
+Current dashboard information includes:
 
 - Pilot avatar
 - Pilot ID and callsign
@@ -1140,9 +1181,9 @@ The buddy system is intended to work across participating airlines so pilots can
 
 ## Help and Support
 
-The Help & Support Center is planned as an integrated assistance and diagnostics workspace.
+The Help & Support Center is implemented as a searchable in-app operating guide and diagnostics workspace with contextual HD illustrations, connection checks, sanitized support diagnostics, documentation links, and integrated bug-report preparation.
 
-Target capabilities include:
+Current and planned capabilities include:
 
 - Help search
 - Getting-started guides

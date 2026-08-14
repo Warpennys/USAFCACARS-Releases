@@ -15,8 +15,47 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## [Unreleased]
 
+### Added
+
+- Added the full **Weather Operations Center**, opened from the left weather card, with synchronized departure/arrival summaries, selectable en-route METAR stations, route-aware station sampling, Esri satellite imagery, animated RainViewer precipitation, infrared imagery, a live SimConnect aircraft marker, explicit refresh, and last-valid-snapshot retention.
+- Added the aircraft operations page and persistent MSFS 2024 aircraft catalog, including installed/streamed/Official/Community discovery, exact active-title/livery matching, cached model cards, aircraft library browsing, operational data, and an official blue ACARS image-unavailable fallback.
+- Added the private MSFS 2024 EFB bridge workflow for acknowledged planner transfer, presentation-card discovery, aircraft matching, direct-load state selection, and Community-package installation path handling.
+- Added the unified instrument-style Flight Planner for Scheduled, SimBrief, Free Flight, Charter, and Tours workflows with route, weather, fuel, aircraft, NOTAM, ATC/frequency, document, procedure, gate, and simulator-load tools.
+- Added a redesigned Tours workspace with cached rotating banners, horizontal image flight strips, robust flexible tour parsing, dynamic airline wording, achievement artwork, leg progress, and unified-planner launch.
+- Added persistent Horizon Explorer bookmark folders, optional stable-gutter bookmark bars, current-page bookmarking, removal, Chrome/Edge/HTML import, and matching bookmark access in detached browser windows.
+- Added real Workspace Manager layouts, named profiles, window bounds/state capture, profile restore/delete, off-screen clamping, safe reset, atomic persistence, and functional autosave/layout/monitor/tool/Horizon restore preferences.
+- Added the in-app Release Center with documentation/changelog/repository access, update checks, a development track, sanitized diagnostics, and prefilled bug reporting.
+- Added the searchable Help & Support Center with workflow/error keyword search, contextual HD illustrations, connection checks, sanitized diagnostics, and operating guidance for the major ACARS systems.
+- Added site-side Charter route generation, manual planning, MSFS PLN/PnL/FLT import, distance/time/cruise estimation, approval policy handling, and approved-charter synchronization into phpVMS flights and bids.
+- Added USAFCACARS Map Settings for selecting the live real-world aircraft provider, including ADSB.lol, ADSB.fi, and OpenSky fallback support.
+
+### Changed
+
+- Changed the left weather card from a refresh-only card into the entry point for the synchronized Weather Operations Center; page refresh updates both views from the same source.
+- Changed Workspace Manager controls from preview-only behavior to real detached-window layout operations.
+- Changed completed-flight handling so a successfully filed PIREP removes the matching pilot bid and refreshes bid state.
+- Changed Tours and Charter language to use the connected airline/module configuration instead of hard-coded USAFC wording where satellite airlines are supported.
+- Changed local settings persistence to atomic UTF-8 writes with automatic empty/NUL/invalid JSON recovery and timestamped diagnostic backups.
+
+### Fixed
+
+- Fixed duplicate site bid insertion by serializing UI submissions, routing Tours through the core bid service, deduplicating existing user/flight pairs, and enforcing a unique database index.
+- Fixed PIREP Submit visibility and authorization so it appears only to the owning pilot after a genuinely completed, unfiled flight with blocks-on/arrival state.
+- Fixed flexible Tour JSON parsing when numeric values arrive as strings, nulls, or mixed server representations.
+- Fixed completed bids remaining visible in ACARS after successful PIREP completion.
+- Fixed corrupt settings files producing raw `0x00` JSON errors instead of recovering safely.
+- Fixed visible replacement-character text discovered during the site/documentation audit.
+
+### Security and Packaging
+
+- Kept the proprietary USAFCACARS phpVMS module/API and MSFS 2024 bridge/package source out of the public Releases repository.
+- Added private, credential-audited source backups to the private site repository so excluded integration source is recoverable without public disclosure.
+
 ### In Active Development
 
+- Reworked MSFS 2024 aircraft artwork handling around a persistent ACARS aircraft catalog populated from SimConnect's installed-aircraft inventory.
+- Added exact live aircraft-title and livery matching through the private in-sim VFS bridge, with on-demand presentation-card caching for immediate reuse after aircraft changes.
+- Removed synthetic aircraft-card fallbacks and the local radar test contact so unavailable or live data is never represented as genuine simulator/network data.
 - Continued integration of the USAFCACARS Windows desktop application with the proprietary USAFCACARS phpVMS API module.
 - Continued work on the complete flight lifecycle:
   - Pilot authentication
