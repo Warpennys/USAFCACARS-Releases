@@ -17,6 +17,12 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added the shared **Pilot Social notification center** on the website and in USAFCACARS, including unread counts, category filters, read/unread and dismiss actions, pilot avatars/ranks, destination actions, and user-controlled notification preferences governed by administrator availability.
+- Added native Unicode emoji entry for Pilot Social posts, comments, and private transmissions plus expressive Like, Love, Laugh, Celebrate, and Wow reactions.
+- Added optional birthday profiles and privacy-aware reminders with independent birthday visibility, year visibility, and notification controls.
+- Added the server-authoritative **Toss Paper Airplane** buddy game with one-toss-per-target hourly cooldowns, randomized humorous outcomes, immutable scoring, return tosses, current-period/all-time leaderboards, durable aggregate statistics, and configurable detailed-history cleanup.
+- Added a clean Pilot Social event-publisher contract and flight-completion listener so meaningful phpVMS/module events can reach the shared activity feed without coupling unrelated controllers to social rendering.
+
 - Added the full **Weather Operations Center**, opened from the left weather card, with synchronized departure/arrival summaries, selectable en-route METAR stations, route-aware station sampling, Esri satellite imagery, animated RainViewer precipitation, infrared imagery, a live SimConnect aircraft marker, explicit refresh, and last-valid-snapshot retention.
 - Added the aircraft operations page and persistent MSFS 2024 aircraft catalog, including installed/streamed/Official/Community discovery, exact active-title/livery matching, cached model cards, aircraft library browsing, operational data, and an official blue ACARS image-unavailable fallback.
 - Added the private MSFS 2024 EFB bridge workflow for acknowledged planner transfer, presentation-card discovery, aircraft matching, direct-load state selection, and Community-package installation path handling.
@@ -31,6 +37,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed Pilot Social feeds to preserve composer text and independent column scroll positions while silently merging refreshed network data; the feed viewport no longer extends behind the application status bar.
+- Changed current-style app menu and tab active states to a deeper blood-red illuminated treatment while preserving the existing hover behavior.
+- Changed app voice-bubble hover help to open beside the actual pointer instead of appearing remotely from the hovered control.
+
 - Changed the left weather card from a refresh-only card into the entry point for the synchronized Weather Operations Center; page refresh updates both views from the same source.
 - Changed Workspace Manager controls from preview-only behavior to real detached-window layout operations.
 - Changed completed-flight handling so a successfully filed PIREP removes the matching pilot bid and refreshes bid state.
@@ -38,6 +48,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 - Changed local settings persistence to atomic UTF-8 writes with automatic empty/NUL/invalid JSON recovery and timestamped diagnostic backups.
 
 ### Fixed
+
+- Fixed a dashboard startup crash caused by the EFB toolbar icon being present on disk but omitted from WPF packaged resources; toolbar icon loading now uses an embedded resource plus a nonfatal fallback.
+- Fixed Pilot Social notification filter mapping for aviation/flight activity, corrected timestamp separators, and aligned informational birthday priority with non-intrusive notification behavior.
+- Fixed Pilot Social content being clipped at the bottom of the desktop center workspace.
 
 - Fixed duplicate site bid insertion by serializing UI submissions, routing Tours through the core bid service, deduplicating existing user/flight pairs, and enforcing a unique database index.
 - Fixed PIREP Submit visibility and authorization so it appears only to the owning pilot after a genuinely completed, unfiled flight with blocks-on/arrival state.

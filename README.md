@@ -1066,6 +1066,33 @@ Current dashboard information includes:
 
 ---
 
+## Pilot Social
+
+Pilot Social is now the shared community and notification layer for the phpVMS website and USAFCACARS desktop application. Both clients use the same private USAFCSocial backend, so posts, buddy activity, private transmissions, notifications, birthdays, flight milestones, and Paper Airplane results remain synchronized without a separate desktop database.
+
+Implemented Pilot Social capabilities include:
+
+- A live network feed with pilot identity, avatar, rank, media/link presentation, comments, editing, deletion, sharing, and silent updates that preserve the pilot's scroll and composer state
+- Independent scrolling feed and discovery columns with remembered collapsed pilot panels
+- Notification badges, category filters, read/unread state, mark-all-read, dismiss, and contextual actions
+- Administrator-controlled category availability combined with clear per-pilot notification preferences
+- Optional birthday month/day, separately controlled year visibility, reminders, profile actions, and private birthday transmissions
+- Unicode emoji entry in posts, comments, and private transmissions
+- Like, Love, Laugh, Celebrate, and Wow reactions
+- Meaningful automated aviation/community cards through a shared internal event-publisher interface
+- Server-authoritative **Toss Paper Airplane** buddy interactions, return tosses, randomized outcome text, cooldown enforcement, current-period and all-time leaderboards, and lifetime scoring that survives detailed-history cleanup
+
+The Paper Airplane client submits only the requested action. Eligibility, cooldown, outcome, message, and both pilots' scores are determined and stored by the server.
+
+> [!IMPORTANT]
+> The proprietary USAFCSocial module and API remain in the private site repository and are intentionally excluded from this public Releases repository.
+
+<p align="center">
+  <img src="assets/readme/pilot_social.png" alt="Pilot Social aviation community emblem" width="44%">
+</p>
+
+---
+
 ## Community Hub
 
 The Community Hub is intended to connect pilots directly from the desktop application and extend that community experience to other participating virtual airlines.
