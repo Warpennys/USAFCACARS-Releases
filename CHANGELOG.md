@@ -49,6 +49,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed the Pilot Social admin control-center Blade crash caused by a malformed Laravel `Str` class reference, and replaced adjacent damaged separator glyphs with encoding-stable HTML bullets.
 - Fixed a dashboard startup crash caused by the EFB toolbar icon being present on disk but omitted from WPF packaged resources; toolbar icon loading now uses an embedded resource plus a nonfatal fallback.
 - Fixed Pilot Social notification filter mapping for aviation/flight activity, corrected timestamp separators, and aligned informational birthday priority with non-intrusive notification behavior.
 - Fixed Pilot Social content being clipped at the bottom of the desktop center workspace.
