@@ -40,6 +40,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed Twitch live broadcasts to render through the secure Pilot Social player on the website and USAFCACARS, start muted autoplay when the broadcast is live, preserve manual replay playback, and use the browser timezone for scheduled countdowns.
+- Changed direct linked-image previews to retain long source URLs and cache validated remote images locally so expiring social-media CDN URLs no longer produce blank cards.
 - Changed Pilot Social feeds to preserve composer text and independent column scroll positions while silently merging refreshed network data; the feed viewport no longer extends behind the application status bar.
 - Changed current-style app menu and tab active states to a deeper blood-red illuminated treatment while preserving the existing hover behavior.
 - Changed app voice-bubble hover help to open beside the actual pointer instead of appearing remotely from the hovered control.
