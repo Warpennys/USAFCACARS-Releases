@@ -130,7 +130,6 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
-- Fixed public Facebook video posts that remained clickable cover images by resolving the post's Facebook video identifier and using the official direct video player on both the website and desktop feed.
 - Fixed flight cancellation so the lower-left airport card returns from the arrival target to the pilot's actual/last airport context.
 - Fixed quick-action start/load visual-state updates so labels remain visible and the correct button stays illuminated.
 - Fixed the pilot/operations rail layout so populated live data does not resize, clip, or force unnecessary scrolling at the normal application size.
@@ -838,7 +837,6 @@ Use this template for future versions:
 
 ### Fixed
 
-- Fixed public Facebook video posts that remained clickable cover images by resolving the post's Facebook video identifier and using the official direct video player on both the website and desktop feed.
 - Corrected defects
 
 ### Security
