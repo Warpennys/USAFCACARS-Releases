@@ -52,7 +52,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
-- Fixed public Facebook video posts that remained clickable cover images by resolving the post's Facebook video identifier and using the official direct video player on both the website and desktop feed.
+- Fixed public Facebook video posts that remained clickable cover images by resolving the post's Facebook video identifier and using the official direct video player on both the website and desktop feed; Facebook Story URLs now use an explicit sign-in-aware external card when Facebook provides no embeddable player.
 - Fixed blank Twitch live and replay posts by adding host-verified HTTPS player embeds on the website, native secure Twitch playback in USAFCACARS, responsive minimum player sizing, and a visible Watch Live fallback for the HTTP-only local development site.
 - Fixed the Pilot Social admin control-center Blade crash caused by a malformed Laravel `Str` class reference, and replaced adjacent damaged separator glyphs with encoding-stable HTML bullets.
 - Fixed a dashboard startup crash caused by the EFB toolbar icon being present on disk but omitted from WPF packaged resources; toolbar icon loading now uses an embedded resource plus a nonfatal fallback.
