@@ -17,6 +17,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added synchronized scheduled-Twitch premiere cards on the site and in USAFCACARS with a large countdown, animated full-frame aviation/radar background, automatic zero-time player transition, and persistent Watch Live access.
 - Added the shared **Pilot Social notification center** on the website and in USAFCACARS, including unread counts, category filters, read/unread and dismiss actions, pilot avatars/ranks, destination actions, and user-controlled notification preferences governed by administrator availability.
 - Added native Unicode emoji entry for Pilot Social posts, comments, and private transmissions plus expressive Like, Love, Laugh, Celebrate, and Wow reactions.
 - Added optional birthday profiles and privacy-aware reminders with independent birthday visibility, year visibility, and notification controls.
