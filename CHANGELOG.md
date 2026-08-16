@@ -17,6 +17,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and web-native direct MP4/M4V/WebM/OGG links; formats browsers cannot decode inline open through the system player, while ordinary websites retain safe rich preview cards.
+- Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - Added synchronized scheduled-Twitch premiere cards on the site and in USAFCACARS with a large countdown, animated full-frame aviation/radar background, automatic zero-time player transition, and persistent Watch Live access.
 - Added playable Facebook post/video cards to Pilot Social on the website and in USAFCACARS, including safe iframe-code normalization, canonical post links, responsive containment, and backward-compatible rendering of existing Facebook shares.
 - Fixed Facebook shares falling back to clickable image cards in currently installed ACARS clients by publishing them through the established playable-video preview contract.
@@ -40,6 +42,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Changed Twitch live broadcasts to render through the secure Pilot Social player on the website and USAFCACARS, start muted autoplay when the broadcast is live, preserve manual replay playback, and use the browser timezone for scheduled countdowns.
 - Changed direct linked-image previews to retain long source URLs and cache validated remote images locally so expiring social-media CDN URLs no longer produce blank cards.
 - Changed Pilot Social feeds to preserve composer text and independent column scroll positions while silently merging refreshed network data; the feed viewport no longer extends behind the application status bar.
@@ -54,6 +57,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
 - Fixed Facebook posts showing copyright-blocked direct-player errors by using Facebook's official full-post widget at a larger responsive height so multi-video posts and native controls remain together when Facebook permits embedding; Facebook Story URLs use an explicit sign-in-aware external card because Facebook provides no Story embed player.
 - Fixed copied direct image links—including Facebook CDN JPEGs—being discarded as generic non-HTML links; supported image URLs now render responsively in the website lightbox and desktop feed.
 - Fixed blank Twitch live and replay posts by adding host-verified HTTPS player embeds on the website, native secure Twitch playback in USAFCACARS, responsive minimum player sizing, and a visible Watch Live fallback for the HTTP-only local development site.
@@ -115,6 +119,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
+- Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - Added the responsive, instrument-panel-inspired right operations rail with populated pilot, operations-grid, quick-action, and ACARS flight-data sections.
 - Added separate **Load Flight to Planner** and **Load Flight Directly** controls with high-definition icons and independent active/progress states.
 - Added configurable direct-load startup states for cold and dark, ready for engine start, engines running, and ready for taxi.
@@ -124,6 +130,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Rebuilt the right-side quick actions as riveted, dark-gunmetal cockpit controls with stable labels, icons, indicator lamps, and responsive sizing.
 - Limited left-rail scrolling to the navigation links so connection, airport/weather, and version cards remain visible at normal application sizes.
 - Made the airport weather strip fit its complete flight category, wind, visibility, temperature, altimeter, condition, and moon-phase text without right-edge truncation.
@@ -133,6 +140,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
 - Fixed flight cancellation so the lower-left airport card returns from the arrival target to the pilot's actual/last airport context.
 - Fixed quick-action start/load visual-state updates so labels remain visible and the correct button stays illuminated.
 - Fixed the pilot/operations rail layout so populated live data does not resize, clip, or force unnecessary scrolling at the normal application size.
@@ -142,6 +150,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
+- Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - Added the first operational Communications Station with independent COM1 and COM2 selection.
 - Added active/standby frequency transfer, mouse tuning, and two-way SimConnect radio synchronization.
 - Added global push-to-talk that remains available while USAFCACARS is not focused.
@@ -154,6 +164,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Improved microphone normalization, receive buffering, and stale-packet handling to reduce low or garbled voice playback.
 - Updated Communications Station, installation, testing, troubleshooting, and support documentation.
 - Preserved the expanded communications-center artwork and roadmap as explicitly planned concepts beyond the current radio implementation.
@@ -173,6 +184,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
+- Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 #### Application Foundation
 
 - Established the current USAFCACARS `1.0.4` development baseline.
@@ -709,6 +722,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Clarified that USAFCACARS is proprietary software and is not open source.
 - Standardized the Composer license direction as:
 
@@ -832,14 +846,18 @@ Use this template for future versions:
 
 ### Added
 
+- Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
+- Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - New features
 
 ### Changed
 
+- Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Behavior or interface changes
 
 ### Fixed
 
+- Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
 - Corrected defects
 
 ### Security

@@ -1073,13 +1073,13 @@ Pilot Social is now the shared community and notification layer for the phpVMS w
 Implemented Pilot Social capabilities include:
 
 - A live network feed with pilot identity, avatar, rank, media/link presentation, comments, editing, deletion, sharing, and silent updates that preserve the pilot's scroll and composer state
-- Scheduled Twitch broadcasts with a server-synchronized countdown, animated aviation broadcast background, automatic in-place player transition, and persistent Watch Live access
-- Playable public Facebook post and video embeds from either a shared post URL or pasted iframe code, normalized safely for responsive website and ACARS feed playback
+- Scheduled Twitch broadcasts with a server-synchronized countdown, animated aviation broadcast background, automatic in-place player transition, persistent Watch Live access, and correct live/VOD/clip players
+- Responsive, contained playback for public Facebook embeds, YouTube videos/live links, Twitch, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and web-native direct video files, with safe rich cards for sites that disallow framing
 - Independent scrolling feed and discovery columns with remembered collapsed pilot panels
 - Notification badges, category filters, read/unread state, mark-all-read, dismiss, and contextual actions
 - Administrator-controlled category availability combined with clear per-pilot notification preferences
 - Optional birthday month/day, separately controlled year visibility, reminders, profile actions, and private birthday transmissions
-- Unicode emoji entry in posts, comments, and private transmissions
+- A locally bundled, searchable 1,697-entry emoji library behind compact smiley dropdowns for posts, comments, private transmissions, and reactions
 - Like, Love, Laugh, Celebrate, and Wow reactions
 - Meaningful automated aviation/community cards through a shared internal event-publisher interface
 - Server-authoritative **Toss Paper Airplane** buddy interactions, return tosses, randomized outcome text, cooldown enforcement, current-period and all-time leaderboards, and lifetime scoring that survives detailed-history cleanup
