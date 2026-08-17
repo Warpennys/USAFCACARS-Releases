@@ -50,6 +50,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Rebuilt the phpVMS top-navigation world clocks as pure-CSS aviation instruments with machined multi-ring bezels, recessed illuminated dials, dimensional metal hands, glass reflections, smooth sweep seconds, cached timezone formatters, and responsive city/time readouts while preserving the six live world time zones.
+
 - Changed site navigation so current destinations remain visible across landing and child routes: standalone/module links use the blood-red active state, while links inside an already-active dropdown use gold across desktop, mini, and mobile navigation.
 - Refined the phpVMS top navigation into a compact instrument-style command bar with unified control sizing, cleaner spacing, aligned icons and dropdowns, a deep blood-red current-page state, responsive mobile behavior, and preserved module, language, theme, session, dashboard, and administrator actions.
 - Restyled the existing phpVMS left navigation in its original sidebar template and CSS with recessed blue-black instrument buttons, blood-red active/open states, cyan icon accents, refined nested navigation, horizontally and vertically centered full and mini division/wordmark branding, matching pilot and Crew Mail panels, a separate service-years card, and the original borderless rank presentation with a centered silver-first service-star configuration, true optical centering for injected module icons, keyboard focus treatment, hover-revealed blood-red scrolling, and proportional full/mini-sidebar layouts without changing the menu hierarchy or destinations.
@@ -144,6 +146,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Rebuilt the phpVMS top-navigation world clocks as pure-CSS aviation instruments with machined multi-ring bezels, recessed illuminated dials, dimensional metal hands, glass reflections, smooth sweep seconds, cached timezone formatters, and responsive city/time readouts while preserving the six live world time zones.
+
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Rebuilt the right-side quick actions as riveted, dark-gunmetal cockpit controls with stable labels, icons, indicator lamps, and responsive sizing.
 - Limited left-rail scrolling to the navigation links so connection, airport/weather, and version cards remain visible at normal application sizes.
@@ -179,6 +183,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 - Added GitHub-compatible tab-style README navigation for major documentation sections.
 
 ### Changed
+
+- Rebuilt the phpVMS top-navigation world clocks as pure-CSS aviation instruments with machined multi-ring bezels, recessed illuminated dials, dimensional metal hands, glass reflections, smooth sweep seconds, cached timezone formatters, and responsive city/time readouts while preserving the six live world time zones.
 
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Improved microphone normalization, receive buffering, and stale-packet handling to reduce low or garbled voice playback.
@@ -740,6 +746,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Rebuilt the phpVMS top-navigation world clocks as pure-CSS aviation instruments with machined multi-ring bezels, recessed illuminated dials, dimensional metal hands, glass reflections, smooth sweep seconds, cached timezone formatters, and responsive city/time readouts while preserving the six live world time zones.
+
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Clarified that USAFCACARS is proprietary software and is not open source.
 - Standardized the Composer license direction as:
@@ -871,6 +879,8 @@ Use this template for future versions:
 - New features
 
 ### Changed
+
+- Rebuilt the phpVMS top-navigation world clocks as pure-CSS aviation instruments with machined multi-ring bezels, recessed illuminated dials, dimensional metal hands, glass reflections, smooth sweep seconds, cached timezone formatters, and responsive city/time readouts while preserving the six live world time zones.
 
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Behavior or interface changes
