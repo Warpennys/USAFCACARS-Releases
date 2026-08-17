@@ -17,6 +17,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Moved Pilot Social rank artwork directly beneath each pilot avatar in both the website and USAFCACARS feeds, keeping author metadata aligned and eliminating the detached far-right rank badge.
 - Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and web-native direct MP4/M4V/WebM/OGG links; formats browsers cannot decode inline open through the system player, while ordinary websites retain safe rich preview cards.
 - Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - Added synchronized scheduled-Twitch premiere cards on the site and in USAFCACARS with a large countdown, animated full-frame aviation/radar background, automatic zero-time player transition, and persistent Watch Live access.
