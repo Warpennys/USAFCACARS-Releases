@@ -143,7 +143,6 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
-- Refined the phpVMS top navigation into a compact instrument-style command bar with unified control sizing, cleaner spacing, aligned icons and dropdowns, a deep blood-red current-page state, responsive mobile behavior, and preserved module, language, theme, session, dashboard, and administrator actions.
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Rebuilt the right-side quick actions as riveted, dark-gunmetal cockpit controls with stable labels, icons, indicator lamps, and responsive sizing.
 - Limited left-rail scrolling to the navigation links so connection, airport/weather, and version cards remain visible at normal application sizes.
@@ -180,7 +179,6 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
-- Refined the phpVMS top navigation into a compact instrument-style command bar with unified control sizing, cleaner spacing, aligned icons and dropdowns, a deep blood-red current-page state, responsive mobile behavior, and preserved module, language, theme, session, dashboard, and administrator actions.
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Improved microphone normalization, receive buffering, and stale-packet handling to reduce low or garbled voice playback.
 - Updated Communications Station, installation, testing, troubleshooting, and support documentation.
@@ -741,7 +739,6 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
-- Refined the phpVMS top navigation into a compact instrument-style command bar with unified control sizing, cleaner spacing, aligned icons and dropdowns, a deep blood-red current-page state, responsive mobile behavior, and preserved module, language, theme, session, dashboard, and administrator actions.
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Clarified that USAFCACARS is proprietary software and is not open source.
 - Standardized the Composer license direction as:
@@ -874,7 +871,6 @@ Use this template for future versions:
 
 ### Changed
 
-- Refined the phpVMS top navigation into a compact instrument-style command bar with unified control sizing, cleaner spacing, aligned icons and dropdowns, a deep blood-red current-page state, responsive mobile behavior, and preserved module, language, theme, session, dashboard, and administrator actions.
 - Changed Pilot Social image handling to detect and cache JPG, JPEG, PNG/APNG, GIF, WebP, AVIF, BMP, ICO, SVG, image-CDN URLs, and extensionless image responses; modern formats retain animation where supported or normalize to PNG for cross-client display.
 - Behavior or interface changes
 
