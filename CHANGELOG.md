@@ -17,6 +17,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Redesigned contextual Pilot Social profile summaries as instrument-style records with the selected pilot's assigned DIVISION card and real logo, home/current locations, country code with real flag, permission-aware SUPER ADMIN/staff/ACTIVE PILOT role, and profile-only join-date service stars (gold for completed years and silver for the year in progress).
 - Added native Pilot Social pilot activity and awards pages, linked profile KPIs, assigned-airline branding, rank progression, private finance summaries, and collapsible landing trends on the website and in USAFCACARS.
 - Added fully contextual public pilot profiles: both navigation rails, profile links, KPI destinations, activity, awards, airline identity, country flag, and rank data now follow the pilot being viewed while owner-only settings and private finance remain protected.
 - Restyled Pilot Social rank identity headers as dark recessed aviation panels with the rank artwork enlarged and flush left, the rank name aligned right, and the redundant pilot ID removed.

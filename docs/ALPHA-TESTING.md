@@ -205,10 +205,13 @@ Verify that the pilot dashboard and profile display the correct available inform
 - Pilot name
 - Pilot ID
 - Callsign
-- Division or airline
+- Assigned division name and the real division logo
+- Country code and matching country flag
+- Network role: SUPER ADMIN, configured staff role, or ACTIVE PILOT
 - Rank
 - Rank image
 - Avatar
+- Actual join date and profile-only service stars (gold for completed years, silver for the year in progress)
 - Flight hours
 - Completed flights
 - Current airport

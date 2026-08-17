@@ -1073,6 +1073,7 @@ Pilot Social is now the shared community and notification layer for the phpVMS w
 Implemented Pilot Social capabilities include:
 
 - A live network feed with pilot identity, avatar, rank, media/link presentation, comments, editing, deletion, sharing, and silent updates that preserve the pilot's scroll and composer state
+- Contextual pilot records with the selected pilot's real assigned division/logo, country flag, home and current location, permission-aware network role, linked operations totals, and a profile-only join-date service display with gold completed-year stars plus a silver current-year star
 - Scheduled Twitch broadcasts with a server-synchronized countdown, animated aviation broadcast background, automatic in-place player transition, persistent Watch Live access, and correct live/VOD/clip players
 - Responsive, contained playback for public Facebook single-video, reel, and split multi-video post embeds, YouTube videos/live links, Twitch, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and web-native direct video files, with safe rich cards for sites that disallow framing
 - Independent scrolling feed and discovery columns with remembered collapsed pilot panels
