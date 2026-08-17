@@ -50,7 +50,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
-- Rebuilt the phpVMS top-navigation world clocks as pure-CSS aviation instruments with machined multi-ring bezels, recessed illuminated dials, dimensional metal hands, glass reflections, smooth sweep seconds, cached timezone formatters, and responsive city/time readouts while preserving the six live world time zones.
+- Rebuilt the phpVMS top-navigation world clocks as clean, legible aviation chronometers with machined multi-ring bezels, deep illuminated dials, four cardinal numerals, eight baton markers, dimensional hands, restrained glass reflections, smooth sweep seconds, and live six-zone timekeeping; the mounting plate now uses the site's existing boarded-metal texture, the red city names use a recessed heat-stamped treatment, and each digital readout sits in a compact charred inset window fully below the board seams.
 
 - Changed site navigation so current destinations remain visible across landing and child routes: standalone/module links use the blood-red active state, while links inside an already-active dropdown use gold across desktop, mini, and mobile navigation.
 - Refined the phpVMS top navigation into a compact instrument-style command bar with unified control sizing, cleaner spacing, aligned icons and dropdowns, a deep blood-red current-page state, responsive mobile behavior, and preserved module, language, theme, session, dashboard, and administrator actions.
