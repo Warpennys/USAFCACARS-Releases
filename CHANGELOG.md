@@ -17,6 +17,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added native Pilot Social pilot activity and awards pages, linked profile KPIs, assigned-airline branding, rank progression, private finance summaries, and collapsible landing trends on the website and in USAFCACARS.
+- Added fully contextual public pilot profiles: both navigation rails, profile links, KPI destinations, activity, awards, airline identity, country flag, and rank data now follow the pilot being viewed while owner-only settings and private finance remain protected.
+- Restyled Pilot Social rank identity headers as dark recessed aviation panels with the rank artwork enlarged and flush left, the rank name aligned right, and the redundant pilot ID removed.
+- Added independent optional-module capability discovery: when USAFCSocial is missing, disabled, or awaiting migrations, ACARS hides all actionable Social controls and returns safely to Dashboard; a freshly installed module is detected automatically while signed in.
 - Moved Pilot Social rank artwork directly beneath each pilot avatar in both the website and USAFCACARS feeds, keeping author metadata aligned and eliminating the detached far-right rank badge.
 - Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and web-native direct MP4/M4V/WebM/OGG links; formats browsers cannot decode inline open through the system player, while ordinary websites retain safe rich preview cards.
 - Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
@@ -121,6 +125,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added native Pilot Social pilot activity and awards pages, linked profile KPIs, assigned-airline branding, rank progression, private finance summaries, and collapsible landing trends on the website and in USAFCACARS.
+- Added independent optional-module capability discovery: when USAFCSocial is missing, disabled, or awaiting migrations, ACARS hides all actionable Social controls and returns safely to Dashboard; a freshly installed module is detected automatically while signed in.
 - Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
 - Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - Added the responsive, instrument-panel-inspired right operations rail with populated pilot, operations-grid, quick-action, and ACARS flight-data sections.
@@ -152,6 +158,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added native Pilot Social pilot activity and awards pages, linked profile KPIs, assigned-airline branding, rank progression, private finance summaries, and collapsible landing trends on the website and in USAFCACARS.
+- Added independent optional-module capability discovery: when USAFCSocial is missing, disabled, or awaiting migrations, ACARS hides all actionable Social controls and returns safely to Dashboard; a freshly installed module is detected automatically while signed in.
 - Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
 - Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - Added the first operational Communications Station with independent COM1 and COM2 selection.
@@ -186,6 +194,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added native Pilot Social pilot activity and awards pages, linked profile KPIs, assigned-airline branding, rank progression, private finance summaries, and collapsible landing trends on the website and in USAFCACARS.
+- Added independent optional-module capability discovery: when USAFCSocial is missing, disabled, or awaiting migrations, ACARS hides all actionable Social controls and returns safely to Dashboard; a freshly installed module is detected automatically while signed in.
 - Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
 - Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 #### Application Foundation
@@ -848,6 +858,8 @@ Use this template for future versions:
 
 ### Added
 
+- Added native Pilot Social pilot activity and awards pages, linked profile KPIs, assigned-airline branding, rank progression, private finance summaries, and collapsible landing trends on the website and in USAFCACARS.
+- Added independent optional-module capability discovery: when USAFCSocial is missing, disabled, or awaiting migrations, ACARS hides all actionable Social controls and returns safely to Dashboard; a freshly installed module is detected automatically while signed in.
 - Added responsive in-feed players for YouTube videos/live links, Twitch live/VOD/clips, Vimeo, Dailymotion, TikTok, Instagram, Streamable, Rumble, Loom, Kick, and direct MP4/M4V/WebM/OGG/MOV links, while ordinary websites retain safe rich preview cards.
 - Added a physically bundled Twemoji stylesheet and searchable 1,697-entry emoji catalog, presented through compact smiley dropdowns for posts, comments, private messages, and reactions.
 - New features
