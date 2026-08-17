@@ -228,6 +228,13 @@ Also test missing or incomplete profile content:
 - Missing optional fields
 
 The application should use a clean fallback rather than show a broken image or crash.
+### Pilot Social settings persistence
+
+- Enter a birthday and a website with the optional favorite-aircraft fields empty.
+- Save, reload the settings page, and confirm both values remain populated.
+- Confirm a domain entered without a scheme is saved as an HTTPS URL.
+- Enter an actually invalid value and confirm the form preserves the other submitted values and displays a clear validation error.
+- Repeat through the authenticated ACARS API and confirm the same saved settings are returned.
 
 ---
 

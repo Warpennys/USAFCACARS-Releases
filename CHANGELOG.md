@@ -64,6 +64,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed Pilot Social profile settings silently rejecting and clearing birthday/website entries when the optional favorite-aircraft row was blank; website domains are normalized to HTTPS, failed submissions retain entered values, and validation errors are now shown.
 - Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
 - Fixed Facebook posts showing copyright-blocked direct-player errors by using Facebook's official full-post widget at a larger responsive height so multi-video posts and native controls remain together when Facebook permits embedding; Facebook Story URLs use an explicit sign-in-aware external card because Facebook provides no Story embed player.
 - Fixed copied direct image links—including Facebook CDN JPEGs—being discarded as generic non-HTML links; supported image URLs now render responsively in the website lightbox and desktop feed.
