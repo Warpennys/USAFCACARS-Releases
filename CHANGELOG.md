@@ -41,6 +41,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 - Added the full **Weather Operations Center**, opened from the left weather card, with synchronized departure/arrival summaries, selectable en-route METAR stations, route-aware station sampling, Esri satellite imagery, animated RainViewer precipitation, infrared imagery, a live SimConnect aircraft marker, explicit refresh, and last-valid-snapshot retention.
 - Added the aircraft operations page and persistent MSFS 2024 aircraft catalog, including installed/streamed/Official/Community discovery, exact active-title/livery matching, cached model cards, aircraft library browsing, operational data, and an official blue ACARS image-unavailable fallback.
+- Added 24 physically bundled MSFS 2020 aircraft presentation assets, resolved by ICAO without mapping or depending on the external source folder; each internal image is decoded and reused once across matching variants.
 - Added the private MSFS 2024 EFB bridge workflow for acknowledged planner transfer, presentation-card discovery, aircraft matching, direct-load state selection, and Community-package installation path handling.
 - Added the unified instrument-style Flight Planner for Scheduled, SimBrief, Free Flight, Charter, and Tours workflows with route, weather, fuel, aircraft, NOTAM, ATC/frequency, document, procedure, gate, and simulator-load tools.
 - Added a redesigned Tours workspace with cached rotating banners, horizontal image flight strips, robust flexible tour parsing, dynamic airline wording, achievement artwork, leg progress, and unified-planner launch.
@@ -52,6 +53,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 - Added USAFCACARS Map Settings for selecting the live real-world aircraft provider, including ADSB.lol, ADSB.fi, and OpenSky fallback support.
 
 ### Changed
+
+- Changed the Aircraft Catalog to group exact simulator models by ICAO, present installed liveries as switchable tabs, and load the currently viewed livery. The full live inventory remains searchable while card realization and image decoding are bounded for stable memory use.
+- Changed aircraft artwork synchronization to cache-first operation with silent MSFS installation-change detection, pilot approval, an in-window progress instrument, and one shared internal asset per ICAO.
 
 - Changed center-workspace expansion into a single remembered pilot preference across Dashboard, Bids, Tours, Flight Tracking, Live Map, Weather Center, Profile, Aircraft, Pilot Social, Settings, Help, Release Center, and internal page transitions. A fresh launch still presents Dashboard collapsed without overwriting the saved preference; navigating away and returning applies the remembered expanded/collapsed state.
 - Rebuilt the phpVMS top-navigation world clocks as clean, legible aviation chronometers with machined multi-ring bezels, deep illuminated dials, four cardinal numerals, eight baton markers, dimensional hands, restrained glass reflections, smooth sweep seconds, and live six-zone timekeeping; a newly polished USAFC logo with a cold graphite/blue-steel heat-stamp impression and the clocks now share one continuous boarded-metal instrument plate on desktop, the same plate wraps evenly around the logo when clocks hide on tablet, and its mobile width reserves an even gap for the menu control without shifting the logo. Red city names use a recessed heat-stamped treatment and each digital readout sits in a compact charred inset window fully below the board seams.
@@ -73,6 +77,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 - Changed local settings persistence to atomic UTF-8 writes with automatic empty/NUL/invalid JSON recovery and timestamped diagnostic backups.
 
 ### Fixed
+
+- Fixed incomplete SimConnect aircraft-catalog responses being discarded when the simulator timed out after returning valid partial results.
+- Fixed the Aircraft Catalog trapping pilots without a return control, and fixed hidden/thousands-of-card artwork realization causing excessive memory use.
 
 - Fixed Weather Center **FIT ROUTE** so it re-centers the complete loaded route after airport or station exploration.
 - Fixed the live aircraft marker intercepting airport clicks; departure and arrival station reports remain selectable when the aircraft occupies the same coordinates.
