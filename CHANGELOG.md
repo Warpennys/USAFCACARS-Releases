@@ -73,6 +73,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed Weather Center **FIT ROUTE** so it re-centers the complete loaded route after airport or station exploration.
+- Fixed the live aircraft marker intercepting airport clicks; departure and arrival station reports remain selectable when the aircraft occupies the same coordinates.
+- Fixed silent arrival/en-route ATIS, AWOS, and ASOS reception with supplemental local weather audio when MSFS has no native station audio; receiver mute state and delayed SimConnect frequency telemetry no longer cancel the broadcast.
+- Moved route summary, departure/arrival observations, selected-station identity, and raw METAR computer data into black riveted instrument windows.
 - Restored the approved USAFC logo optical scale, left inset, and vertical baseline inside the top chronometer board without moving the board or clocks; tablet and mobile keep their prior responsive positioning.
 - Fixed Pilot Social profile settings silently rejecting and clearing birthday/website entries when the optional favorite-aircraft row was blank; website domains are normalized to HTTPS, failed submissions retain entered values, and validation errors are now shown.
 - Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
@@ -161,6 +165,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed Weather Center **FIT ROUTE** so it re-centers the complete loaded route after airport or station exploration.
+- Fixed the live aircraft marker intercepting airport clicks; departure and arrival station reports remain selectable when the aircraft occupies the same coordinates.
+- Fixed silent arrival/en-route ATIS, AWOS, and ASOS reception with supplemental local weather audio when MSFS has no native station audio; receiver mute state and delayed SimConnect frequency telemetry no longer cancel the broadcast.
+- Moved route summary, departure/arrival observations, selected-station identity, and raw METAR computer data into black riveted instrument windows.
 - Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
 - Fixed flight cancellation so the lower-left airport card returns from the arrival target to the pilot's actual/last airport context.
 - Fixed quick-action start/load visual-state updates so labels remain visible and the correct button stays illuminated.
@@ -887,6 +895,10 @@ Use this template for future versions:
 
 ### Fixed
 
+- Fixed Weather Center **FIT ROUTE** so it re-centers the complete loaded route after airport or station exploration.
+- Fixed the live aircraft marker intercepting airport clicks; departure and arrival station reports remain selectable when the aircraft occupies the same coordinates.
+- Fixed silent arrival/en-route ATIS, AWOS, and ASOS reception with supplemental local weather audio when MSFS has no native station audio; receiver mute state and delayed SimConnect frequency telemetry no longer cancel the broadcast.
+- Moved route summary, departure/arrival observations, selected-station identity, and raw METAR computer data into black riveted instrument windows.
 - Fixed older saved image/video posts remaining generic or blank by repairing stale preview metadata in place, with no repost required; redirecting website links now resolve through public-address-validated hops.
 - Corrected defects
 

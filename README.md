@@ -474,6 +474,10 @@ Current operational-alpha capabilities include:
 - Esri satellite imagery and live SimConnect aircraft position
 - Animated RainViewer precipitation history and infrared imagery
 - Station visibility, route fitting, explicit refresh, and last-valid-snapshot retention
+- Reliable **FIT ROUTE** re-centering after map exploration
+- Click-through live aircraft positioning so co-located airport markers and reports remain selectable
+- Native departure ATIS plus supplemental arrival/en-route ATIS, AWOS, and ASOS weather audio when MSFS supplies no native broadcast
+- Black riveted route, airport, station, and raw-METAR data instruments
 
 Planned weather expansion includes:
 
