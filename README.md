@@ -136,6 +136,7 @@ USAFCACARS is designed around a persistent operations shell with:
 - A continuous operations feed
 
 Selected modules can expand into the large center workspace between the permanent left and right rails. This allows a live map, flightboard, TRACON scope, briefing package, aircraft panel, or another major tool to use the full working area without losing access to the pilot and flight controls.
+The pilot's expanded/collapsed choice follows them between center pages and is saved for later sessions. On a fresh launch only the initial Dashboard view is deliberately collapsed; after navigating, Dashboard and every other center page use the remembered state until the pilot changes it.
 
 ### Current Shell Rail Design
 

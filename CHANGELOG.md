@@ -53,6 +53,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Changed center-workspace expansion into a single remembered pilot preference across Dashboard, Bids, Tours, Flight Tracking, Live Map, Weather Center, Profile, Aircraft, Pilot Social, Settings, Help, Release Center, and internal page transitions. A fresh launch still presents Dashboard collapsed without overwriting the saved preference; navigating away and returning applies the remembered expanded/collapsed state.
 - Rebuilt the phpVMS top-navigation world clocks as clean, legible aviation chronometers with machined multi-ring bezels, deep illuminated dials, four cardinal numerals, eight baton markers, dimensional hands, restrained glass reflections, smooth sweep seconds, and live six-zone timekeeping; a newly polished USAFC logo with a cold graphite/blue-steel heat-stamp impression and the clocks now share one continuous boarded-metal instrument plate on desktop, the same plate wraps evenly around the logo when clocks hide on tablet, and its mobile width reserves an even gap for the menu control without shifting the logo. Red city names use a recessed heat-stamped treatment and each digital readout sits in a compact charred inset window fully below the board seams.
 
 - Changed site navigation so current destinations remain visible across landing and child routes: standalone/module links use the blood-red active state, while links inside an already-active dropdown use gold across desktop, mini, and mobile navigation.
