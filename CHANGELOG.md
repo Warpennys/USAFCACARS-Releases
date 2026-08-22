@@ -78,6 +78,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed Aircraft Catalog ICAO normalization for Airbus A330 variants: A330-200 and A330-300 packages now resolve and group under `A330`, while the unrelated Extra 330 remains `E330`.
+- Fixed Aircraft Catalog responsiveness with a finite virtualized viewport, true vertical scrolling, full-width aircraft strips, consolidated same-ICAO variants/liveries, compact unclipped controls, cache-first page loading, paged realization, and an explicit update workflow that performs simulator discovery only after pilot confirmation.
 - Fixed incomplete SimConnect aircraft-catalog responses being discarded when the simulator timed out after returning valid partial results.
 - Fixed the Aircraft Catalog trapping pilots without a return control, and fixed hidden/thousands-of-card artwork realization causing excessive memory use.
 

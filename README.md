@@ -729,11 +729,11 @@ The larger communications-center concept remains part of the project roadmap. It
 The Aircraft workspace now separates the live airframe from the installed-aircraft catalog. The **CURRENT AIRCRAFT** control always returns to the operational view, while **AIRCRAFT CATALOG** opens a cache-first inventory discovered directly from MSFS 2024.
 
 - Installed, streamed, Official, and Community aircraft are discovered through live SimConnect catalog enumeration.
-- Rows are named and searchable by ICAO/model rather than by an external folder mapping.
-- Liveries for the same exact simulator model are presented as tabs; the livery in view is the one sent to **LOAD IN SIM**.
-- The complete inventory remains searchable while the UI renders a bounded virtualized slice for stable memory use.
+- Rows are named and searchable by normalized ICAO/model rather than by an external folder mapping. Airbus A330-200 and A330-300 packages are grouped as `A330`; the aerobatic Extra 330 remains the distinct `E330` type.
+- Variants and liveries for the same ICAO are consolidated into one full-width aircraft strip; the selection in view is the one sent to **LOAD IN SIM**.
+- The complete inventory remains searchable while a finite, vertically scrollable viewport renders paged, recycled rows and lazy artwork for stable memory use.
 - Twenty-four supplied MSFS 2020 presentation images are physically bundled inside the desktop application and shared once per ICAO. The original source folder is not required at runtime.
-- Installed-aircraft changes are detected silently. After pilot confirmation, a visible in-window progress instrument updates the local database and available artwork cache.
+- Installed-aircraft changes are detected silently. The update dialog explains whether a refresh is needed, waits for **START**, reports progress, and updates the app-owned local inventory and artwork cache without blocking ordinary catalog browsing.
 - Existing simulator/package artwork remains preferred when available, with the internal ICAO art and official unavailable card providing deterministic fallbacks.
 
 ## Aircraft Control
