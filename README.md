@@ -728,9 +728,9 @@ The larger communications-center concept remains part of the project roadmap. It
 
 The Aircraft workspace now separates the live airframe from the installed-aircraft catalog. The **CURRENT AIRCRAFT** control always returns to the operational view, while **AIRCRAFT CATALOG** opens a cache-first inventory discovered directly from MSFS 2024.
 
-- Installed, streamed, Official, and Community aircraft are discovered through live SimConnect catalog enumeration.
+- Installed, streamed, Official, and Community airplanes and helicopters are discovered through aircraft-only live SimConnect catalog enumeration; unrelated ground vehicles, animals, boats, and other SimObjects are excluded.
 - Rows are named and searchable by normalized ICAO/model rather than by an external folder mapping. Airbus A330-200 and A330-300 packages are grouped as `A330`; the aerobatic Extra 330 remains the distinct `E330` type.
-- Variants and liveries for the same ICAO are consolidated into one full-width aircraft strip; the selection in view is the one sent to **LOAD IN SIM**.
+- Variants and liveries for the same ICAO are consolidated into one full-width aircraft strip. Five responsive strips are shown per page in the expanded workspace; each displays the default and selected paintjob artwork side by side, uses readable three-across selection controls, and sends the selected paintjob through the centered **LOAD IN SIM** control.
 - The complete inventory remains searchable while a finite, vertically scrollable viewport renders paged, recycled rows and lazy artwork for stable memory use.
 - Twenty-four supplied MSFS 2020 presentation images are physically bundled inside the desktop application and shared once per ICAO. The original source folder is not required at runtime.
 - Installed-aircraft changes are detected silently. The update dialog explains whether a refresh is needed, waits for **START**, reports progress, and updates the app-owned local inventory and artwork cache without blocking ordinary catalog browsing.
