@@ -78,6 +78,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed the remaining Aircraft Catalog artwork delay and page-to-page memory growth: catalog updates now finish every available persistent display thumbnail before reporting completion, existing local caches self-complete silently in the background, completed thumbnails are never regenerated, the in-memory bitmap cache is bounded, and off-screen page/paintjob images are released while their local thumbnails remain immediately reusable. Runtime stress verification covered 25 forward pages plus 25 cached return pages with the client responsive and memory stable.
+
 - Fixed slow/blank Aircraft Catalog artwork by removing API/simulator discovery from image realization, proactively hydrating each visible page and paintjob selector from the app-local cache, decoding on bounded background STA workers, persisting 512-pixel thumbnails across sessions, deduplicating simultaneous image requests, and indexing nested MSFS Official `OneStore` packages. Explicit catalog updates now allow larger packages enough time to complete without blocking the UI.
 - Fixed Aircraft Catalog paintjob identity so the simulator default remains the default, named variants display only their own exact cached artwork, previously captured MSFS repaint cards remain reusable, and selecting a paintjob closes the selector without changing the default card.
 - Fixed incomplete aircraft-artwork caching and catalog stalls by replacing the serial all-variant package crawl with a bounded background cache scan, shared package-directory indexing, per-item time limits, incremental progress, and explicit exact-artwork/pending counts.
@@ -179,6 +181,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 - Improved cached image reuse and window-control glyph rendering to prevent visual flashing and corrupted minimize/maximize/close symbols.
 
 ### Fixed
+
+- Fixed the remaining Aircraft Catalog artwork delay and page-to-page memory growth: catalog updates now finish every available persistent display thumbnail before reporting completion, existing local caches self-complete silently in the background, completed thumbnails are never regenerated, the in-memory bitmap cache is bounded, and off-screen page/paintjob images are released while their local thumbnails remain immediately reusable. Runtime stress verification covered 25 forward pages plus 25 cached return pages with the client responsive and memory stable.
 
 - Fixed Weather Center **FIT ROUTE** so it re-centers the complete loaded route after airport or station exploration.
 - Fixed the live aircraft marker intercepting airport clicks; departure and arrival station reports remain selectable when the aircraft occupies the same coordinates.
@@ -909,6 +913,8 @@ Use this template for future versions:
 - Behavior or interface changes
 
 ### Fixed
+
+- Fixed the remaining Aircraft Catalog artwork delay and page-to-page memory growth: catalog updates now finish every available persistent display thumbnail before reporting completion, existing local caches self-complete silently in the background, completed thumbnails are never regenerated, the in-memory bitmap cache is bounded, and off-screen page/paintjob images are released while their local thumbnails remain immediately reusable. Runtime stress verification covered 25 forward pages plus 25 cached return pages with the client responsive and memory stable.
 
 - Fixed Weather Center **FIT ROUTE** so it re-centers the complete loaded route after airport or station exploration.
 - Fixed the live aircraft marker intercepting airport clicks; departure and arrival station reports remain selectable when the aircraft occupies the same coordinates.
