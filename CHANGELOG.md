@@ -54,6 +54,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Unified the Aircraft, Aircraft Control, and Aircraft Catalog workspaces under the same riveted Aircraft Operations header. The selected destination now retains a full-bright green active lamp, and the Aircraft Control header provides working direct navigation back to Current Aircraft or the Catalog without covering its live WebView instruments.
+
 - Changed the Aircraft Catalog to group exact simulator models by ICAO, present installed liveries as switchable tabs, and load the currently viewed livery. The full live inventory remains searchable while card realization and image decoding are bounded for stable memory use.
 - Changed aircraft artwork synchronization to cache-first operation with silent MSFS installation-change detection, pilot approval, an in-window progress instrument, and one shared internal asset per ICAO.
 

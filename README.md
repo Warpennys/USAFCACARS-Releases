@@ -741,6 +741,8 @@ The Aircraft workspace now separates the live airframe from the installed-aircra
 
 The Aircraft Control workspace is an advanced SimConnect concept intended to display aircraft instruments and expose supported simulator controls.
 
+Aircraft Control carries the same riveted **AIRCRAFT OPERATIONS PANEL** header used by Current Aircraft and the Aircraft Catalog. The active destination is identified by a green illuminated switch, and pilots can move directly among all three aircraft workspaces without returning to the left navigation.
+
 Potential systems include:
 
 - Primary flight instruments
