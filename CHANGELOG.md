@@ -78,6 +78,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed Aircraft Catalog paintjob identity so the simulator default remains the default, named variants display only their own exact cached artwork, previously captured MSFS repaint cards remain reusable, and selecting a paintjob closes the selector without changing the default card.
+- Fixed incomplete aircraft-artwork caching and catalog stalls by replacing the serial all-variant package crawl with a bounded background cache scan, shared package-directory indexing, per-item time limits, incremental progress, and explicit exact-artwork/pending counts.
 - Fixed the Aircraft Catalog presentation to show exactly five responsive aircraft strips per page, keep all five strips and paging controls fully visible in the expanded 1080p workspace, enlarge readable model/ICAO/paintjob labels, show default and selected artwork side by side, arrange paintjob controls in equal three-button rows, and center equal-size **LOAD IN SIM** controls. Simulator discovery now requests aircraft and helicopters only instead of the MSFS `ALL` object class, preventing animals and ground vehicles from entering the aircraft inventory.
 
 - Fixed Aircraft Catalog ICAO normalization for Airbus A330 variants: A330-200 and A330-300 packages now resolve and group under `A330`, while the unrelated Extra 330 remains `E330`.

@@ -730,11 +730,12 @@ The Aircraft workspace now separates the live airframe from the installed-aircra
 
 - Installed, streamed, Official, and Community airplanes and helicopters are discovered through aircraft-only live SimConnect catalog enumeration; unrelated ground vehicles, animals, boats, and other SimObjects are excluded.
 - Rows are named and searchable by normalized ICAO/model rather than by an external folder mapping. Airbus A330-200 and A330-300 packages are grouped as `A330`; the aerobatic Extra 330 remains the distinct `E330` type.
-- Variants and liveries for the same ICAO are consolidated into one full-width aircraft strip. Five responsive strips are shown per page in the expanded workspace; each displays the default and selected paintjob artwork side by side, uses readable three-across selection controls, and sends the selected paintjob through the centered **LOAD IN SIM** control.
+- Variants and liveries for the same ICAO are consolidated into one full-width aircraft strip. Five responsive strips are shown per page in the expanded workspace; each displays the default and selected paintjob artwork side by side and sends the selected paintjob through the centered **LOAD IN SIM** control.
+- A dedicated paintjob selector presents each cached variant independently, closes after selection, and keeps the simulator default unchanged until the pilot explicitly chooses another paintjob.
 - The complete inventory remains searchable while a finite, vertically scrollable viewport renders paged, recycled rows and lazy artwork for stable memory use.
 - Twenty-four supplied MSFS 2020 presentation images are physically bundled inside the desktop application and shared once per ICAO. The original source folder is not required at runtime.
-- Installed-aircraft changes are detected silently. The update dialog explains whether a refresh is needed, waits for **START**, reports progress, and updates the app-owned local inventory and artwork cache without blocking ordinary catalog browsing.
-- Existing simulator/package artwork remains preferred when available, with the internal ICAO art and official unavailable card providing deterministic fallbacks.
+- Installed-aircraft changes are detected silently. The update dialog explains whether a refresh is needed, waits for **START**, reports exact-cache progress, and uses bounded background package scans with per-item time limits so protected or streamed packages cannot freeze catalog browsing.
+- Exact cached MSFS repaint cards are retained across sessions. Generic/default ICAO artwork is never substituted for a named livery; an unresolved repaint stays explicitly unavailable until MSFS exposes its exact card.
 
 ## Aircraft Control
 
