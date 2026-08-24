@@ -80,6 +80,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Fixed MSFS 2024 paintjob artwork regression by treating each catalog row's exact simulator imagePath as authoritative, bounding every VFS transfer so damaged packages cannot stall the catalog, and invalidating the prior artwork-cache generation so stale generic/default cards are recached automatically. Live verification returned different VFS paths, byte counts, and SHA-256 hashes for two EC-135 paintjobs.
+- Restored the official USAFC ACARS application icon for the Windows taskbar and authenticated main window by applying one explicit shell application identity and the embedded icon to every top-level window.
+
 - Fixed the remaining Aircraft Catalog artwork delay and page-to-page memory growth: catalog updates now finish every available persistent display thumbnail before reporting completion, existing local caches self-complete silently in the background, completed thumbnails are never regenerated, the in-memory bitmap cache is bounded, and off-screen page/paintjob images are released while their local thumbnails remain immediately reusable. Runtime stress verification covered 25 forward pages plus 25 cached return pages with the client responsive and memory stable.
 
 - Fixed slow/blank Aircraft Catalog artwork by removing API/simulator discovery from image realization, proactively hydrating each visible page and paintjob selector from the app-local cache, decoding on bounded background STA workers, persisting 512-pixel thumbnails across sessions, deduplicating simultaneous image requests, and indexing nested MSFS Official `OneStore` packages. Explicit catalog updates now allow larger packages enough time to complete without blocking the UI.

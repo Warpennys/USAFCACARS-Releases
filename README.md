@@ -735,7 +735,7 @@ The Aircraft workspace now separates the live airframe from the installed-aircra
 - The complete inventory remains searchable while a finite, vertically scrollable viewport renders paged, recycled rows. Catalog updates finish all available optimized local thumbnails before reporting completion, and an existing cache silently completes any missing thumbnails in the background. Each visible page and paintjob selector hydrates only from that app-local cache; a bounded in-memory bitmap pool and off-screen image release keep long browsing sessions stable while persistent thumbnails make revisits immediate. Browsing never waits on the API or simulator.
 - Twenty-four supplied MSFS 2020 presentation images are physically bundled inside the desktop application and shared once per ICAO. The original source folder is not required at runtime.
 - Installed-aircraft changes are detected silently. The update dialog explains whether a refresh is needed, waits for **START**, reports exact-cache progress, and uses bounded background package scans with per-item time limits so protected or streamed packages cannot freeze catalog browsing.
-- Exact cached MSFS repaint cards are retained across sessions. Generic/default ICAO artwork is never substituted for a named livery; an unresolved repaint stays explicitly unavailable until MSFS exposes its exact card.
+- Exact cached MSFS repaint cards are retained across sessions. The exact simulator `imagePath` remains authoritative, stale artwork-cache generations are refreshed automatically, and a damaged package cannot freeze the catalog. Generic/default ICAO artwork is never substituted for a named livery; an unresolved repaint stays explicitly unavailable until MSFS exposes its exact card.
 
 ## Aircraft Control
 
