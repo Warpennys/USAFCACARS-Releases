@@ -17,6 +17,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added an aircraft-aware live cabin and payload workspace with built-in airframe profiles, a custom cabin-layout editor, seating and facility layers, passenger manifests, boarding progress, baggage/cargo controls, and SimConnect payload application.
+- Added resilient MSFS 2024 EFB bridge handling for current-aircraft identification, exact artwork selection, cabin/load presentation, and simulator aircraft-loading workflows.
 - Added per-pilot Pilot Social appearance control: pilots can synchronize Social with the website Dark/Light preference or disable synchronization and retain an independent remembered Social theme. The cockpit-style switch and purpose-built illuminated steel-blue treatment cover feeds, profile rails, cards, forms, menus, dialogs, and settings while media viewers remain dark for accurate image and video contrast.
 - Added a compact directly editable Network composer: the visible transmission field is the real text area and expands in place while the pilot types without opening posting options. Only the dedicated settings gear opens or closes the full option section; media shortcuts act directly, and the emoji picker opens below the editor without covering written text.
 - Rebuilt the phpVMS appearance system with an explicit, persistent Dark/Light selector and a dark-first default; the new light presentation retains the signature gray wood navigation and 3D aviation hardware while illuminating a richer blue canvas with concealed white/ice-blue edge lighting beneath the top bar, side navigation, and footer, plus readable light-side cards, forms, tables, and home content.
@@ -54,6 +56,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Changed
 
+- Extended ACARS telemetry acknowledgement time for busy cruise and phase-transition updates while preserving the same idempotent update identifier across retries.
 - Unified the Aircraft, Aircraft Control, and Aircraft Catalog workspaces under the same riveted Aircraft Operations header. The selected destination now retains a full-bright green active lamp, and the Aircraft Control header provides working direct navigation back to Current Aircraft or the Catalog without covering its live WebView instruments.
 
 - Changed the Aircraft Catalog to group exact simulator models by ICAO, present installed liveries as switchable tabs, and load the currently viewed livery. The full live inventory remains searchable while card realization and image decoding are bounded for stable memory use.
@@ -80,6 +83,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Fixed
 
+- Prevented an optional automated-ATC phase advisory failure from turning an already committed telemetry update into an API failure, and surfaced the server failure reason in the in-flight tracking status when a request genuinely fails.
 - Fixed MSFS 2024 paintjob artwork regression by treating each catalog row's exact simulator imagePath as authoritative, bounding every VFS transfer so damaged packages cannot stall the catalog, and invalidating the prior artwork-cache generation so stale generic/default cards are recached automatically. Live verification returned different VFS paths, byte counts, and SHA-256 hashes for two EC-135 paintjobs.
 - Restored the official USAFC ACARS application icon for the Windows taskbar and authenticated main window by applying one explicit shell application identity and the embedded icon to every top-level window.
 
