@@ -737,6 +737,15 @@ The Aircraft workspace now separates the live airframe from the installed-aircra
 - Installed-aircraft changes are detected silently. The update dialog explains whether a refresh is needed, waits for **START**, reports exact-cache progress, and uses bounded background package scans with per-item time limits so protected or streamed packages cannot freeze catalog browsing.
 - Exact cached MSFS repaint cards are retained across sessions. The exact simulator `imagePath` remains authoritative, stale artwork-cache generations are refreshed automatically, and a damaged package cannot freeze the catalog. Generic/default ICAO artwork is never substituted for a named livery; an unresolved repaint stays explicitly unavailable until MSFS exposes its exact card.
 
+## Live Cabin and Payload
+
+The Current Aircraft workspace includes an aircraft-aware cabin and payload panel. Built-in airframe profiles provide useful starting layouts, while the cabin editor can define custom seating, facilities, sections, and load zones for aircraft that need a tailored arrangement.
+
+- Switchable cabin layers show seats, facilities, passenger loading, baggage, cargo, and total payload without losing the active-aircraft context.
+- Passenger manifests and boarding progress provide an operational view of the live cabin rather than a static concept card.
+- Aircraft-specific cabin artwork and a standard cutaway presentation keep unsupported or custom aircraft usable while their detailed profiles are refined.
+- Supported payload values can be applied through SimConnect with visible state and failure feedback.
+
 ## Aircraft Control
 
 The Aircraft Control workspace is an advanced SimConnect concept intended to display aircraft instruments and expose supported simulator controls.
@@ -797,7 +806,7 @@ The available controls will depend on SimConnect support, simulator behavior, ai
 
 ## Passenger Operations
 
-Passenger Operations is planned as a deep cabin and passenger-experience simulation inspired by classic passenger-management add-ons, while remaining a USAFC-owned implementation.
+Passenger Operations now has a working cabin, manifest, boarding, baggage, cargo, and payload foundation. Deeper service and passenger-experience systems remain under active development as a USAFC-owned implementation.
 
 The concept includes:
 
@@ -1576,6 +1585,13 @@ Compare the returned value with the checksum published in the release notes. Do 
 - Distinguish invalid credentials from a server-connection error.
 - Confirm the application is configured for the correct API environment.
 - Check whether the installed alpha build requires an update.
+
+## ACARS update is interrupted during flight
+
+- Flight tracking continues through transient API delays and retries the same idempotent update instead of creating duplicate positions.
+- Cruise and other phase transitions allow additional acknowledgement time, and an optional automated-ATC advisory cannot invalidate telemetry that the server already stored.
+- Read the detailed reason shown in the tracking status. If failures repeat, confirm the USA Flight Club site is reachable and that the current USAFCACARS server module is deployed.
+- Keep the application running while troubleshooting so locally collected flight data is not needlessly interrupted.
 
 ## Voice or audio does not work
 
