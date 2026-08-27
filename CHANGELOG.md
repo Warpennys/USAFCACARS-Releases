@@ -17,6 +17,21 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ### Added
 
+- Added private Free Flight planning with unrestricted pilot-entered flight details and APPEND TO BIDS. These pilot-owned plans appear only in My Bids and PIREPs, remain eligible for flight credit, and never enter available-flight search.
+- Added a compact flight-strip color legend and source-aware inner borders for Scheduled, Charter, Tour, SimBrief, and Free Flight records, with a silver outer bid frame and a green started-flight status treatment.
+- Added a General Settings option to start Microsoft Flight Simulator 2024 after ACARS signs in and is running; an already-running simulator is detected and left untouched.
+- Added focused planner tabs and a full-area Map & Tools overlay whose close action returns directly to Timing.
+
+### Changed
+
+- Reordered planner workflow buttons to Free Flight, Charter, SimBrief, Scheduled, and Tours.
+- Renamed PIREP filters to All PIREPs, Charters, and Tours.
+- Changed tour flight strips to show the tour name and leg number.
+- Changed Scheduled planner navigation to open the complete Search Flights workspace with its Scheduled filter and application tab preserved.
+- Changed active bid presentation so IN FLIGHT appears in green only after the flight actually starts; cancellation returns the bid to normal and filing the PIREP removes it.
+
+### Added — earlier unreleased work
+
 - Added an aircraft-aware live cabin and payload workspace with built-in airframe profiles, a custom cabin-layout editor, seating and facility layers, passenger manifests, boarding progress, baggage/cargo controls, and SimConnect payload application.
 - Added resilient MSFS 2024 EFB bridge handling for current-aircraft identification, exact artwork selection, cabin/load presentation, and simulator aircraft-loading workflows.
 - Added per-pilot Pilot Social appearance control: pilots can synchronize Social with the website Dark/Light preference or disable synchronization and retain an independent remembered Social theme. The cockpit-style switch and purpose-built illuminated steel-blue treatment cover feeds, profile rails, cards, forms, menus, dialogs, and settings while media viewers remain dark for accurate image and video contrast.

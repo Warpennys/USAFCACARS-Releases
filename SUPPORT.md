@@ -1,6 +1,6 @@
 # USAFCACARS Support Guide
 
-**Last updated:** August 11, 2026
+**Last updated:** August 27, 2026
 **Current documented release:** 1.0.17 Alpha
 **Software status:** Proprietary software in active alpha development
 
@@ -32,6 +32,25 @@ Official downloads:
 > Concept graphics, mockups, roadmap descriptions, and interface previews show
 > the intended direction of the project. They do not guarantee that every
 > depicted feature is available in the current build.
+
+---
+
+## Development checkpoint guidance
+
+> [!NOTE]
+> Development-branch documentation can describe work completed after the current downloadable alpha. The August 27 flight-strip, Free Flight, planner-tab, Map & Tools, and optional MSFS 2024 startup changes have not been published as a new installer or deployed update.
+
+### Flight planning and bid questions
+
+- A bid receives its silver outer frame as soon as it is saved, but the green active treatment and green **IN FLIGHT** label appear only after ACARS starts the flight.
+- Canceling an active flight returns the bid to its normal saved state. Filing the completed PIREP removes the flown bid.
+- Tour strips identify the tour and leg. If those details are missing after a transient refresh, wait for the Tours data to reload before recreating the bid.
+- A Free Flight is a private pilot plan. Use **APPEND TO BIDS** to save it; it appears in My Bids and later in PIREPs, but never in available-flight search.
+- **Map & Tools** occupies the full planner workspace. Its upper-right close action returns to **Timing**.
+
+### Starting Microsoft Flight Simulator 2024
+
+Enable **Start Microsoft Flight Simulator 2024 With ACARS** under General Options when ACARS should launch the simulator after successful sign-in. ACARS does not launch another copy when MSFS is already running. Disable the option if the simulator is managed manually or by another launcher.
 
 ---
 
