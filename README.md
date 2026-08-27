@@ -70,6 +70,10 @@
 >
 > Features, layouts, wording, data sources, integrations, and availability may change as development continues. The release notes for each downloadable build are the authoritative record of what is currently functional.
 
+### Current development checkpoint — August 27, 2026
+
+The development branches now include source-aware flight strips and a compact color legend; tour name/leg identification; corrected bid-active lifecycle handling; private Free Flight planning with APPEND TO BIDS; compact planner tabs; a full-area Map & Tools overlay that closes back to Timing; Scheduled navigation into the complete Search Flights workspace; clearer All PIREPs, Charters, and Tours filters; and an optional post-login Microsoft Flight Simulator 2024 launcher. These items are documented as development work only. No new installer or deployed application update was published with this checkpoint.
+
 > [!CAUTION]
 > Alpha builds may contain incomplete features, visual placeholders, disabled controls, configuration changes, or defects. Do not rely on an alpha build as the only method of recording an important flight.
 
