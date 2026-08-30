@@ -2,7 +2,7 @@
 
 All notable changes to **USAFCACARS** are documented in this file.
 
-USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. The latest documented desktop release is `1.0.17`.
+USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. The latest documented desktop release is `1.1.0`.
 
 This changelog follows the general structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and uses version numbers compatible with Semantic Versioning where practical.
 
@@ -13,7 +13,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ---
 
-## [Unreleased]
+## [1.1.0] - 2026-08-30
 
 ### Added
 

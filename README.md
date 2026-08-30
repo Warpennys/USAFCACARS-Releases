@@ -67,6 +67,10 @@
 > **USAFCACARS is currently in active alpha development.**
 >
 > Images labeled **Current** show the implemented application at the documented release. Images labeled **Concept**, **Design Reference**, or **Visual** show intended scope and design direction and should not be interpreted as confirmation that every displayed control or service is already implemented.
+
+## Current Release — 1.1.0
+
+USAFCACARS 1.1.0 promotes the current operations platform into a downloadable Windows release, including the operational MSFS 2024 EFB, unified flight planner, live flight telemetry, airport and weather intelligence, communications, aircraft/cabin operations, and connected USAFC services. Use the **View Latest** button above for the installer and authoritative release assets.
 >
 > Features, layouts, wording, data sources, integrations, and availability may change as development continues. The release notes for each downloadable build are the authoritative record of what is currently functional.
 
