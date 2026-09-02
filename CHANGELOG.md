@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed USAFC TBM 930 and Grand Caravan EX artwork to the development collection and checksum-based cache manifest. Their side views remain outstanding.
+
 - Added source-qualified TBM 930 and Grand Caravan EX references, retaining configuration qualifications and existing operational values.
 
 - Added reviewed Citation Longitude artwork and manufacturer reference data to the development catalog. Full-fleet imagery remains incomplete; no new installer is implied.

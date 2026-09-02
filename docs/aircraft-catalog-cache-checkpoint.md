@@ -14,6 +14,10 @@ TBM 930 and Grand Caravan EX references now distinguish model/configuration
 data, maximum versus normal cruise, and missing test conditions. They do not
 change the simulator's installed seating, propeller, payload or operating limits.
 
+Both turboprops now have reviewed USAFC artwork cards. The Caravan card uses the
+three-blade propeller shown in the simulator reference, not the later factory
+four-blade option. Separate side-profile imagery remains incomplete.
+
 - Valid downloaded imagery persists between restarts.
 - New aircraft imagery is checked against the server's advertised checksum.
 - Corrupt or empty downloads must not be reported as ready.
