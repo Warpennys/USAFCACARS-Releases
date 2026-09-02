@@ -10,6 +10,10 @@ The reviewed development collection now includes a Citation Longitude card and
 source-qualified reference data. This is not a full-fleet image release, and its
 side profile remains outstanding.
 
+TBM 930 and Grand Caravan EX references now distinguish model/configuration
+data, maximum versus normal cruise, and missing test conditions. They do not
+change the simulator's installed seating, propeller, payload or operating limits.
+
 - Valid downloaded imagery persists between restarts.
 - New aircraft imagery is checked against the server's advertised checksum.
 - Corrupt or empty downloads must not be reported as ready.
