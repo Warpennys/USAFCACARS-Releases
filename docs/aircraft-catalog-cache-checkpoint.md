@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The PC-24 reference identifies the current higher-weight manufacturer configuration;
+it does not assume the simulator has that upgrade. Takeoff balanced-field length
+and landing distance retain their different obstacle heights and test conditions.
+
 The ICON A5 reference preserves runway versus water distances and engine power
 duration limits. The manufacturer's newer propeller/weight option is not assumed
 to be the installed simulator configuration.
