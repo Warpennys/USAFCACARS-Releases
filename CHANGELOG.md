@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Fixed duplicate startup-image downloads and loss of successful partial downloads after a failed batch. Retries preserve completed files; cancellation now reaches active transfers.
+- Added automated service-level cache lifecycle checks with two banners, disk-index reuse, empty/corrupt downloads and retries. Real application login/restart checks remain outstanding.
+
 - Added a reviewed PC-12 NGX art card and variant-specific manufacturer references. Reference displays now include general configuration notes and supporting sources; rejected opaque side-view drafts remain excluded.
 - Cruise references distinguish normal knots, maximum KTAS and decimal Mach without changing operational settings.
 
