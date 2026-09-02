@@ -17,6 +17,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 - Display reviewed aircraft references with source/configuration conditions while preserving operational values.
 - Expanded reviewed catalog references for the A321LR and A380-800, retaining tank, cabin and weight-variant qualifications. This is partial fleet coverage, not a new desktop build.
+- Added a reviewed USAFC Boeing 747-8 Intercontinental art card and manufacturer reference. Fleet-wide imagery and interactive cache testing remain incomplete.
 - Distinguish unknown passenger capacity from non-passenger aircraft.
 - Verify aircraft-image checksums and reject empty or corrupt downloads. Background artwork failures warn without treating a successful login as failed.
 - Added focused reference, cache and catalog-manifest checks. Full interactive restart testing and fleet imagery completion remain outstanding.
