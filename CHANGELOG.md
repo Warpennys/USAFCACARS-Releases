@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a reviewed PC-12 NGX art card and variant-specific manufacturer references. Reference displays now include general configuration notes and supporting sources; rejected opaque side-view drafts remain excluded.
+- Cruise references distinguish normal knots, maximum KTAS and decimal Mach without changing operational settings.
+
 - Display reviewed aircraft references with source/configuration conditions while preserving operational values.
 - Expanded reviewed catalog references for the A321LR and A380-800, retaining tank, cabin and weight-variant qualifications. This is partial fleet coverage, not a new desktop build.
 - Added a reviewed USAFC Boeing 747-8 Intercontinental art card and manufacturer reference. Fleet-wide imagery and interactive cache testing remain incomplete.

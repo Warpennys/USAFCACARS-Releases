@@ -12,6 +12,9 @@ distributed through this documentation repository.
 - Reference performance values are labeled as references and retain their source
   and operating conditions. They do not override dispatch or simulator limits.
 - Missing passenger-capacity data does not imply a non-passenger aircraft.
+- Reference tooltips retain general configuration qualifications and supporting
+  sources. Maximum cruise is marked KTAS MAX, and cruise Mach preserves decimals;
+  neither becomes the aircraft's operational cruise setting.
 
 ## Testing before release
 
