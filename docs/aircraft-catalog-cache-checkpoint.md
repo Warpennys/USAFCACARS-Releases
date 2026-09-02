@@ -8,6 +8,8 @@ distributed through this documentation repository.
 
 The Bonanza G36 reference identifies the manufacturer's June 2022 configuration;
 it is not confirmation of the installed simulator serial or weight variant.
+Its USAFC artwork card now uses the conventional-tail, single-engine G36 shape,
+not the V-tail Bonanza or twin-engine Baron. The side view is still outstanding.
 
 The reviewed development collection now includes a Citation Longitude card and
 source-qualified reference data. This is not a full-fleet image release, and its

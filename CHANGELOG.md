@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed USAFC Bonanza G36 artwork to the checksum-based catalog cache collection; separate side-view coverage remains incomplete.
+
 - Added a Bonanza G36 manufacturer reference with serial/configuration applicability and performance conditions; ambiguous source conversions were excluded, and simulator limits remain unchanged.
 
 - Added a full-catalog prerequisite check that fails on missing artwork, side profiles, descriptions or reviewed references for any catalog row. Passing partial-image tests does not indicate a complete collection.
