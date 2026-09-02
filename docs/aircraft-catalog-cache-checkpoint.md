@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The Bonanza G36 reference identifies the manufacturer's June 2022 configuration;
+it is not confirmation of the installed simulator serial or weight variant.
+
 The reviewed development collection now includes a Citation Longitude card and
 source-qualified reference data. This is not a full-fleet image release, and its
 side profile remains outstanding.
