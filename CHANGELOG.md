@@ -2,7 +2,7 @@
 
 All notable changes to **USAFCACARS** are documented in this file.
 
-USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. The latest documented desktop release is `1.1.0`.
+USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. Desktop release `1.1.5` is available; this repository also documents unreleased development work separately.
 
 This changelog follows the general structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and uses version numbers compatible with Semantic Versioning where practical.
 
@@ -12,6 +12,19 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 > Alpha releases may contain incomplete systems, disabled controls, compatibility limitations, breaking configuration changes, or defects. The release notes attached to each downloadable build remain the authoritative record of what was tested and included in that build.
 
 ---
+
+## Unreleased — aircraft catalog/cache checkpoint
+
+- Display reviewed aircraft references with source/configuration conditions while preserving operational values.
+- Distinguish unknown passenger capacity from non-passenger aircraft.
+- Verify aircraft-image checksums and reject empty or corrupt downloads. Background artwork failures warn without treating a successful login as failed.
+- Added focused reference, cache and catalog-manifest checks. Full interactive restart testing and fleet imagery completion remain outstanding.
+- No new installer is published by this documentation checkpoint.
+
+## [1.1.5] - 2026-09-02
+
+- GitHub release assets include Windows setup, portable, full/delta update packages and update metadata.
+- This entry records verified artifact availability, not acceptance of all alpha functionality.
 
 ## [1.1.0] - 2026-08-30
 

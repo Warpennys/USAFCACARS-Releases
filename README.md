@@ -68,13 +68,17 @@
 >
 > Images labeled **Current** show the implemented application at the documented release. Images labeled **Concept**, **Design Reference**, or **Visual** show intended scope and design direction and should not be interpreted as confirmation that every displayed control or service is already implemented.
 
-## Current Release — 1.1.0
+## Current Release — 1.1.5
 
-USAFCACARS 1.1.0 promotes the current operations platform into a downloadable Windows release, including the operational MSFS 2024 EFB, unified flight planner, live flight telemetry, airport and weather intelligence, communications, aircraft/cabin operations, and connected USAFC services. Use the **View Latest** button above for the installer and authoritative release assets.
+The [1.1.5 release](https://github.com/Warpennys/USAFCACARS-Releases/releases/tag/v1.1.5) provides the Windows installer, portable build and updater packages. Release availability does not imply that every alpha feature is complete. Use the **View Latest** button above for the current downloads.
 >
 > Features, layouts, wording, data sources, integrations, and availability may change as development continues. The release notes for each downloadable build are the authoritative record of what is currently functional.
 
-### Current development checkpoint — August 27, 2026
+### Current development checkpoint — September 2, 2026
+
+Aircraft reference displays and image-cache integrity improvements are in development, not included in a newly released installer. Reviewed aircraft references retain configuration conditions and source attribution without changing dispatch limits. Cache changes verify image hashes and report unsuccessful downloads instead of declaring them ready. The aircraft imagery collection is still incomplete. See [catalog/cache testing notes](docs/aircraft-catalog-cache-checkpoint.md).
+
+### Earlier development checkpoint — August 27, 2026
 
 The development branches now include source-aware flight strips and a compact color legend; tour name/leg identification; corrected bid-active lifecycle handling; private Free Flight planning with APPEND TO BIDS; compact planner tabs; a full-area Map & Tools overlay that closes back to Timing; Scheduled navigation into the complete Search Flights workspace; clearer All PIREPs, Charters, and Tours filters; and an optional post-login Microsoft Flight Simulator 2024 launcher. These items are documented as development work only. No new installer or deployed application update was published with this checkpoint.
 
