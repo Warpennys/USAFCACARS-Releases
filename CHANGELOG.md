@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added ICON A5 manufacturer references separating land/water performance, engine takeoff/continuous ratings and total seats from passengers. Existing simulator limits are unchanged.
+
 - Added reviewed USAFC Bonanza G36 artwork to the checksum-based catalog cache collection; separate side-view coverage remains incomplete.
 
 - Added a Bonanza G36 manufacturer reference with serial/configuration applicability and performance conditions; ambiguous source conversions were excluded, and simulator limits remain unchanged.

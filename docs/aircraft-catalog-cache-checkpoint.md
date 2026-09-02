@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The ICON A5 reference preserves runway versus water distances and engine power
+duration limits. The manufacturer's newer propeller/weight option is not assumed
+to be the installed simulator configuration.
+
 The Bonanza G36 reference identifies the manufacturer's June 2022 configuration;
 it is not confirmation of the installed simulator serial or weight variant.
 Its USAFC artwork card now uses the conventional-tail, single-engine G36 shape,
