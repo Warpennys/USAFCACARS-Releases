@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed Citation Longitude artwork and manufacturer reference data to the development catalog. Full-fleet imagery remains incomplete; no new installer is implied.
+
 - Fixed duplicate startup-image downloads and loss of successful partial downloads after a failed batch. Retries preserve completed files; cancellation now reaches active transfers.
 - Added automated service-level cache lifecycle checks with two banners, disk-index reuse, empty/corrupt downloads and retries. Real application login/restart checks remain outstanding.
 

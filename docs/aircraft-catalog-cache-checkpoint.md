@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The reviewed development collection now includes a Citation Longitude card and
+source-qualified reference data. This is not a full-fleet image release, and its
+side profile remains outstanding.
+
 - Valid downloaded imagery persists between restarts.
 - New aircraft imagery is checked against the server's advertised checksum.
 - Corrupt or empty downloads must not be reported as ready.
