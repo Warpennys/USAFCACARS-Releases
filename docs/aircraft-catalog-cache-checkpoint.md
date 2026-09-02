@@ -33,6 +33,12 @@ four-blade option. Separate side-profile imagery remains incomplete.
 
 ## Testing before release
 
+Full-catalog prerequisites are checked separately from tests of the images already
+installed. The completeness check currently fails because collection work remains.
+It includes every catalog row rather than hiding gaps behind shared image keys.
+Even a future passing result still requires visual, livery, research and desktop
+acceptance; it cannot alone establish release readiness.
+
 Check first login, repeat login with no changed imagery, newly published imagery,
 missing files, same-size corruption and interrupted downloads. Confirm that retry
 works, login remains usable after background artwork failure, and the catalog
