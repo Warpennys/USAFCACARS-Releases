@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The original E190 reference separates STD/LR/IGW/SR weight options and passenger
+maxima. It does not apply E190-E2, E195, Lineage or freighter figures to the
+passenger catalog. Conflicting STD/SR landing-weight conversions are excluded.
+Dimensions, engine family and certified altitude are references, not live settings.
+
 ERJ135 and ERJ145 have distinct USAFC artwork cards. The ERJ145 artwork uses
 Embraer's own product image for geometry, not an uncertain local thumbnail.
 Both are virtual illustrations, not installed simulator liveries. Their
