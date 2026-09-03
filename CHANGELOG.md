@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Deployment planning now identifies the schedule key for conflicting aircraft
+  assignments or unresolved subfleets; it still refuses unreviewed replacement.
+
 - Removed automatic catalog retirement and simulator-row deletion from normal
   simulator discovery imports, preserving legacy records for explicit review.
 
