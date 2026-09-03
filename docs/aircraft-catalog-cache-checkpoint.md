@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The ERJ135 reference distinguishes ER/LR weights and alternative 37-, 30- and
+16-seat layouts. These examples do not assign simulator seats. The ambiguously
+labeled left performance column is excluded; LR figures retain conditions.
+Generic aircraft identity does not select an ER/LR variant or engine subtype.
+
 The ERJ145 reference keeps EP and LR configurations separate. Fuel mass retains
 its density assumption; an example 50-seat layout does not set the cabin.
 Published field lengths are conditional, and indicative LR range is not for

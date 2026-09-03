@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added qualified ERJ135 ER/LR reference data and alternative example cabin layouts. An inconsistent performance-column heading is excluded, and no simulator cabin or operating limits are changed.
+
 - Added ERJ145 EP/LR reference figures with separate weights and fuel capacities. Example seating and conditional performance remain references, not simulator assignments.
 
 - Added reviewed USAFC A318, A319 and A330-300 cards to cache discovery, retaining individual reference shapes. Separate side views remain unfinished.
