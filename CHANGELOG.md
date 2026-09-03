@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Published 44 restored pilot avatar assets, including PNGs previously excluded
+  by the uploads ignore rule. Production rendered-page verification remains required.
+
 - Production World activation is confirmed: 3,329 published schedules and 46,606
   reviewed-window departures. A read-only comparison is investigating remaining
   field differences between environments; equal counts are not claimed as full parity.
