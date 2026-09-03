@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added separate USAFC Cessna 207 and 404 Titan artwork cards to cache discovery after image review. Their transparent side profiles remain unfinished.
+
 - Removed the generic "Simulator Aircraft" prefix from catalog titles and aircraft dossier headings, retaining real manufacturer names and saved identity data.
 - Added a USAFC C90GTx card to image-cache discovery. The separate side profile remains unfinished.
 

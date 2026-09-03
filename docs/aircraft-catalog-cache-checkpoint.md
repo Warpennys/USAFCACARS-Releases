@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Cessna 207 and 404 Titan now have separate reviewed USAFC artwork cards.
+Image checks verify 59 asset URLs and their hashes. The cards retain each
+source aircraft's shape; they are illustrations, not installed liveries or
+transparent side views. Neither aircraft's operating limits were changed.
+
 Aircraft headings omit the generic "Simulator Aircraft" manufacturer label.
 Real manufacturer names, models and variants remain visible. This also applies
 to existing cached dossier data; no identity records need to be deleted.
@@ -14,7 +19,7 @@ The C90GTx reference distinguishes the original aircraft from the Q4 2014
 performance upgrade. Neither set of field lengths selects the simulator's
 configuration or establishes runway suitability. Other King Air variants do
 not inherit this reference. Its reviewed USAFC card is now cached; the separate
-side view remains unfinished. The current image check verifies 57 URLs/hashes.
+side view remains unfinished. Its earlier checkpoint verified 57 URLs/hashes.
 
 The original E190, ATR 72-600 and ATR 42-600 have separate reviewed USAFC
 cards made from manufacturer imagery. The shorter ATR42 does not reuse the
