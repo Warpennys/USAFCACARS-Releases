@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a reviewed Stemme S12-G manufacturer reference with variant boundaries
+  and performance caveats. This is catalog development, not a new installer or
+  a declaration that aircraft imagery coverage is complete.
+
 - Verified gate overlap protection with two independent MySQL booking processes.
   AI leasing now rechecks current session, flight status and pilot ownership under
   locks, preventing stale search results from creating leases for claimed flights.
