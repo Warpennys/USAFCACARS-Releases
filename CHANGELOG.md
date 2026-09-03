@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Development schedule generation now rejects nonexistent spring-forward local
+  times instead of silently shifting departures. Seasonal connection corrections
+  and full migration acceptance are still pending; this is not a deployed fix.
+
 - Expanded development rotation checks across recurring dates and daylight-saving
   transitions. Seasonal connection defects remain under correction; the network
   migration has not been accepted or deployed.
