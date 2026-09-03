@@ -6,6 +6,12 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Reviewed primary aircraft names now constrain the A320/A321 and E135/E145/E190
+references. A name merely containing the base type must not silently receive
+its data: neo, E2, freighter, XR and Legacy variants need separate review.
+Reviewed simulator aliases still require their exact platform and package.
+All existing reviewed associations remain valid after this change.
+
 The original E190 reference separates STD/LR/IGW/SR weight options and passenger
 maxima. It does not apply E190-E2, E195, Lineage or freighter figures to the
 passenger catalog. Conflicting STD/SR landing-weight conversions are excluded.

@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Tightened reviewed aircraft-reference matching so similar names cannot silently inherit ceo, regional-jet or passenger data belonging to a different variant. Existing reviewed associations remain valid.
+
 - Added qualified original E190 authority references, separating weight variants and passenger maxima. Conflicting landing-weight conversions are excluded; no simulator configuration is assigned.
 
 - Added separate reviewed USAFC ERJ135 and ERJ145 art cards to cache discovery. The ERJ145 uses its manufacturer's reference image; separate transparent side profiles remain unfinished.
