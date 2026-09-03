@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Isolated remaining Dispatch parity differences to planned parking on 42 schedules;
+  flight identities, routes and times match. Facility/dimension evidence is being
+  checked before changing any production parking assignments.
+
 - Published 44 restored pilot avatar assets, including PNGs previously excluded
   by the uploads ignore rule. Production rendered-page verification remains required.
 
