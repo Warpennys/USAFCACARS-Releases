@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added ERJ145 EP/LR reference figures with separate weights and fuel capacities. Example seating and conditional performance remain references, not simulator assignments.
+
 - Added reviewed USAFC A318, A319 and A330-300 cards to cache discovery, retaining individual reference shapes. Separate side views remain unfinished.
 
 - Added reviewed USAFC A330-200 artwork to cache discovery, preserving the -200 reference shape. Its separate side view remains unfinished.

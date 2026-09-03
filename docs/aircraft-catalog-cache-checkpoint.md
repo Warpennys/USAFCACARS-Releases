@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The ERJ145 reference keeps EP and LR configurations separate. Fuel mass retains
+its density assumption; an example 50-seat layout does not set the cabin.
+Published field lengths are conditional, and indicative LR range is not for
+flight planning or dispatch. Generic catalog identity does not select EP or LR.
+
 A318, A319 and A330-300 now have separate reviewed USAFC catalog cards based
 on their respective aircraft photographs. Size and image hashes are checked
 before inclusion. These are illustrations, not installed simulator liveries;
