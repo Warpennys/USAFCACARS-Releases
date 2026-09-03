@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a read-only, narrowly scoped legacy aircraft profile transfer for
+  reconciliation, retaining source technical data without copying operational IDs
+  or pilot records. Import remains a separate reviewed step.
+
 - Simulator discovery no longer overwrites existing aircraft registration owners,
   reviewed catalog links, nicknames or approval states, and preserves retired
   registrations. Only genuinely missing registrations are created automatically.
