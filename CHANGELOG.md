@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- The corrected development generator passed an isolated full-candidate audit
+  covering 1,402 rotations and more than one million dated legs, with both
+  predecessor and successor timing checks. Aircraft/facility validation and the
+  controlled production migration remain incomplete; this is not deployment approval.
+
 - Development connected-flight generation now chains legs from actual arrivals
   and planned turnaround/layover times. Isolated seasonal, hourly, date-line and
   three-leg tests pass, including preservation of completed flights on repeat.
