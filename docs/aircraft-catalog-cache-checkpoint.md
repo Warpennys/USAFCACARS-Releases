@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Side-profile validation requires visible aircraft content as well as transparent
+background corners. Blank or faint-only cutouts fail acceptance; visual geometry
+and livery review remain separate requirements.
+
 The King Air 350i now has a transparent USAFC side-profile asset as well as its
 art card. Verify side-view selection and persistent cache reuse in the client;
 server image-integrity tests do not replace that interactive check.

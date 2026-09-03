@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Strengthened side-profile acceptance checks to reject empty or faint-only transparent images. Existing reviewed profiles still pass; this is not complete fleet or live-client acceptance.
+
 - Added a reviewed transparent USAFC King Air 350i side profile to cache discovery. The asset is a catalog illustration, not a simulator repaint; fleet coverage remains incomplete.
 
 - Added a serial-qualified King Air 350i reference with separate mission ranges, speed conditions and documented source conflicts. Existing operational limits are unchanged.
