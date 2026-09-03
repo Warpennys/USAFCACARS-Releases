@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The Vision Jet reference separates type limitations from cruise performance and
+preserves the authority's configuration-dependent altitude and seating criteria.
+It does not identify the simulator's serial or assume newer-generation equipment.
+
 Only reviewed, manifest-listed PNG files with matching checksums are served as
 catalog artwork or side profiles. Loose, draft or corrupted files are excluded
 from the aircraft cache collection; this does not fill still-missing imagery.
