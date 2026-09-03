@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added read-back verification after simulator slew/freeze release commands,
+  with bounded retries and failure on unconfirmed state. Automated verification
+  tests pass; this is not yet proof of physical controller operation.
+
 - Flight-workflow candidate: Start requires a confirmed simulator load of the
   current flight; the next step flashes, active tracking stays steady, and all
   quick-action buttons remain visible. Cancellation now requests a return to the

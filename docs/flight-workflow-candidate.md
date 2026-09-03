@@ -21,3 +21,8 @@ failed loads, repeated clicks, cancellation/retry, and physical flight controls.
 If a planner return fails, retain the exact message and its reported camera state.
 Do not reinstall MSFS, remove controller bindings or clear caches as a substitute
 for investigating that transition.
+
+Controls diagnostics now distinguish command transmission from observed release
+of slew and position/attitude freezes. Automated verification covers delayed and
+failed confirmation. A read-only live snapshot is available, but neither that
+snapshot nor software-injected inputs prove physical stick/yoke operation.
