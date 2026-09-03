@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Hardened window-icon assignment for late-created/loaded Windows handles and
+  retained old icon handles until replacements are assigned. A Windows lifecycle
+  contract passes; taskbar appearance still requires visual confirmation.
+
 - A private Windows x64 1.1.6-rc.1 installer/portable candidate now builds from
   current source; reference and persistent-cache contracts pass. It is unsigned,
   not on the update feed, and still requires installed-app/simulator acceptance.
