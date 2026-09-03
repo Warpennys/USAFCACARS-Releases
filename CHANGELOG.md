@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a Cessna 207 historical FAA reference with explicit turbo/conversion,
+  seating and source-currency boundaries. Development now has 42 packaged
+  references matching 45 catalog records; this does not change simulator limits
+  or claim complete aircraft artwork coverage.
+
 - Completed site/data checkpoint transfer is now documented for authenticated
   server retrieval. Deployment acceptance remains separate; the older private
   desktop candidate must not be promoted as the current automatic update.
