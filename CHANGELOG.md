@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Corrected missing flight-type suffixes in development World schedules and added
+  a journaled server migration with duplicate protection. Production flight parity
+  and server acceptance remain pending; this does not announce a desktop release.
+
 - Fixed the server's exact ATR 42-600 legacy identity to resolve its existing approved
   artwork and verified reference. Other ATR variants remain excluded; no image or
   operational performance limit was replaced.
