@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a narrowly reviewed way to unpublish deferred flights with unused departure
+  rows while preserving those rows and blocking operational history changes.
+
 - Bound World activation to its reviewed held-flight identities and routes, so
   incomplete destination aircraft metadata cannot silently release deferred flights.
   The exact hold set is checked; production acceptance remains pending.
