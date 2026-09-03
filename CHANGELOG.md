@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a serial-qualified King Air 350i reference with separate mission ranges, speed conditions and documented source conflicts. Existing operational limits are unchanged.
+
 - Added reviewed USAFC King Air 350 promotional artwork to cache discovery. This does not provide a side profile, a simulator repaint, or complete fleet coverage.
 
 - Added a configuration-qualified CJ4 technical reference, retaining distinct range assumptions and excluding inconsistent gear-speed conversions. Operational values remain unchanged.

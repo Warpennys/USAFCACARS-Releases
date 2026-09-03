@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+King Air 350i reference data retains the 2015 configuration and does not adopt
+ER/360 specifications. Range profiles stay separate, and a conflicting metric
+wingspan is reported rather than silently selected.
+
 The King Air 350 promotional card is included in cache discovery. It depicts
 the simulator-reference configuration in USAFC paint, not an installed repaint.
 Transparent side-profile coverage and full-fleet acceptance remain incomplete.
