@@ -8,7 +8,8 @@ distributed through this documentation repository.
 
 The Cessna 310 catalog card depicts a piston twin with wingtip tanks, not an
 Airbus preview. It is a 310R-family illustration, not a simulator variant or
-performance-data assignment. Its side profile remains outstanding.
+performance-data assignment. A matching transparent USAFC side profile is now
+included in the source checkpoint; it is not a new desktop installer.
 
 Development preview imports must not confuse aircraft sharing a model number or
 replace approved artwork. Exact identity matching prevents new fuzzy matches;
