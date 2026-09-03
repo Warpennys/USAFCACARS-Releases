@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- In development: corrected scheduled-flight time calculations and added reconciliation safety tests for existing flight history and AI reservations. This is unfinished server work, not a released desktop update or completed deployment handoff.
+
 - World Schedules reconciliation remains under review. Development and production data differ; the diagnostic handoff does not publish schedules or replace production flight history. No desktop update is included in this documentation change.
 
 - Added separate USAFC Cessna 207 and 404 Titan artwork cards to cache discovery after image review. Their transparent side profiles remain unfinished.
