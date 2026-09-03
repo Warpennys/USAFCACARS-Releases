@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The C172 reference describes the current 180-hp Skyhawk. It does not establish the
+catalog's unspecified 172 subtype or replace existing aircraft range and limits.
+
 The PC-24 reference identifies the current higher-weight manufacturer configuration;
 it does not assume the simulator has that upgrade. Takeoff balanced-field length
 and landing distance retain their different obstacle heights and test conditions.

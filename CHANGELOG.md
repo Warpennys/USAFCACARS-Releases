@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a qualified C172/172S manufacturer reference, with unresolved simulator subtype stated explicitly and conflicting source weight figures excluded. Existing aircraft values remain unchanged.
+
 - Added reviewed PC-24 USAFC artwork to the development catalog and checksum-based cache collection. Its separate side profile remains outstanding.
 
 - Added configuration-qualified PC-24 reference data, including separate takeoff balanced-field and landing criteria. No simulator weight, seating or operational limit is overwritten.
