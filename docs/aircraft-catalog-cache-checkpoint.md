@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+A320 and A321 entries now have qualified ceo references. Sharklet dimensions and
+range, maximum weights, fuel and seating are configuration references, not
+installed equipment or dispatch limits. The source's conflicting A321 typical
+seating figures are excluded; no engine subtype or neo/LR/XLR values are inferred.
+
 A318 reference data retains separate passenger weight variants. Its passenger
 fuel capacity is not the corporate-jet tank installation, and standard seating
 is not a verified cabin layout. Wing-tip-fence dimensions retain configuration
