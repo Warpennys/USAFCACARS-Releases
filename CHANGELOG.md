@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a private transactional reconciliation preview command with verified
+  input/review files, explicit UTC windows and overwrite protection. Tests confirm
+  rollback and rejected invalid inputs. Production application remains unavailable.
+
 - Strengthened development reconciliation safeguards for assigned aircraft,
   registrations, estimated times and pilot-selected gates/routes, even before a
   flight leaves scheduled status. Independent operational-field tests pass.
