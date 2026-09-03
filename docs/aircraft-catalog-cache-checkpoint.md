@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+A318, A319 and A330-300 now have separate reviewed USAFC catalog cards based
+on their respective aircraft photographs. Size and image hashes are checked
+before inclusion. These are illustrations, not installed simulator liveries;
+their separate transparent side views remain unfinished.
+
 The A330-200 catalog card now has reviewed USAFC artwork based on a matching
 photograph. The original airline registration is removed. This is a virtual
 illustration, not an installed simulator repaint; the side view is still pending.

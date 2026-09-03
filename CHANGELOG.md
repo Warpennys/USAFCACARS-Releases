@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed USAFC A318, A319 and A330-300 cards to cache discovery, retaining individual reference shapes. Separate side views remain unfinished.
+
 - Added reviewed USAFC A330-200 artwork to cache discovery, preserving the -200 reference shape. Its separate side view remains unfinished.
 
 - Added qualified A330-200/-300 references without changing operational limits. Conflicting A330-200 range, typical seating and weight figures are excluded pending configuration-specific evidence.
