@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Verified the additive date-offset migration on development MySQL after a full
+  backup, with original flight, pilot and history data unchanged. Local definition
+  review now succeeds; production migration and final acceptance are still pending.
+
 - Added database-engine preflight for development reconciliation, rejecting
   nontransactional or missing tables, views and detected triggers before staging
   writes. Production permissions and concurrency checks remain outstanding.
