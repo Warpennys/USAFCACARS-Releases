@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Gate reservations now recheck occupancy after obtaining the gate lock, handling
+  stale availability results. Tests cover overlap, adjacent bookings, helipad
+  allocation and an intervening reservation; multi-process verification is pending.
+
 - Published-flight reconciliation and preview-command tests now pass on isolated
   MySQL tables. Fixed JSON formatting differences that incorrectly rejected repeat
   imports; meaningful JSON content changes remain protected. Production concurrency
