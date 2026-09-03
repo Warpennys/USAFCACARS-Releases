@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Strengthened development reconciliation safeguards for assigned aircraft,
+  registrations, estimated times and pilot-selected gates/routes, even before a
+  flight leaves scheduled status. Independent operational-field tests pass.
+
 - Added internal integration tests for reviewed definition and future-flight
   reconciliation together, including rollback, stale approvals, repeat imports
   and unpublished-leg protection. Production command and acceptance remain pending.
