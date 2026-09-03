@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The Citation CJ4 promotional card follows the simulator reference without tall
+winglets. It is included in cache discovery, not a replacement for a side profile.
+
 Closing the catalog selector cancels its image transfers instead of only
 discarding downloaded results. User cancellation should not show an artwork error.
 
