@@ -15,6 +15,13 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Flight-workflow candidate: Start requires a confirmed simulator load of the
+  current flight; the next step flashes, active tracking stays steady, and all
+  quick-action buttons remain visible. Cancellation now requests a return to the
+  simulator planner, with explicit retry on incomplete return. Build/readiness
+  contracts pass; live planner-return and all-flight-type acceptance are pending.
+  See [candidate testing](docs/flight-workflow-candidate.md).
+
 - Hardened window-icon assignment for late-created/loaded Windows handles and
   retained old icon handles until replacements are assigned. A Windows lifecycle
   contract passes; taskbar appearance still requires visual confirmation.
