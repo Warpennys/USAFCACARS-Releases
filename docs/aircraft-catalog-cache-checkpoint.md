@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The King Air 350i now has a transparent USAFC side-profile asset as well as its
+art card. Verify side-view selection and persistent cache reuse in the client;
+server image-integrity tests do not replace that interactive check.
+
 King Air 350i reference data retains the 2015 configuration and does not adopt
 ER/360 specifications. Range profiles stay separate, and a conflicting metric
 wingspan is reported rather than silently selected.
