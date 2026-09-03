@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Completed a rolled-back reconciliation preview on development MySQL and verified
+  protected data hashes remained unchanged. Draft services stayed unpublished.
+  Batched history checks reduce repeated queries while retaining operational guards.
+
 - Verified the additive date-offset migration on development MySQL after a full
   backup, with original flight, pilot and history data unchanged. Local definition
   review now succeeds; production migration and final acceptance are still pending.
