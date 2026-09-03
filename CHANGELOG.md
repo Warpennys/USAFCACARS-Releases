@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added qualified Cessna 404 Titan authority-reference data and model-boundary
+  checks. Installed cabin and simulator limits remain unchanged. Its artwork card
+  is already available; the separate side profile remains unfinished.
+
 - Added a development-only, read-only reconciliation review command with file
   checksum verification, private output and stale-plan detection. It does not
   import, publish or deploy schedules; the complete migration remains unfinished.
