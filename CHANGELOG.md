@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a read-only two-way aircraft identity comparison for deployment review,
+  preserving historical aircraft and flagging mismatched simulator associations.
+  This diagnostic does not import or publish flight schedules.
+
 - Fixed site lookup of restored pilot PNG avatars when the stored avatar path is
   blank or still points to a missing JPEG. Existing custom/remote avatars are
   preserved; no pilot database migration or original-image replacement.
