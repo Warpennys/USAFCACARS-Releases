@@ -15,6 +15,12 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added the confirmed flight-source lettering contract for new flight identifiers:
+  F (Free Flight), C (Charter), B (SimBrief), O (Open), S (Scheduled), T (Tour),
+  independently of the trailing operational-type letter. Pilot-created Free
+  Flight and append-to-bids behavior remain intact. Existing-data reconciliation
+  and production acceptance are still pending; this is not a new desktop release.
+
 - Corrected missing flight-type suffixes in development World schedules and added
   a journaled server migration with duplicate protection. Production flight parity
   and server acceptance remain pending; this does not announce a desktop release.
