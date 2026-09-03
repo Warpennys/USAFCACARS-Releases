@@ -15,6 +15,12 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Combined the development/server World schedule definitions without replacing
+  existing flight history. Development import and repeat definition checks pass;
+  private server transfer instructions are included with the implementation.
+  Production publication and matching Dispatch occurrence counts are not yet
+  verified. No new aircraft artwork or desktop release is claimed by this update.
+
 - Added a guarded server activation procedure for restored PNG pilot avatars;
   existing pilot records and image files are preserved. Live-server visual
   verification remains required.
