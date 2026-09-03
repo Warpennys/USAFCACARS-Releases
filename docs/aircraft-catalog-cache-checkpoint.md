@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+SkyCourier artwork now depicts the freighter configuration from the simulator
+reference. This card is not a passenger-configuration or transparent-side asset.
+
 SkyCourier reference figures identify passenger versus freighter configuration.
 Conflicting payload and occupant labels do not become operational assignments.
 
