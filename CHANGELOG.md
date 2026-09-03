@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a read-only full-roster identity comparison after a pilot-number mismatch
+  selected the wrong restored avatar. No automatic account renumbering is performed.
+
 - Isolated remaining Dispatch parity differences to planned parking on 42 schedules;
   flight identities, routes and times match. Facility/dimension evidence is being
   checked before changing any production parking assignments.
