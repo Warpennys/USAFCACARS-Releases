@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The A320ceo card now displays a reviewed USAFC illustration with conventional
+wingtip fences. It is distinct from the approved A320neo artwork. The separate
+A320ceo side view remains unfinished; rejected output is not in the cache.
+
 A320 and A321 entries now have qualified ceo references. Sharklet dimensions and
 range, maximum weights, fuel and seating are configuration references, not
 installed equipment or dispatch limits. The source's conflicting A321 typical
