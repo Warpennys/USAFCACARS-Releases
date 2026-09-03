@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a USAFC Bell 47J Ranger art card to cache discovery. The transparent side profile remains unfinished; no simulator repaint is installed.
+
 - Added qualified Bell 47J-2-series reference data with exact simulator-package matching. Passenger count, variant weights and modified-aircraft exclusions remain explicit.
 
 - Added USAFC Bell 222 artwork and a transparent side profile to the catalog cache checkpoint. These illustrations do not install a simulator repaint.

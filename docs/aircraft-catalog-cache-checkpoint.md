@@ -9,7 +9,8 @@ distributed through this documentation repository.
 The Bell 47J simulator entry uses a reviewed 47J-2-series reference only with an
 exact model/package match. Four seats includes the pilot; 47J-2A weight and a
 historical converted aircraft's engine must not become default simulator limits.
-Its card and side profile remain outstanding.
+Its USAFC card is included. Its side profile remains outstanding because the
+generated candidates failed transparency checks; those candidates are excluded.
 
 The Bell 222 reference applies to the original wheeled model, not the 222B,
 222U, 230 or 430. Fuel capacity depends on serial/modification status; external
