@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Simulator discovery no longer overwrites existing aircraft registration owners,
+  reviewed catalog links, nicknames or approval states, and preserves retired
+  registrations. Only genuinely missing registrations are created automatically.
+
 - Restored five existing development legacy aircraft to match verified active
   server identities, preserving original records and history. Full World transfer
   preview completed locally and rolled back; nothing was implicitly published.
