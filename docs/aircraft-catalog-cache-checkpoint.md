@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The ICON A5 promotional card is now included in the reviewed cache collection.
+It does not substitute for a missing transparent side profile.
+
 The reviewed Vision Jet artwork is included in cache discovery. Its promotional
 card is not a side profile; the missing side profile is not marked complete.
 

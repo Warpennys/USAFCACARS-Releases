@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed USAFC ICON A5 artwork to cache discovery; the card preserves its amphibian configuration. Side-profile coverage remains incomplete.
+
 - Added reviewed USAFC Vision Jet artwork to the catalog cache collection. Full-fleet artwork and side-profile coverage remain incomplete.
 
 - Added a type-certificate-based Vision Jet reference with serial-dependent altitude, seating and equipment qualifications. Newer-generation performance and a conflicting source dimension were not inferred.
