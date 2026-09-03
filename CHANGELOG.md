@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Fixed a legacy unknown-duration compatibility issue in World schedule transfer.
+  The published-production subset now passes the development rollback preview;
+  production acceptance and new-service publication remain pending.
+
 - Combined the development/server World schedule definitions without replacing
   existing flight history. Development import and repeat definition checks pass;
   private server transfer instructions are included with the implementation.
