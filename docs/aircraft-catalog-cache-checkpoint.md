@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Legacy reference imports must not assign a different model solely because an
+ICAO key matches. Conflicts now stop preflight, including with forced replacement.
+Existing historical catalog conflicts still need separate reconciliation.
+
 The SR22 card is included in the checksum-based image collection. Its reference
 describes the 2022 normally aspirated model, not the turbocharged SR22T, and does
 not overwrite simulator limits or assume optional equipment. Side view pending.
