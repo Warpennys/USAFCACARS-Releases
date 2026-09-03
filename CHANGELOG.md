@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Restored five existing development legacy aircraft to match verified active
+  server identities, preserving original records and history. Full World transfer
+  preview completed locally and rolled back; nothing was implicitly published.
+
 - Corrected 24 development PC-6 schedule assignments and their untouched scheduled
   occurrences while preserving IDs and history. The complete transfer plan now
   builds locally; production import and publication remain separately reviewed.
