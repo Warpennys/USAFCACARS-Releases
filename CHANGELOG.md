@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Corrected 24 development PC-6 schedule assignments and their untouched scheduled
+  occurrences while preserving IDs and history. The complete transfer plan now
+  builds locally; production import and publication remain separately reviewed.
+
 - Deployment planning now identifies the schedule key for conflicting aircraft
   assignments or unresolved subfleets; it still refuses unreviewed replacement.
 
