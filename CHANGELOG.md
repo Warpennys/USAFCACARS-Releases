@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed PC-24 USAFC artwork to the development catalog and checksum-based cache collection. Its separate side profile remains outstanding.
+
 - Added configuration-qualified PC-24 reference data, including separate takeoff balanced-field and landing criteria. No simulator weight, seating or operational limit is overwritten.
 
 - Added ICON A5 manufacturer references separating land/water performance, engine takeoff/continuous ratings and total seats from passengers. Existing simulator limits are unchanged.
