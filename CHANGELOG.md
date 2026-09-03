@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- A private Windows x64 1.1.6-rc.1 installer/portable candidate now builds from
+  current source; reference and persistent-cache contracts pass. It is unsigned,
+  not on the update feed, and still requires installed-app/simulator acceptance.
+
 - Added read-only flight-fleet reconciliation reporting that lists every missing
   or ambiguous aircraft association and its affected schedules before import.
 
