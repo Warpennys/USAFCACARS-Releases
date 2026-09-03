@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added correctly identified USAFC Cessna 310 artwork, replacing a mismatched development preview association. Aircraft variant and operational specifications are unchanged.
+
 - Development preview matching now rejects numeric-name collisions and ambiguous image sources while preserving approved artwork. Existing identity discrepancies still need reconciliation; no corrected fleet coverage is claimed.
 
 - Strengthened side-profile acceptance checks to reject empty or faint-only transparent images. Existing reviewed profiles still pass; this is not complete fleet or live-client acceptance.
