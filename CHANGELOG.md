@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Verified one-to-one coverage of all 195 active aircraft identities across the
+  captured development/server inventories using eight reviewed legacy aliases.
+  Retired records remain preserved; this is not full profile/artwork or flight parity.
+
 - Prepared a tested add-only legacy profile importer that allocates destination IDs,
   rejects conflicting existing records and preserves technical JSON. The four verified
   server-only legacy profiles have now been imported into development, retaining
