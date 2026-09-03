@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added an internal, preview-first future-occurrence reconciler with protection for
+  pilot history, active traffic and gate reservations. Repeat and rollback tests
+  pass in isolation; production import integration remains unfinished.
+
 - Corrected development occurrence generation to retain its rotation and selected
   subfleet associations, with checks against ambiguous or cross-airline ownership.
   Existing occurrence reconciliation remains unfinished; no production data was
