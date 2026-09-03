@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The A330-200 catalog card now has reviewed USAFC artwork based on a matching
+photograph. The original airline registration is removed. This is a virtual
+illustration, not an installed simulator repaint; the side view is still pending.
+
 A330-200 and A330-300 references remain separate and do not apply to freighter
 or neo configurations. Conflicting A330-200 range, typical seating and weight
 figures are excluded. Maximum fuel/seating and operating Mach are references,
