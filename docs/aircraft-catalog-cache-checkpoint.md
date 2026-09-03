@@ -6,6 +6,12 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The CH-47D reference describes a historical U.S. Army configuration, not current
+CH-47F or MH-47 specifications. The site and desktop label it as a military
+operator reference and retain its publisher and period. Verify those labels in
+the desktop tooltip; historical troop capacity is not an installed cabin layout.
+No CH-47D artwork or simulator repaint is supplied by this data-only increment.
+
 The Bell 47J simulator entry uses a reviewed 47J-2-series reference only with an
 exact model/package match. Four seats includes the pilot; 47J-2A weight and a
 historical converted aircraft's engine must not become default simulator limits.
