@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added internal integration tests for reviewed definition and future-flight
+  reconciliation together, including rollback, stale approvals, repeat imports
+  and unpublished-leg protection. Production command and acceptance remain pending.
+
 - The corrected development generator passed an isolated full-candidate audit
   covering 1,402 rotations and more than one million dated legs, with both
   predecessor and successor timing checks. Aircraft/facility validation and the
