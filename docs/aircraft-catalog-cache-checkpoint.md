@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+A318 reference data retains separate passenger weight variants. Its passenger
+fuel capacity is not the corporate-jet tank installation, and standard seating
+is not a verified cabin layout. Wing-tip-fence dimensions retain configuration
+qualifications. No engine choice or runway performance is inferred.
+
 The generic A319 entry can display an explicitly qualified A319ceo reference.
 Published Sharklet range and maximum fuel/weight/seating figures do not establish
 its installed equipment. No engine subtype, cabin, ACJ or neo configuration is

@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added an A318 passenger reference preserving separate weight variants and excluding corporate-jet fuel configuration. Published seating and dimensions do not overwrite the simulator cabin or operating limits.
+
 - Added qualified A319ceo manufacturer reference data. Sharklet range, weight options, maximum seating and fuel capacity remain references rather than simulator configuration assignments.
 
 - Added the reviewed airborne USAFC C-17 artwork card to cache discovery. Its separate side profile remains outstanding; this is not an installed simulator repaint.
