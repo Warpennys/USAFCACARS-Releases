@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The C152 reference distinguishes total seats from passenger capacity and system
+voltage from battery voltage. Operational settings remain separate.
+
 The Cessna 310 catalog card depicts a piston twin with wingtip tanks, not an
 Airbus preview. It is a 310R-family illustration, not a simulator variant or
 performance-data assignment. A matching transparent USAFC side profile is now
