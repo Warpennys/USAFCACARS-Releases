@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Prepared the approved transactional pilot-number correction with legacy provenance,
+  collision checks and rollback tests. It changes no internal IDs or other account
+  fields; production application and avatar-page verification remain pending.
+
 - Added a read-only full-roster identity comparison after a pilot-number mismatch
   selected the wrong restored avatar. No automatic account renumbering is performed.
   The resulting correction proposal requires review of numbers retained by deleted accounts.
