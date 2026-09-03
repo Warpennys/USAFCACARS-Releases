@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added Saab 340B manufacturer references with explicit equipment options;
+  44 packages now match 47 development catalog records. Runtime limits and the
+  issued deployment pins are unchanged.
+
 - Added an A310-300 reference with exact-model safeguards and historical Airbus
   source conditions: 43 packaged references now match 46 development records.
   This follow-up does not change the already-issued bounded deployment pins.
