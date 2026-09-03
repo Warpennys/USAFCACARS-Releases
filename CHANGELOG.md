@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added the reviewed airborne USAFC C-17 artwork card to cache discovery. Its separate side profile remains outstanding; this is not an installed simulator repaint.
+
 - Added a qualified USAF C-17 reference with exact simulator-package matching. Cargo, troop and medical layouts remain separate; conditional range is not an operational fuel setting.
 
 - Added separate ATR 42-600 and 72-600 manufacturer references with qualified runway, range, fuel-mass and seating-layout figures. Ambiguous ATR and earlier/freighter variants are excluded.

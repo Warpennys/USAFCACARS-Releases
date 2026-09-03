@@ -10,7 +10,8 @@ C-17 data is attributed to the U.S. Air Force, not labeled as manufacturer data.
 Its unrefueled range retains the published payload and altitude conditions.
 Maximum cargo, troop seating and medical layouts are not simultaneous capacity
 assignments. The reference does not authorize short-runway operations or change
-simulator fuel, cabin or dispatch limits. C-17 imagery remains unfinished.
+simulator fuel, cabin or dispatch limits. The reviewed airborne C-17 card is
+included in cache discovery; its separate side profile remains unfinished.
 
 ATR 42-600 and 72-600 references are matched separately. Fuel figures are mass,
 not gallons. Published takeoff/landing distances are conditional figures, not
