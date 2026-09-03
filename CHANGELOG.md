@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Dispatch Center now reuses the Pilot Roster custom pagination, retaining filters
+  and falling back to the default paginator when the custom view is unavailable.
+
 - Prepared the approved transactional pilot-number correction with legacy provenance,
   collision checks and rollback tests. It changes no internal IDs or other account
   fields; production application and avatar-page verification remain pending.
