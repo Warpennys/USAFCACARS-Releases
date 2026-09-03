@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added qualified A330-200/-300 references without changing operational limits. Conflicting A330-200 range, typical seating and weight figures are excluded pending configuration-specific evidence.
+
 - Added reviewed USAFC A321ceo artwork with its distinct door configuration to cache discovery. The separate side view remains unfinished; existing neo artwork is unchanged.
 
 - Added reviewed USAFC A320ceo artwork to catalog cache discovery. Its separate side profile remains unfinished; the approved A320neo card is unchanged.

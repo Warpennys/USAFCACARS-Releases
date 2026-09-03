@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+A330-200 and A330-300 references remain separate and do not apply to freighter
+or neo configurations. Conflicting A330-200 range, typical seating and weight
+figures are excluded. Maximum fuel/seating and operating Mach are references,
+not installed cabin, fuel settings or cruise commands. Existing geometry is preserved.
+
 The A321ceo card retains its four full-height door stations and conventional
 wingtip fences. Incorrect-exit artwork attempts were excluded. This is a
 virtual USAFC illustration, not an installed repaint; its side view is pending.
