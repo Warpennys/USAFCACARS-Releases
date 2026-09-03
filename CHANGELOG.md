@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Published-flight reconciliation and preview-command tests now pass on isolated
+  MySQL tables. Fixed JSON formatting differences that incorrectly rejected repeat
+  imports; meaningful JSON content changes remain protected. Production concurrency
+  and final deployment acceptance are still pending.
+
 - Prepared checksummed private delivery of the network definition candidate,
   removing the need for manual file copying. It remains unapproved for production
   import; no private package or operational data is included in this public repository.
