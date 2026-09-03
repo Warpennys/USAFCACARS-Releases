@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Development preview imports must not confuse aircraft sharing a model number or
+replace approved artwork. Exact identity matching prevents new fuzzy matches;
+previously misidentified images still need separate review and correction.
+
 Side-profile validation requires visible aircraft content as well as transparent
 background corners. Blank or faint-only cutouts fail acceptance; visual geometry
 and livery review remain separate requirements.

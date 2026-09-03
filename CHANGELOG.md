@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Development preview matching now rejects numeric-name collisions and ambiguous image sources while preserving approved artwork. Existing identity discrepancies still need reconciliation; no corrected fleet coverage is claimed.
+
 - Strengthened side-profile acceptance checks to reject empty or faint-only transparent images. Existing reviewed profiles still pass; this is not complete fleet or live-client acceptance.
 
 - Added a reviewed transparent USAFC King Air 350i side profile to cache discovery. The asset is a catalog illustration, not a simulator repaint; fleet coverage remains incomplete.
