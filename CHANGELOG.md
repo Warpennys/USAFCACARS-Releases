@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added an explicitly reviewed missing-reference option for installations whose
+  catalog lacks a packaged aircraft. Only named absent keys may be omitted;
+  mismatched models, unexpected missing keys and stale acknowledgements still
+  abort atomically. Successful partial coverage is reported visibly.
+
 - Added Saab 340B manufacturer references with explicit equipment options;
   44 packages now match 47 development catalog records. Runtime limits and the
   issued deployment pins are unchanged.
