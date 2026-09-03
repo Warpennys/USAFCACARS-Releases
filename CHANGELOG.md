@@ -15,6 +15,12 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Activated 3,329 validated World schedules on development and reconciled 46,606
+  dated departures in the reviewed 14-day window. Repeat activation makes no
+  changes. Added guarded server activation and portable comparison reports;
+  production activation still requires its own receipt. Twenty-eight definitions
+  remain held for deferred rotorcraft scope or range validation.
+
 - Fixed a legacy unknown-duration compatibility issue in World schedule transfer.
   The published-production subset now passes the development rollback preview;
   production acceptance and new-service publication remain pending.
