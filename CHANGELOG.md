@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Fixed the server's exact ATR 42-600 legacy identity to resolve its existing approved
+  artwork and verified reference. Other ATR variants remain excluded; no image or
+  operational performance limit was replaced.
+
 - Verified one-to-one coverage of all 195 active aircraft identities across the
   captured development/server inventories using eight reviewed legacy aliases.
   Retired records remain preserved; this is not full profile/artwork or flight parity.
