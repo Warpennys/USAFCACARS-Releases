@@ -6,15 +6,20 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Aircraft headings omit the generic "Simulator Aircraft" manufacturer label.
+Real manufacturer names, models and variants remain visible. This also applies
+to existing cached dossier data; no identity records need to be deleted.
+
 The C90GTx reference distinguishes the original aircraft from the Q4 2014
 performance upgrade. Neither set of field lengths selects the simulator's
 configuration or establishes runway suitability. Other King Air variants do
-not inherit this reference. Its aircraft card and side view remain unfinished.
+not inherit this reference. Its reviewed USAFC card is now cached; the separate
+side view remains unfinished. The current image check verifies 57 URLs/hashes.
 
 The original E190, ATR 72-600 and ATR 42-600 have separate reviewed USAFC
 cards made from manufacturer imagery. The shorter ATR42 does not reuse the
 ATR72 image. These are illustrations, not installed liveries or transparent
-side views. The current image-manifest check verifies 56 URLs and file hashes.
+side views. That regional-card checkpoint verified 56 URLs and file hashes.
 
 Reviewed primary aircraft names now constrain the A320/A321 and E135/E145/E190
 references. A name merely containing the base type must not silently receive
