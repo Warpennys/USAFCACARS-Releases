@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a SkyCourier reference with separate passenger/freighter figures and visible source conflicts. Existing operational limits are unchanged.
+
 - Added reviewed USAFC ICON A5 artwork to cache discovery; the card preserves its amphibian configuration. Side-profile coverage remains incomplete.
 
 - Added reviewed USAFC Vision Jet artwork to the catalog cache collection. Full-fleet artwork and side-profile coverage remain incomplete.

@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+SkyCourier reference figures identify passenger versus freighter configuration.
+Conflicting payload and occupant labels do not become operational assignments.
+
 The ICON A5 promotional card is now included in the reviewed cache collection.
 It does not substitute for a missing transparent side profile.
 
