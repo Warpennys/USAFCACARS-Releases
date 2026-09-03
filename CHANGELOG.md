@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Fixed an ACARS livery-side display path that required a simultaneous default-card download. Available side images can now update independently; interactive release verification remains pending.
+
 - Added reviewed USAFC SkyCourier freighter artwork to cache discovery. Transparent side-profile coverage remains incomplete.
 
 - Added a SkyCourier reference with separate passenger/freighter figures and visible source conflicts. Existing operational limits are unchanged.

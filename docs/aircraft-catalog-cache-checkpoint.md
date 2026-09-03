@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+An available livery side image must display even when no default art card is
+downloaded in the same request. Verify this on a non-default USAFC livery and
+check that closing the selector prevents a cancelled late image update.
+
 SkyCourier artwork now depicts the freighter configuration from the simulator
 reference. This card is not a passenger-configuration or transparent-side asset.
 
