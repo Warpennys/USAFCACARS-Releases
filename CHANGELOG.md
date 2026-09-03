@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added an A310-300 reference with exact-model safeguards and historical Airbus
+  source conditions: 43 packaged references now match 46 development records.
+  This follow-up does not change the already-issued bounded deployment pins.
+
 - Built private test candidate 1.1.6-rc.4 from the latest flight readiness and
   control-release verification source. Automated reference/cache, readiness,
   control-state, icon and published-executable fixture checks pass. Live simulator
