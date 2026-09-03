@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Built private test candidate 1.1.6-rc.4 from the latest flight readiness and
+  control-release verification source. Automated reference/cache, readiness,
+  control-state, icon and published-executable fixture checks pass. Live simulator
+  and installer acceptance remain outstanding; no public update is promoted.
+
 - Completed the bounded server deployment handoff for reviewed site, aircraft
   references and existing artwork. Unresolved World-network activation and
   desktop installer promotion remain excluded; this is not a claim of production
