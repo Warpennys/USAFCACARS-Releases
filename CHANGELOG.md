@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Catalog card and side-image downloads now honor cancellation during HTTP transfer without reporting user cancellation as an artwork failure. Transport regression checks pass; live UI acceptance is still pending.
+
 - Fixed an ACARS livery-side display path that required a simultaneous default-card download. Available side images can now update independently; interactive release verification remains pending.
 
 - Added reviewed USAFC SkyCourier freighter artwork to cache discovery. Transparent side-profile coverage remains incomplete.
