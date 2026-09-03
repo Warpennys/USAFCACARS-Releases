@@ -11,6 +11,9 @@ Airbus preview. It is a 310R-family illustration, not a simulator variant or
 performance-data assignment. A matching transparent USAFC side profile is now
 included in the source checkpoint; it is not a new desktop installer.
 
+Its family reference keeps original, later and turbocharged engine/weight data
+separate. Unidentified simulator variants do not inherit those dispatch limits.
+
 Development preview imports must not confuse aircraft sharing a model number or
 replace approved artwork. Exact identity matching prevents new fuzzy matches;
 previously misidentified images still need separate review and correction.

@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a Cessna 310 family authority reference with explicit variant qualifications; no automatic changes to dispatch limits or passenger capacity.
+
 - Added a matching transparent USAFC Cessna 310 side profile to the catalog cache checkpoint. This remains an unreleased partial-fleet update.
 
 - Added correctly identified USAFC Cessna 310 artwork, replacing a mismatched development preview association. Aircraft variant and operational specifications are unchanged.
