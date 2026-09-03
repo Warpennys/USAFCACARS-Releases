@@ -6,6 +6,9 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The reviewed Vision Jet artwork is included in cache discovery. Its promotional
+card is not a side profile; the missing side profile is not marked complete.
+
 The Vision Jet reference separates type limitations from cruise performance and
 preserves the authority's configuration-dependent altitude and seating criteria.
 It does not identify the simulator's serial or assume newer-generation equipment.
