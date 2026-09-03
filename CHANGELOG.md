@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Production World activation is confirmed: 3,329 published schedules and 46,606
+  reviewed-window departures. A read-only comparison is investigating remaining
+  field differences between environments; equal counts are not claimed as full parity.
+
 - Added a narrowly reviewed way to unpublish deferred flights with unused departure
   rows while preserving those rows and blocking operational history changes.
 
