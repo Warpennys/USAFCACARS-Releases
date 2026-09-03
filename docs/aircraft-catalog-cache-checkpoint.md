@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The SR22 card is included in the checksum-based image collection. Its reference
+describes the 2022 normally aspirated model, not the turbocharged SR22T, and does
+not overwrite simulator limits or assume optional equipment. Side view pending.
+
 The C172 reference describes the current 180-hp Skyhawk. It does not establish the
 catalog's unspecified 172 subtype or replace existing aircraft range and limits.
 
