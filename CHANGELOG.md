@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Removed automatic catalog retirement and simulator-row deletion from normal
+  simulator discovery imports, preserving legacy records for explicit review.
+
 - Repaired the development A400M simulator association and restored its existing
   catalog entry, retaining aircraft IDs and historical/configuration links.
 
