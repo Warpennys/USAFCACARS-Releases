@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Prepared checksummed private delivery of the network definition candidate,
+  removing the need for manual file copying. It remains unapproved for production
+  import; no private package or operational data is included in this public repository.
+
 - Completed a rolled-back reconciliation preview on development MySQL and verified
   protected data hashes remained unchanged. Draft services stayed unpublished.
   Batched history checks reduce repeated queries while retaining operational guards.
