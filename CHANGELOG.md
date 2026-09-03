@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Catalog image serving now verifies review status, manifest membership, file type and checksum before exposing an image to the site or ACARS cache. Corrected files can recover without stale resolver results.
+
 - Legacy type-reference imports now stop before writing when model identity is mismatched or ambiguous. Previously imported catalog conflicts still require reconciliation; this does not change flight history or aircraft identifiers.
 
 - Added reviewed USAFC SR22 artwork and a 2022 normally aspirated SR22 manufacturer reference; SR22T figures and unconfirmed installed options remain excluded. The separate side view is still outstanding.

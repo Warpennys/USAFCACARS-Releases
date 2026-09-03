@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Only reviewed, manifest-listed PNG files with matching checksums are served as
+catalog artwork or side profiles. Loose, draft or corrupted files are excluded
+from the aircraft cache collection; this does not fill still-missing imagery.
+
 Legacy reference imports must not assign a different model solely because an
 ICAO key matches. Conflicts now stop preflight, including with forced replacement.
 Existing historical catalog conflicts still need separate reconciliation.
