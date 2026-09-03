@@ -8,6 +8,7 @@ distributed through this documentation repository.
 
 The 787-10 reference preserves both published weight options without selecting
 one for the simulator. Example seating is not an installed cabin assignment.
+Its USAFC artwork card is now included; no completed transparent side profile is claimed.
 
 Generic simulator display names can use a reviewed reference alias only when
 the exact name, simulator platform and package match. Similar names alone do

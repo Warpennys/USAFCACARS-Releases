@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed USAFC 787-10 artwork to the catalog cache. The separate transparent side profile remains outstanding.
+
 - Added Boeing 787-10 planning reference data, preserving separate weight options and seating/fuel conditions. Full-fleet audit now checks verified simulator aliases consistently with installation.
 
 - Added explicit simulator-package checks for reviewed catalog reference aliases, retaining strict variant matching. No new aircraft data is assigned by this change alone.
