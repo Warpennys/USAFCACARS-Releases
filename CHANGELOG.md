@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added separate ATR 42-600 and 72-600 manufacturer references with qualified runway, range, fuel-mass and seating-layout figures. Ambiguous ATR and earlier/freighter variants are excluded.
+
 - Added the reviewed USAFC CH-47D artwork card to catalog cache discovery. Its separate side profile remains unfinished; no simulator repaint is installed.
 
 - Added a historical CH-47D reference with exact simulator-package matching. Site and desktop reference displays identify military-operator sources and preserve publisher, period and configuration qualifications; operational limits remain unchanged.

@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+ATR 42-600 and 72-600 references are matched separately. Fuel figures are mass,
+not gallons. Published takeoff/landing distances are conditional figures, not
+universal runway requirements. Alternative seating layouts do not change the
+simulator cabin. Earlier -500, freighter and generic ATR entries remain separate.
+
 The CH-47D reference describes a historical U.S. Army configuration, not current
 CH-47F or MH-47 specifications. The site and desktop label it as a military
 operator reference and retain its publisher and period. Verify those labels in
