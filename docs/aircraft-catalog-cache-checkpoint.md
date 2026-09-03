@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The A321ceo card retains its four full-height door stations and conventional
+wingtip fences. Incorrect-exit artwork attempts were excluded. This is a
+virtual USAFC illustration, not an installed repaint; its side view is pending.
+
 The A320ceo card now displays a reviewed USAFC illustration with conventional
 wingtip fences. It is distinct from the approved A320neo artwork. The separate
 A320ceo side view remains unfinished; rejected output is not in the cache.
