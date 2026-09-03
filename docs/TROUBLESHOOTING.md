@@ -1849,3 +1849,10 @@ All rights reserved.
 
 USAFCACARS is proprietary software.
 ```
+# Free Flight will not load into the MSFS planner
+
+Confirm ACARS is version 1.1.11 or newer. Earlier builds could show
+`Items collection must be empty before using ItemsSource` after APPEND TO BIDS.
+The corrected build keeps the active briefing open and safely prepares its aircraft selector.
+If the error persists on 1.1.11 or newer, attach `%APPDATA%\USAFCACARS\Logs\client.log`
+to the support report and include the selected aircraft and flight source.

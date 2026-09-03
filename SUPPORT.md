@@ -38,7 +38,7 @@ Official downloads:
 ## Development checkpoint guidance
 
 > [!NOTE]
-> Development-branch documentation can describe work completed after the current downloadable alpha. The August 27 flight-strip, Free Flight, planner-tab, Map & Tools, and optional MSFS 2024 startup changes have not been published as a new installer or deployed update.
+> Development-branch documentation can describe work completed after the current downloadable alpha. Confirm the installed version in ACARS before troubleshooting; the corrected Free Flight planner workflow requires 1.1.11 or newer.
 
 ### Flight planning and bid questions
 

@@ -68,9 +68,9 @@
 >
 > Images labeled **Current** show the implemented application at the documented release. Images labeled **Concept**, **Design Reference**, or **Visual** show intended scope and design direction and should not be interpreted as confirmation that every displayed control or service is already implemented.
 
-## Current Release — 1.1.5
+## Current Release — 1.1.11
 
-The [1.1.5 release](https://github.com/Warpennys/USAFCACARS-Releases/releases/tag/v1.1.5) provides the Windows installer, portable build and updater packages. Release availability does not imply that every alpha feature is complete. Use the **View Latest** button above for the current downloads.
+The [1.1.11 release](https://github.com/Warpennys/USAFCACARS-Releases/releases/tag/v1.1.11) provides the Windows installer and automatic-update packages. It fixes the Free Flight APPEND TO BIDS → active briefing → Load to Planner workflow and the aircraft-selector binding crash. Release availability does not imply that every alpha feature is complete. Use the **View Latest** button above for the current downloads.
 >
 > Features, layouts, wording, data sources, integrations, and availability may change as development continues. The release notes for each downloadable build are the authoritative record of what is currently functional.
 

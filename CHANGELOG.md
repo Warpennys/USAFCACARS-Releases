@@ -2,7 +2,7 @@
 
 All notable changes to **USAFCACARS** are documented in this file.
 
-USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. Desktop release `1.1.5` is available; this repository also documents unreleased development work separately.
+USAFCACARS is proprietary software developed for USA Flight Club. The application is currently in **active alpha development**. Desktop release `1.1.11` is available; this repository also documents unreleased development work separately.
 
 This changelog follows the general structure of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and uses version numbers compatible with Semantic Versioning where practical.
 
@@ -10,6 +10,16 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 > A version number does not indicate that USAFCACARS is production-ready.
 >
 > Alpha releases may contain incomplete systems, disabled controls, compatibility limitations, breaking configuration changes, or defects. The release notes attached to each downloadable build remain the authoritative record of what was tested and included in that build.
+
+---
+
+## [1.1.11] - 2026-09-03
+
+- Fixed the Free Flight Load to Planner crash caused by mixing direct aircraft-selector items with WPF `ItemsSource` binding.
+- Kept pilots on the prepared active briefing after APPEND TO BIDS instead of routing them back through Open Flights.
+- Preserved recoverable planner-error handling and client-log diagnostics without starting a failed flight.
+- Updated generated Free Flight numbers to the approved `F####<type>` source/type format.
+- Added aircraft-aware airport-planning requests for compatible automatic alternate recommendations from the paired private server API.
 
 ---
 
