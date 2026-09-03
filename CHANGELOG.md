@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added separate reviewed USAFC ERJ135 and ERJ145 art cards to cache discovery. The ERJ145 uses its manufacturer's reference image; separate transparent side profiles remain unfinished.
+
 - Added qualified ERJ135 ER/LR reference data and alternative example cabin layouts. An inconsistent performance-column heading is excluded, and no simulator cabin or operating limits are changed.
 
 - Added ERJ145 EP/LR reference figures with separate weights and fuel capacities. Example seating and conditional performance remain references, not simulator assignments.

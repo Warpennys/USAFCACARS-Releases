@@ -6,6 +6,12 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+ERJ135 and ERJ145 have distinct USAFC artwork cards. The ERJ145 artwork uses
+Embraer's own product image for geometry, not an uncertain local thumbnail.
+Both are virtual illustrations, not installed simulator liveries. Their
+separate transparent side profiles remain unfinished. Cache verification now
+checks 53 image URLs and their hashes; it does not prove live restart behavior.
+
 The ERJ135 reference distinguishes ER/LR weights and alternative 37-, 30- and
 16-seat layouts. These examples do not assign simulator seats. The ambiguously
 labeled left performance column is excluded; LR figures retain conditions.
