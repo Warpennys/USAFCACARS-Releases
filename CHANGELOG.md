@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a guarded server activation procedure for restored PNG pilot avatars;
+  existing pilot records and image files are preserved. Live-server visual
+  verification remains required.
+
 - Added the confirmed flight-source lettering contract for new flight identifiers:
   F (Free Flight), C (Charter), B (SimBrief), O (Open), S (Scheduled), T (Tour),
   independently of the trailing operational-type letter. Pilot-created Free
