@@ -15,8 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
-- Added a Cessna 207 historical FAA reference with explicit turbo/conversion,
-  seating and source-currency boundaries. Development now has 42 packaged
+- Corrected the abbreviated C207 catalog association to the package-verified
+  T207A Turbo Stationair, not a normally aspirated 207. Historical FAA reference
+  data retains seating, power-duration and source-currency boundaries. An exact
+  erroneous generated description is repaired without replacing custom text.
+  Development now has 42 packaged
   references matching 45 catalog records; this does not change simulator limits
   or claim complete aircraft artwork coverage.
 
