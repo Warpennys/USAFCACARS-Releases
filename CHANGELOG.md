@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a development-only, read-only reconciliation review command with file
+  checksum verification, private output and stale-plan detection. It does not
+  import, publish or deploy schedules; the complete migration remains unfinished.
+
 - Added development-only reconciliation tests for aircraft assignments, subfleets,
   connected rotation legs and repeat imports. Server-specific identities are
   resolved locally; conflicting assignments require review. This is not a completed
