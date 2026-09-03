@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added a configuration-qualified CJ4 technical reference, retaining distinct range assumptions and excluding inconsistent gear-speed conversions. Operational values remain unchanged.
+
 - Added reviewed USAFC Citation CJ4 artwork to the catalog cache. No side profile or new aircraft performance values are implied by this card.
 
 - Catalog card and side-image downloads now honor cancellation during HTTP transfer without reporting user cancellation as an artwork failure. Transport regression checks pass; live UI acceptance is still pending.

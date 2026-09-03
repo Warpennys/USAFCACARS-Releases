@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+CJ4 reference data retains its 2015 configuration and mission assumptions.
+The high-speed mission range is distinct from the fact-book maximum range;
+inconsistent gear-speed conversions do not become operational limits.
+
 The Citation CJ4 promotional card follows the simulator reference without tall
 winglets. It is included in cache discovery, not a replacement for a side profile.
 
