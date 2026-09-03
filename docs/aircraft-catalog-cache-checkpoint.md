@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+Generic simulator display names can use a reviewed reference alias only when
+the exact name, simulator platform and package match. Similar names alone do
+not qualify, and installed-reference verification checks this identity too.
+
 The C152 reference distinguishes total seats from passenger capacity and system
 voltage from battery voltage. Operational settings remain separate.
 

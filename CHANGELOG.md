@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added explicit simulator-package checks for reviewed catalog reference aliases, retaining strict variant matching. No new aircraft data is assigned by this change alone.
+
 - Added Cessna 152 authority reference data with seating and electrical qualifications. Its transparent side profile remains unfinished.
 
 - Added a Cessna 310 family authority reference with explicit variant qualifications; no automatic changes to dispatch limits or passenger capacity.
