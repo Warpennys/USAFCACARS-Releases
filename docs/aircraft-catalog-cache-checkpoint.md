@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The generic A319 entry can display an explicitly qualified A319ceo reference.
+Published Sharklet range and maximum fuel/weight/seating figures do not establish
+its installed equipment. No engine subtype, cabin, ACJ or neo configuration is
+inferred. Maximum operating Mach is not presented as cruise speed.
+
 C-17 data is attributed to the U.S. Air Force, not labeled as manufacturer data.
 Its unrefueled range retains the published payload and altitude conditions.
 Maximum cargo, troop seating and medical layouts are not simultaneous capacity
