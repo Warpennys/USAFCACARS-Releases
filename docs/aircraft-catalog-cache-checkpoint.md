@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The Bell 222 reference applies to the original wheeled model, not the 222B,
+222U, 230 or 430. Fuel capacity depends on serial/modification status; external
+cargo weight and maximum passenger seating are not automatic dispatch or cabin
+settings. Its artwork and side profile remain unfinished.
+
 The 787-10 reference preserves both published weight options without selecting
 one for the simulator. Example seating is not an installed cabin assignment.
 Its USAFC artwork card is now included; no completed transparent side profile is claimed.

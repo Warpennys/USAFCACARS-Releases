@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added original Bell 222 authority reference data with serial-dependent fuel and external-cargo qualifications. No helicopter artwork or simulator configuration is inferred from this reference.
+
 - Added reviewed USAFC 787-10 artwork to the catalog cache. The separate transparent side profile remains outstanding.
 
 - Added Boeing 787-10 planning reference data, preserving separate weight options and seating/fuel conditions. Full-fleet audit now checks verified simulator aliases consistently with installation.
