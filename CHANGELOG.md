@@ -16,7 +16,7 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 ## Unreleased — aircraft catalog/cache checkpoint
 
 - Corrected a guarded schedule activation blocker for an exact aircraft-assignment
-  repair with unused cancelled departures. Operational history remains protected;
+  repair with mixed unused cancelled and scheduled departures. Operational history remains protected;
   production activation verification is still pending. No desktop release change.
 
 - Activated 3,329 validated World schedules on development and reconciled 46,606
