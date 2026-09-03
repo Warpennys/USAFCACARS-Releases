@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added reviewed USAFC King Air 350 promotional artwork to cache discovery. This does not provide a side profile, a simulator repaint, or complete fleet coverage.
+
 - Added a configuration-qualified CJ4 technical reference, retaining distinct range assumptions and excluding inconsistent gear-speed conversions. Operational values remain unchanged.
 
 - Added reviewed USAFC Citation CJ4 artwork to the catalog cache. No side profile or new aircraft performance values are implied by this card.

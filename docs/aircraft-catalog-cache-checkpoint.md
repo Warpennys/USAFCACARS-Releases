@@ -6,6 +6,10 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The King Air 350 promotional card is included in cache discovery. It depicts
+the simulator-reference configuration in USAFC paint, not an installed repaint.
+Transparent side-profile coverage and full-fleet acceptance remain incomplete.
+
 CJ4 reference data retains its 2015 configuration and mission assumptions.
 The high-speed mission range is distinct from the fact-book maximum range;
 inconsistent gear-speed conversions do not become operational limits.
