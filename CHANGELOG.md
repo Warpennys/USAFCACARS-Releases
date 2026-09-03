@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Bound World activation to its reviewed held-flight identities and routes, so
+  incomplete destination aircraft metadata cannot silently release deferred flights.
+  The exact hold set is checked; production acceptance remains pending.
+
 - Corrected a guarded schedule activation blocker for an exact aircraft-assignment
   repair with mixed unused cancelled and scheduled departures. Operational history remains protected;
   production activation verification is still pending. No desktop release change.
