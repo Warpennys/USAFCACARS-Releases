@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added database-engine preflight for development reconciliation, rejecting
+  nontransactional or missing tables, views and detected triggers before staging
+  writes. Production permissions and concurrency checks remain outstanding.
+
 - Added a private transactional reconciliation preview command with verified
   input/review files, explicit UTC windows and overwrite protection. Tests confirm
   rollback and rejected invalid inputs. Production application remains unavailable.
