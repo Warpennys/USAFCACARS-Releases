@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Fixed site lookup of restored pilot PNG avatars when the stored avatar path is
+  blank or still points to a missing JPEG. Existing custom/remote avatars are
+  preserved; no pilot database migration or original-image replacement.
+
 - Corrected 24 PC-6 bush-route aircraft associations in the private World-network
   transfer candidate, retaining all 2,805 definitions. Local hard facility failures
   are cleared; destination matching and range/clearance review remain outstanding.
