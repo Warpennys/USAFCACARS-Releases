@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Tightened 787-10 reference model matching while preserving its existing
+  specifications and verified simulator-package alias. Other 787 variants and
+  unreviewed conversions cannot inherit the reference through a name suffix.
+
 - Added an internal, preview-first future-occurrence reconciler with protection for
   pilot history, active traffic and gate reservations. Repeat and rollback tests
   pass in isolation; production import integration remains unfinished.
