@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added development-only reconciliation tests for aircraft assignments, subfleets,
+  connected rotation legs and repeat imports. Server-specific identities are
+  resolved locally; conflicting assignments require review. This is not a completed
+  migration handoff or a new desktop release.
+
 - In development: corrected scheduled-flight time calculations and added reconciliation safety tests for existing flight history and AI reservations. This is unfinished server work, not a released desktop update or completed deployment handoff.
 
 - World Schedules reconciliation remains under review. Development and production data differ; the diagnostic handoff does not publish schedules or replace production flight history. No desktop update is included in this documentation change.
