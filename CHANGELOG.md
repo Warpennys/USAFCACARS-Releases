@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Corrected 24 PC-6 bush-route aircraft associations in the private World-network
+  transfer candidate, retaining all 2,805 definitions. Local hard facility failures
+  are cleared; destination matching and range/clearance review remain outstanding.
+  This candidate is not a published network update.
+
 - Added an explicitly reviewed missing-reference option for installations whose
   catalog lacks a packaged aircraft. Only named absent keys may be omitted;
   mismatched models, unexpected missing keys and stale acknowledgements still
