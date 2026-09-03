@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Expanded development rotation checks across recurring dates and daylight-saving
+  transitions. Seasonal connection defects remain under correction; the network
+  migration has not been accepted or deployed.
+
 - Tightened 787-10 reference model matching while preserving its existing
   specifications and verified simulator-package alias. Other 787 variants and
   unreviewed conversions cannot inherit the reference through a name suffix.
