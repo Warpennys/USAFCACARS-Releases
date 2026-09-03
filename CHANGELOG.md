@@ -15,6 +15,12 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Corrected three exact legacy aircraft identity aliases and the Beechjet/A400M
+  transfer association. The complete schedule candidate now resolves against the
+  received server inventory; live import and publication remain separate checks.
+- Prevented simulator imports from matching numeric model fragments inside another
+  aircraft identifier, and rejected ambiguous catalog matches.
+
 - Added a read-only two-way aircraft identity comparison for deployment review,
   preserving historical aircraft and flagging mismatched simulator associations.
   This diagnostic does not import or publish flight schedules.
