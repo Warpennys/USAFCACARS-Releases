@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Prepared a tested add-only legacy profile importer that allocates destination IDs,
+  rejects conflicting existing records and preserves technical JSON. The four verified
+  server-only legacy profiles have now been imported into development, retaining
+  source data gaps honestly and leaving existing records/history untouched.
+
 - Added a read-only, narrowly scoped legacy aircraft profile transfer for
   reconciliation, retaining source technical data without copying operational IDs
   or pilot records. Import remains a separate reviewed step.
