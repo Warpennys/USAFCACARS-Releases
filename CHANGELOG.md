@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Current deployment preparation includes completed aircraft details and imagery;
+  unfinished aircraft artwork is a later update, not a release prerequisite.
+  Reviewed flight imports now have a tested apply command with backup/checksum
+  acknowledgements and retained receipts. Production activation is still pending.
+
 - Added a reviewed Stemme S12-G manufacturer reference with variant boundaries
   and performance caveats. This is catalog development, not a new installer or
   a declaration that aircraft imagery coverage is complete.
