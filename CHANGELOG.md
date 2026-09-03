@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Completed the bounded server deployment handoff for reviewed site, aircraft
+  references and existing artwork. Unresolved World-network activation and
+  desktop installer promotion remain excluded; this is not a claim of production
+  acceptance or a new automatic desktop update.
+
 - Corrected the abbreviated C207 catalog association to the package-verified
   T207A Turbo Stationair, not a normally aspirated 207. Historical FAA reference
   data retains seating, power-duration and source-currency boundaries. An exact
