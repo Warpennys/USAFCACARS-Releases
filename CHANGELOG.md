@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added read-only flight-fleet reconciliation reporting that lists every missing
+  or ambiguous aircraft association and its affected schedules before import.
+
 - Current deployment preparation includes completed aircraft details and imagery;
   unfinished aircraft artwork is a later update, not a release prerequisite.
   Reviewed flight imports now have a tested apply command with backup/checksum
