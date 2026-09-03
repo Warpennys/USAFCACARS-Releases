@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Verified gate overlap protection with two independent MySQL booking processes.
+  AI leasing now rechecks current session, flight status and pilot ownership under
+  locks, preventing stale search results from creating leases for claimed flights.
+
 - Gate reservations now recheck occupancy after obtaining the gate lock, handling
   stale availability results. Tests cover overlap, adjacent bookings, helipad
   allocation and an intervening reservation; multi-process verification is pending.
