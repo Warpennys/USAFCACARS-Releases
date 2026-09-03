@@ -15,6 +15,11 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Development connected-flight generation now chains legs from actual arrivals
+  and planned turnaround/layover times. Isolated seasonal, hourly, date-line and
+  three-leg tests pass, including preservation of completed flights on repeat.
+  Full-network validation and deployment acceptance remain incomplete.
+
 - Development schedule generation now rejects nonexistent spring-forward local
   times instead of silently shifting departures. Seasonal connection corrections
   and full migration acceptance are still pending; this is not a deployed fix.
