@@ -15,6 +15,9 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Repaired the development A400M simulator association and restored its existing
+  catalog entry, retaining aircraft IDs and historical/configuration links.
+
 - Corrected three exact legacy aircraft identity aliases and the Beechjet/A400M
   transfer association. The complete schedule candidate now resolves against the
   received server inventory; live import and publication remain separate checks.
