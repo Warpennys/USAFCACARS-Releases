@@ -15,6 +15,10 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Completed site/data checkpoint transfer is now documented for authenticated
+  server retrieval. Deployment acceptance remains separate; the older private
+  desktop candidate must not be promoted as the current automatic update.
+
 - Added read-back verification after simulator slew/freeze release commands,
   with bounded retries and failure on unconfirmed state. Automated verification
   tests pass; this is not yet proof of physical controller operation.
