@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The C90GTx reference distinguishes the original aircraft from the Q4 2014
+performance upgrade. Neither set of field lengths selects the simulator's
+configuration or establishes runway suitability. Other King Air variants do
+not inherit this reference. Its aircraft card and side view remain unfinished.
+
 The original E190, ATR 72-600 and ATR 42-600 have separate reviewed USAFC
 cards made from manufacturer imagery. The shorter ATR42 does not reuse the
 ATR72 image. These are illustrations, not installed liveries or transparent
@@ -25,8 +30,9 @@ Dimensions, engine family and certified altitude are references, not live settin
 ERJ135 and ERJ145 have distinct USAFC artwork cards. The ERJ145 artwork uses
 Embraer's own product image for geometry, not an uncertain local thumbnail.
 Both are virtual illustrations, not installed simulator liveries. Their
-separate transparent side profiles remain unfinished. Cache verification now
-checks 53 image URLs and their hashes; it does not prove live restart behavior.
+separate transparent side profiles remain unfinished. The earlier ERJ image
+checkpoint verified 53 URLs; the current count is listed above. Hash checks
+do not prove live restart behavior.
 
 The ERJ135 reference distinguishes ER/LR weights and alternative 37-, 30- and
 16-seat layouts. These examples do not assign simulator seats. The ambiguously

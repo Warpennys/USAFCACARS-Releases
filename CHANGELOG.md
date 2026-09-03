@@ -15,6 +15,8 @@ This changelog follows the general structure of [Keep a Changelog](https://keepa
 
 ## Unreleased — aircraft catalog/cache checkpoint
 
+- Added manufacturer-backed C90GTx reference data with separate original and upgraded performance figures. Exact model matching prevents other King Air variants from inheriting it; simulator limits remain unchanged.
+
 - Added separate USAFC cards for the original E190, ATR 72-600 and ATR 42-600 using manufacturer imagery. All three are included in cache discovery; separate side views remain unfinished.
 
 - Tightened reviewed aircraft-reference matching so similar names cannot silently inherit ceo, regional-jet or passenger data belonging to a different variant. Existing reviewed associations remain valid.
