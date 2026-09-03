@@ -6,6 +6,11 @@ distributed through this documentation repository.
 
 ## Expected behavior
 
+The original E190, ATR 72-600 and ATR 42-600 have separate reviewed USAFC
+cards made from manufacturer imagery. The shorter ATR42 does not reuse the
+ATR72 image. These are illustrations, not installed liveries or transparent
+side views. The current image-manifest check verifies 56 URLs and file hashes.
+
 Reviewed primary aircraft names now constrain the A320/A321 and E135/E145/E190
 references. A name merely containing the base type must not silently receive
 its data: neo, E2, freighter, XR and Legacy variants need separate review.
